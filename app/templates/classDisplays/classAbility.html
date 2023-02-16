@@ -1,0 +1,17 @@
+<div class="col-12 col-md-4 p-0 py-2 py-md-0 px-2">
+    <div class="card h-100 no-pointer">
+        <h5 class="font-worksans-bold text-white p-1 m-0 text-center weaponBorder">Ability</h5>
+        <div class="card-body weaponBorder d-flex align-items-center border-top-0">
+            <div class="row d-flex align-items-center">
+                <div class="col-3 d-flex justify-content-center">
+                    <img src="{{ model.abilityImage }}" class="icon-abilities" alt="Image of {{ model.ability }}">
+                </div>
+                <div class="col-9">
+                    <h6 class="font-worksans-bold text-white">{{ model.ability }}</h6>
+                    <p class="font-worksans-light mb-0 small-text">{{ model.abilityDescription }}</p>
+                    <p class="font-worksans-light mb-0 small-text pt-1">Cooldown: {{ model.abilityCooldown }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

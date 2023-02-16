@@ -1,0 +1,24 @@
+<div class="container text-center py-3">
+    <h1>Classes</h1>
+    {% include "components/skullbanner.html" %}
+    {% if "Zealot" in subtypeWeapon.classes and "Psyker" in subtypeWeapon.classes and "Veteran" in subtypeWeapon.classes and "Ogryn" in subtypeWeapon.classes %}
+    <p class="card-text"> <img class="icon-classes-weapons-responsive" src="/static/img/classes/zealot.png"> <img class="icon-classes-weapons-responsive" src="/static/img/classes/veteran.png"> <img class="icon-classes-weapons-responsive" src="/static/img/classes/psyker.png"> <img class="icon-classes-weapons-responsive" src="/static/img/classes/ogryn.png"> </p>
+    {% elif "Zealot" in subtypeWeapon.classes and "Psyker" in subtypeWeapon.classes and "Veteran" in subtypeWeapon.classes %}
+    <p class="card-text"> <img class="icon-classes-weapons-responsive" src="/static/img/classes/zealot.png"> <img class="icon-classes-weapons-responsive" src="/static/img/classes/veteran.png"> <img class="icon-classes-weapons-responsive" src="/static/img/classes/psyker.png"> </p>
+    {% elif "Zealot" in subtypeWeapon.classes and "Veteran" in subtypeWeapon.classes %}
+    <p class="card-text"> <img class="icon-classes-weapons-responsive" src="/static/img/classes/zealot.png"> <img class="icon-classes-weapons-responsive" src="/static/img/classes/veteran.png"> </p>
+    {% elif "Psyker" in subtypeWeapon.classes and "Veteran" in subtypeWeapon.classes %}
+    <p class="card-text"> <img class="class-icon-hover card-icon" src="/static/img/classes/psyker.png"> <img class="class-icon-hover card-icon" src="/static/img/classes/veteran.png"> </p>
+    {% elif "Psyker" in subtypeWeapon.classes and "Zealot" in subtypeWeapon.classes %}
+    <p class="card-text"> <img class="class-icon-hover card-icon" src="/static/img/classes/psyker.png"> <img class="class-icon-hover card-icon" src="/static/img/classes/zealot.png"> </p>
+    {% elif "Zealot" in subtypeWeapon.classes %}
+    <p class="card-text"> <img class="icon-classes-weapons-responsive" src="/static/img/classes/zealot.png"> </p>
+    {% elif "Psyker" in subtypeWeapon.classes %}
+    <p class="card-text"> <img class="icon-classes-weapons-responsive" src="/static/img/classes/psyker.png"> </p>
+    {% elif "Ogryn" in subtypeWeapon.classes %}
+    <p class="card-text"> <img class="icon-classes-weapons-responsive" src="/static/img/classes/ogryn.png"> </p>
+    {% elif "Veteran" in subtypeWeapon.classes %}
+    <p class="card-text"> <img class="icon-classes-weapons-responsive" src="/static/img/classes/veteran.png"> </p>                  
+    {% endif %}
+    <br>
+</div>

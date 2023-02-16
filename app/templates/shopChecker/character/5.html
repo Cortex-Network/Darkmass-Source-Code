@@ -1,0 +1,66 @@
+<div class="collapse collapse-{{ result[1] }}" id="shop-results-{{ result[1] }}" data-bs-parent="#shop-group">
+    <div class="row py-5">
+        {% for weapon in character5 %}
+        <div class="col-12 col-md-3 py-3">
+            <div class="card">
+                {% for subtype in SubtypeMeleeList %}
+                    {% if subtype.codeName in weapon[0] %}
+                        <img src = {{subtype.image}} class="shop-img" alt="Weapon Image">
+                        <p>Weapon: {{subtype.name}} </p>
+                        <p>Price: {{ weapon[1] }}</p>
+                        <p>Item Level: {{ weapon[2] }}</p>
+                        <p>Base Item Level: {{ weapon[15] }}</p>
+                        <p>Bar 1: {{ weapon[5] }} : {{weapon[6] }}</p>
+                        <p>Bar 2: {{ weapon[7] }} : {{weapon[8] }}</p>
+                        <p>Bar 3: {{ weapon[9] }} : {{weapon[10] }}</p>
+                        <p>Bar 4: {{ weapon[11] }} : {{weapon[12] }}</p>
+                        <p>Bar 5: {{ weapon[13] }} : {{weapon[14] }}</p>
+                        {% if weapon[3] != "None" %}
+                            <p>Perk: {{ weapon[3] }}</p>
+                         {% endif %}
+                        {% if weapon[4] != "None" %}
+                            <p>Blessing: {{ weapon[4] }}</p>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+                {% for subtype in SubtypeRangedList %}
+                    {% if subtype.codeName in weapon[0] %}
+                        <img src = {{subtype.image}} class="shop-img" alt="Weapon Image">
+                        <p>Weapon: {{subtype.name}} </p>
+                        <p>Price: {{ weapon[1] }}</p>
+                        <p>Item Level: {{ weapon[2] }}</p>
+                        <p>Base Item Level: {{ weapon[15] }}</p>
+                        <p>Bar 1: {{ weapon[5] }} : {{weapon[6] }}</p>
+                        <p>Bar 2: {{ weapon[7] }} : {{weapon[8] }}</p>
+                        <p>Bar 3: {{ weapon[9] }} : {{weapon[10] }}</p>
+                        <p>Bar 4: {{ weapon[11] }} : {{weapon[12] }}</p>
+                        <p>Bar 5: {{ weapon[13] }} : {{weapon[14] }}</p>
+                        {% if weapon[3] != "None" %}
+                            <p>Perk: {{ weapon[3] }}</p>
+                        {% endif %}
+                        {% if weapon[4] != "None" %}
+                            <p>Blessing: {{ weapon[4] }}</p>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+                {% for curio in curioList %}
+                    {% for c in curio.codeName %}
+                        {% if c == weapon[0] %}
+                            <img src = {{curio.image}} class="shop-img" alt="Weapon Image">
+                            <p>Curio: {{curio.name}} </p>
+                            <p>Price: {{ weapon[1] }}</p>
+                            <p>Item Level: {{ weapon[2] }}</p>
+                            <p>Base Item Level: {{ weapon[15] }}</p>
+                            {% if weapon[3] != "None" %}
+                                <p>Perk: {{ weapon[3] }}</p>
+                            {% endif %}
+                            {% if weapon[3] != "None" %}
+                                <p>Blessing: {{ weapon[4] }}</p>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>

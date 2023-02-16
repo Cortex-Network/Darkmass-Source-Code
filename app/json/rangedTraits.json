@@ -1,0 +1,324 @@
+{
+"rangedTraits": [
+{
+    "name": "Adhesive Charge",
+    "image": "/static/img/rangedTraits/adhesivecharge.webp",
+    "description": "Your Grenades stick to Monstrosities."
+},
+{
+    "name": "Between the Eyes",
+    "image": "/static/img/rangedTraits/betweentheeyes.webp",
+    "description": "Clears Suppression (Self) & grants Suppression Immunity (Self) for 0.5-0.9s on Weak Spot Hit."
+},
+{
+    "name": "Blaze Away",
+    "image": "/static/img/rangedTraits/blazeaway.webp",
+    "description": "Up to +2% Power based on how long you keep shooting."
+},
+{
+    "name": "Blazing Spirit (Staffs)",
+    "image": "/static/img/rangedTraits/blazingspirit.webp",
+    "description": "Enemy gains +1-2 Stacks of Soulblaze on Critical Hit."
+},
+{
+    "name": "Born in Blood",
+    "image": "/static/img/rangedTraits/borninblood.webp",
+    "description": "+1-2.5% Toughness on Close Range Kill."
+},
+{
+    "name": "Can Opener",
+    "image": "/static/img/rangedTraits/canopener.webp",
+    "description": "+1-4 Rending on Special Attack (Armoured enemies)."
+},
+{
+    "name": "Cavalcade",
+    "image": "/static/img/rangedTraits/cavalcade.webp",
+    "description": "+1-4% Critical Chance. Stracks up to 5 based on duration of Continuous Fire."
+},
+{
+    "name": "Ceaseless Barrage",
+    "image": "/static/img/rangedTraits/ceaselessbarrage.webp",
+    "description": "Continuous firing increases Suppression over time."
+},
+{
+    "name": "Charmed Reload",
+    "image": "/static/img/rangedTraits/charmedreload.webp",
+    "description": "+4-10 Bullets loaded on Critical Hit."
+},
+{
+    "name": "Crucian Roulette",
+    "image": "/static/img/rangedTraits/crucianroulette.webp",
+    "description": "+2-5% Critical Chance for each empty chamber in your weapon."
+},
+{
+    "name": "Deadly Accurate",
+    "image": "/static/img/rangedTraits/deadlyaccurate.webp",
+    "description": "Adds 30-50% additional damage on crit weakspot hits."
+},
+{
+    "name": "Deathspitter",
+    "image": "/static/img/rangedTraits/deathspitter.webp",
+    "description": "+5-6.5% Power for 1-1.375 seconds on Close Range Kill."
+},
+{
+    "name": "Dumdum",
+    "image": "/static/img/rangedTraits/dumdum.webp",
+    "description": "+1-2.5% Close Range damage on Repeated Hit. Stacks 5 times."
+},
+{
+    "name": "Efficiency",
+    "image": "/static/img/rangedTraits/efficiency.webp",
+    "description": "+33% Reduced Ammo use after not shooting for 5.5-4 seconds."
+},
+{
+    "name": "Expansive",
+    "image": "/static/img/rangedTraits/expansive.webp",
+    "description": "+2-5% Melee Power for 4 seconds on Hitting 3+ Enemies with a Ranged Attack."
+},
+{
+    "name": "Falter",
+    "image": "/static/img/rangedTraits/falter.webp",
+    "description": "+30-60% Target Stagger on Weak Spot Hit."
+},
+{
+    "name": "Fan the Flames",
+    "image": "/static/img/rangedTraits/fantheflames.webp",
+    "description": "Primary Attack ignores 30-60% Stagger Resistance on Burning Enemies."
+},
+{
+    "name": "Fire Frenzy",
+    "image": "/static/img/rangedTraits/firefrenzy.webp",
+    "description": "Gain a 5-10% Power increase against nearby enemies for 1.75 seconds after killing an enemy at close range."
+},
+{
+    "name": "Flechette",
+    "image": "/static/img/rangedTraits/flechette.webp",
+    "description": "+1 Bleed Stacks on Critical Hit."
+},
+{
+    "name": "Focused Channeling",
+    "image": "/static/img/rangedTraits/focusedchanneling.webp",
+    "description": "Your Secondary Attack cannot be interrupted."
+},
+{
+    "name": "Full Bore",
+    "image": "/static/img/rangedTraits/fullbore.webp",
+    "description": "+2-5% Power for 5 seconds when every pellet in a shot hits the same enemy."
+},
+{
+    "name": "Gets Hot!",
+    "image": "/static/img/rangedTraits/getshot.webp",
+    "description": "Up to +5-12.5% Critical Chance (scales on Heat Level)."
+},
+{
+    "name": "Ghost",
+    "image": "/static/img/rangedTraits/ghost.webp",
+    "description": "Immune to ranged attacks for 0.5-1.0 seconds on weak spot hit."
+},
+{
+    "name": "Gloryhunter",
+    "image": "/static/img/rangedTraits/gloryhunter.webp",
+    "description": "+4-10% Toughness on Elite Kill."
+},
+{
+    "name": "Hand-Cannon",
+    "image": "/static/img/rangedTraits/handcannon.webp",
+    "description": "+20-50% Rending on Critical Hit."
+},
+{
+    "name": "Headhunter",
+    "image": "/static/img/rangedTraits/headhunter.webp",
+    "description": "+2-5% Critical Chance on Weak Spot Hit until your next Critical Hit. Stacks 5 times."
+},
+{
+    "name": "Hit & Run",
+    "image": "/static/img/rangedTraits/hitandrun.webp",
+    "description": "Immune to Ranged Attacks for 0.3-0.7 seconds on Close Range Kill."
+},
+{
+    "name": "Infernus (Infantry Lasgun & Helbore Lasgun)",
+    "image": "/static/img/rangedTraits/infernus.png",
+    "description": "+2-3 Burn Stacks on Critical Hit to a maximum of 6-9 Stacks(s)"
+},
+{
+    "name": "Infernus (Laspistol)",
+    "image": "/static/img/rangedTraits/infernuslaspistol.png",
+    "description": "+2-3 Burn Stacks on Critical Hit to a maximum of 6-9 Stacks(s)"
+},
+{
+    "name": "Infernus (Recon Lasgun)",
+    "image": "/static/img/rangedTraits/infernuslasgunrecon.png",
+    "description": "+1-2 Burn Stacks on Critical Hit to a maximum of 6-9 Stacks(s)"
+},
+{
+    "name": "Inspiring Barrage",
+    "image": "/static/img/rangedTraits/inspiringbarrage.webp",
+    "description": "Replenish 10% Toughness over time during Continuous Fire. Stacks up to 5 times."
+},
+{
+    "name": "Man-Stopper",
+    "image": "/static/img/rangedTraits/manstopper.webp",
+    "description": "Increased Cleave on Critical Hit."
+},
+{
+    "name": "No Respite",
+    "image": "/static/img/rangedTraits/norespite.webp",
+    "description": "Up to +10-20% Damage on Hit (Staggered Enemy), scaling with Stagger."
+},
+{
+    "name": "Onslaught",
+    "image": "/static/img/rangedTraits/onslaught.webp",
+    "description": "Chaining Charged Attacks reduces their Charge Time by -4-10%. Stacks 5 times."
+},
+{
+    "name": "Opening Salvo",
+    "image": "/static/img/rangedTraits/openingsalvo.webp",
+    "description": "+5-15% Power on Salvos First shot."
+},
+{
+    "name": "Overwhelming Fire",
+    "image": "/static/img/rangedTraits/overwhelmingfire.png",
+    "description": "+1-2.5% Power on Chained Ranged Hit (Same Target). Stacks 5 times."
+},
+{
+    "name": "Overpressure",
+    "image": "/static/img/rangedTraits/overpressure.webp",
+    "description": "Up to +2-5% Power, scaling with remaining Ammunition. Stacks 5 times."
+},
+{
+    "name": "Pierce",
+    "image": "/static/img/rangedTraits/pierce.webp",
+    "description": "Special Attacks ignore Hit Mass Bonus from Armour."
+},
+{
+    "name": "Pinning Fire",
+    "image": "/static/img/rangedTraits/pinningfire.webp",
+    "description": "+5-20% Power for every Enemy you Stagger. Stacks 5 times."
+},
+{
+    "name": "Pinpointing Target",
+    "image": "/static/img/rangedTraits/pinpointingtarget.webp",
+    "description": "Up to +5-20% Power based on the Charge Time of your Weapon special and Melee Attacks. Stacks 3 times."
+},
+{
+    "name": "Point Blank",
+    "image": "/static/img/rangedTraits/pointblank.webp",
+    "description": "+15-20% Ranged Critical Chance on Kill for 2 seconds."
+},
+{
+    "name": "Powderburn",
+    "image": "/static/img/rangedTraits/powderburn.webp",
+    "description": "+5-20% Suppression and +5-20% Recoil on close range kill."
+},
+{
+    "name": "Punishing Fire",
+    "image": "/static/img/rangedTraits/punishingfire.webp",
+    "description": "+2-5% Power on Ranged Attacks for 3 seconds on Multiple Hit Special Attack."
+},
+{
+    "name": "Punishing Salvo",
+    "image": "/static/img/rangedTraits/punishingsalvo.webp",
+    "description": "+5-20% Weak Spot Damage on Second and Third shots in a Salvo."
+},
+{
+    "name": "Quickflame",
+    "image": "/static/img/rangedTraits/quickflame.webp",
+    "description": "+5-10% Reload Speed if empty."
+},
+{
+    "name": "Raking Fire",
+    "image": "/static/img/rangedTraits/rakingfire.webp",
+    "description": "+15-30% Damage when shooting Enemies in the back."
+},
+{
+    "name": "Reassuringly Accurate",
+    "image": "/static/img/rangedTraits/reassuringlyaccurate.webp",
+    "description": "+5-10% Toughness on Critical Hit Kill"
+},
+{
+    "name": "Rending Shockwave",
+    "image": "/static/img/rangedTraits/rendingshockwave.webp",
+    "description": "Up to +2-8 Rending, scaling with your charge time of Secondary Attack."
+},
+{
+    "name": "Roaring Advance",
+    "image": "/static/img/rangedTraits/roaringadvance.webp",
+    "description": "2.5-10% Movement Speed while firing."
+},
+{
+    "name": "Run N Gun",
+    "image": "/static/img/rangedTraits/runngun.webp",
+    "description": "You can Hipfire with this weapon while Sprinting."
+},
+{
+    "name": "Scattershot",
+    "image": "/static/img/rangedTraits/scattershot.webp",
+    "description": "+4% Critical Chance for 4 seconds on Multiple Hit."
+},
+{
+    "name": "Shattering Impact",
+    "image": "/static/img/rangedTraits/shatteringimpact.webp",
+    "description": "+1-4 Rending (Armoured Enemies)."
+},
+{
+    "name": "Showstopper",
+    "image": "/static/img/rangedTraits/showstopper.webp",
+    "description": "+5-20% Elite enemy Explodes on kill."
+},
+{
+    "name": "Speedload",
+    "image": "/static/img/rangedTraits/speedload.webp",
+    "description": "+5-10% Reload Speed for 2 seconds after Sliding."
+},
+{
+    "name": "Stripped Down",
+    "image": "/static/img/rangedTraits/strippedown.webp",
+    "description": "+3-9% Sprint Speed (Weapon is Active)."
+},
+{
+    "name": "Surge",
+    "image": "/static/img/rangedTraits/surge.png",
+    "description": "2 Shots on Critical Hit."
+},
+{
+    "name": "Surgical",
+    "image": "/static/img/rangedTraits/surgical.webp",
+    "description": "+2-5% Critical Chance while aming. Builds Stacks over time. Stacks 5 times."
+},
+{
+    "name": "Sustained Fire",
+    "image": "/static/img/rangedTraits/sustainedfire.webp",
+    "description": "+5-15% Damage on Second and Third shots in a Salvo"
+},
+{
+    "name": "Terrifying Barrage",
+    "image": "/static/img/rangedTraits/terrifyingbarrage.webp",
+    "description": "Suppress Enemies within 3-9m Radius on Close range Kill."
+},
+{
+    "name": "Transfer Peril",
+    "image": "/static/img/rangedTraits/transferperil.webp",
+    "description": "Quell 4.5% of your Peril on Weak Spot Hit."
+},
+{
+    "name": "Trickshooter",
+    "image": "/static/img/rangedTraits/trickshooter.png",
+    "description": "2-5% Power on Chained Weak Spot Hit (Any Target). Stacks 5 Times."
+},
+{
+    "name": "Volatile Impact",
+    "image": "/static/img/rangedTraits/volatileimpact.webp",
+    "description": "+1-4% Charge Speed on low Overheat. Stacks up to 5 times."
+},
+{
+    "name": "Warp Flurry",
+    "image": "/static/img/rangedTraits/warpflurry.webp",
+    "description": "+-4-10% Charge Rate on chained Secondary Attack. Stacks 5 times."
+},
+{
+    "name": "Warp Nexus",
+    "image": "/static/img/rangedTraits/warpnexus.webp",
+    "description": "Increases your critical hit chance by 2-5% at different increments of Peril up to 4 stacks."
+}
+]
+}

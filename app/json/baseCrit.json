@@ -1,0 +1,72 @@
+{
+"baseCrit": [
+{
+    "name": "Autoguns",
+    "crit": "-2%"
+},
+{
+    "name": "Autopistol",
+    "crit": "-2%"
+},
+{
+    "name": "Bolter (ADS)",
+    "crit": "5%"
+},
+{
+    "name": "Tactical Axe",
+    "crit": "0-15%"
+},
+{
+    "name": "Combat Knife",
+    "crit": "15%"
+},
+{
+    "name": "Laspistol",
+    "crit": "15%"
+},
+{
+    "name": "Infantry Lasgun (ADS)",
+    "crit": "5%"
+},
+{
+    "name": "Helbore Lasgun (ADS)",
+    "crit": "5%"
+},
+{
+    "name": "Thumper (ADS)",
+    "crit": "5%"
+},
+{
+    "name": "Kickback (ADS)",
+    "crit": "5%"
+},
+{
+    "name": "Plasma Gun (ADS)",
+    "crit": "5%"
+},
+{
+    "name": "Shotgun (ADS)",
+    "crit": "5%"
+},
+{
+    "name": "Surge Force Staff",
+    "crit": "5-25%"
+},
+{
+    "name": "Recon Lasgun",
+    "crit": "-2%"
+},
+{
+    "name": "Revolver",
+    "crit": "5-25%"
+},
+{
+    "name": "Heavy Stubber",
+    "crit": "-2%"
+},
+{
+    "name": "Grenades",
+    "crit": "-5%"
+}
+]
+}

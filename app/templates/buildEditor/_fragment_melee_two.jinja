@@ -1,0 +1,15 @@
+{% for blessing_name, blessing_info in blessings.items() %}
+    <div class="d-flex align-items-center justify-content-start modal-select-bg meleeBlessingTwoSelectButton my-3 p-2 pointer"
+         @click='
+        meleeBlessingTwo = "{{ blessing_info.name }}",
+        meleeBlessingTwoImage = "{{ blessing_info.image }}",
+        meleeBlessingTwoDescription = "{{ blessing_info.description }}",
+        meleeBlessingTwoModal.toggle()
+        '>
+        <img src="{{ url_for('static', filename='img/traits/' + get_stem(blessing_info.image)) }}" class="icon-curios p-1" alt="Blessing image">
+        <div class="ps-2">
+            <p style="color:white;">{{ blessing_info.name }}</p>
+            <p class="m-0" style="color:white;">{{ blessing_info.description }}</p>
+        </div>
+    </div>
+{% endfor %}

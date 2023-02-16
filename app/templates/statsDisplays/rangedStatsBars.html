@@ -1,0 +1,37 @@
+<div class="container" id="rangedBars" style="display: none;">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10">
+            <h1 class="pt-5 font-anton-upp font-anton-cracked">Ranged Bars</h1>
+            <div class="d-flex flex-column">
+                <p class="pt-3 font-worksans mx-auto w-max-lg">This page showcases ALL the possible modifiers for the bars associated with ranged weapons. Read the bottom of the page for more detail.</p>
+            </div>
+            <div class="row mt-3 g-3">
+                {% for bar in rangedBarsList %}
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card stat-action-card h-100">
+                        <div class="card-body weaponBorder h-100 d-flex flex-column bl-bg p-1">
+                            <h6 class="py-2 mb-0">{{ bar.name }}</h6>
+                            <img src="{{ bar.image }}" class="img-fluid font-worksans-bold py-1 w-75 mx-auto" alt="Yellow Bar">
+                            <p class="font-worksans-light small-text px-0 py-2 mb-0">{{ bar.description }}</p>
+                            <details>
+                                <summary class="font-worksans-bold small-text">Bar Modifiers</summary>
+                                <ul class="pt-2 ps-3 mb-0">
+                                    {% for mod in bar.modifiers %}
+                                    <li class="font-worksans-light small-text text-start">{{ mod }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </details> 
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="d-flex flex-column mt-3">
+                <p class="pt-3 font-worksans mx-auto w-max-lg">The ranged data is a lot more complicated than melee weapons. For Example, for melee weapons, A Krourk MK IV Cleaver And Rashad MK II Combat Axe Both Have A Penetration Bar, Which Effects Light Attack Damage Vs Flak Armoured, Etc In The Exact Same Fashion.</p>
+                <p class="pt-3 font-worksans mx-auto w-max-lg">This does not follow the same pattern for ranged weapons. Whilst the Boltgun and Combat Shotgun share the Stopping Power bar, the modifiers inside that bar are completely different.</p>
+                <p class="pt-3 font-worksans mx-auto w-max-lg">The best way to display this data in a readable fashion is through showing the bars per weapon, alongside the SPECIFIC modifiers tied to the bars of that particular weapon. This data can be viewed by clicking the weapon table button and then filtering by weapon through the dropdowns.</p>
+                <p class="pt-3 font-worksans mx-auto w-max-lg">We are working on gathering data regarding the exact number ranges per modifier, per weapon. This will be implemented across the site once completed. Expect to also see the rate of fire, reload speed, and amount of bullet per burst (where applicable) in the near future.</p>
+            </div>
+        </div>
+    </div>
+</div>

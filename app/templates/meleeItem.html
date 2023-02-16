@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block background %}
+    class="mainPage"
+{% endblock %}
+
+{% block content %}
+    <div class="container-lg w-max-xl">
+        <div class="row">
+            <div class="col-12 col-md-6 py-4">
+                <div class="container-fluid text-center px-auto mx-auto">
+                    <div class="weaponBorder">
+                        <img src="{{ meleeWeapon.image }}" class="img-fluid mb-2" alt="...">
+                        <h1 class="font-anton my-3">{{ meleeWeapon.name }}</h1>
+                        <h5 class="font-worksans mb-3">{{ meleeWeapon.description }}</h5>    
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                {% include "weaponDisplays/meleeClasses.html" %}
+            </div>
+        </div>
+    </div>
+    <br>
+    {% include "weaponDisplays/meleeSubtypeDisplay.html" %}
+    {% include "weaponDisplays/meleeTraits.html" %}
+{% endblock %}
+

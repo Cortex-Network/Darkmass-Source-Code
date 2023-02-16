@@ -1,0 +1,160 @@
+<div class="container-fluid py-2 text-center">
+    <h2 class="font-anton-upp font-anton-cracked">Feats</h2>
+    {% include "components/skullbanner.html" %}
+</div>
+<div class="container py-2 justify-content-center">
+    <div class="row">
+        <h5 class="text-center font-worksans-bold">Level 5</h5>
+        {% for i in model.level5 %}
+            {% for talent in talentList %}
+                {% if i == talent.name %}
+                <div class="col-md-4 py-2 px-3">
+                    <div class="card h-100 row">
+                        <div class="card-body weaponBorder d-flex align-items-center trait-card">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-3 d-flex justify-content-center">
+                                    <img src="{{ talent.image }}" class="icon-abilities" alt="...">
+                                </div>
+                                <div class="col-9">
+                                    <h6 class="font-worksans-bold text-white">{{ talent.name }}</h6>
+                                    <p class="font-worksans-light mb-0">{{ talent.description }}</p>        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </div>
+</div>
+<div class="container py-2 justify-content-center">
+    <div class="row">
+        <h5 class="text-center font-worksans-bold">Level 10</h5>
+        {% for i in model.level10 %}
+            {% for talent in talentList %}
+                {% if i == talent.name %}
+                <div class="col-md-4 py-2 px-3">
+                    <div class="card h-100 row">
+                        <div class="card-body weaponBorder d-flex align-items-center trait-card">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-3 d-flex justify-content-center">
+                                    <img src="{{ talent.image }}" class="icon-abilities" alt="...">
+                                </div>
+                                <div class="col-9">
+                                    <h6 class="font-worksans-bold text-white">{{ talent.name }}</h6>
+                                    <p class="font-worksans-light mb-0">{{ talent.description }}</p>        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </div>
+</div>
+<div class="container py-2 justify-content-center">
+    <div class="row">
+        <h5 class="text-center font-worksans-bold">Level 15</h5>
+        {% for i in model.level15 %}
+            {% for talent in talentList %}
+                {% if i == talent.name %}
+                <div class="col-md-4 py-2 px-3">
+                    <div class="card h-100 row">
+                        <div class="card-body weaponBorder d-flex align-items-center trait-card">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-3 d-flex justify-content-center">
+                                    <img src="{{ talent.image }}" class="icon-abilities" alt="...">
+                                </div>
+                                <div class="col-9">
+                                    <h6 class="font-worksans-bold text-white">{{ talent.name }}</h6>
+                                    <p class="font-worksans-light mb-0">{{ talent.description }}</p>        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </div>
+</div>
+<div class="container py-2 justify-content-center">
+    <div class="row">
+        <h5 class="text-center font-worksans-bold">Level 20</h5>
+        {% for i in model.level20 %}
+            {% for talent in talentList %}
+                {% if i == talent.name %}
+                <div class="col-md-4 py-2 px-3">
+                    <div class="card h-100 row">
+                        <div class="card-body weaponBorder d-flex align-items-center trait-card">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-3 d-flex justify-content-center">
+                                    <img src="{{ talent.image }}" class="icon-abilities" alt="...">
+                                </div>
+                                <div class="col-9">
+                                    <h6 class="font-worksans-bold text-white">{{ talent.name }}</h6>
+                                    <p class="font-worksans-light mb-0">{{ talent.description }}</p>        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </div>
+</div>
+<div class="container py-2 justify-content-center">
+    <div class="row">
+        <h5 class="text-center font-worksans-bold">Level 25</h5>
+        {% for i in model.level25 %}
+            {% for talent in talentList %}
+                {% if i == talent.name %}
+                <div class="col-md-4 py-2 px-3">
+                    <div class="card h-100 row">
+                        <div class="card-body weaponBorder d-flex align-items-center trait-card">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-3 d-flex justify-content-center">
+                                    <img src="{{ talent.image }}" class="icon-abilities" alt="...">
+                                </div>
+                                <div class="col-9">
+                                    <h6 class="font-worksans-bold text-white">{{ talent.name }}</h6>
+                                    <p class="font-worksans-light mb-0">{{ talent.description }}</p>        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </div>
+</div>
+<div class="container py-2 justify-content-center">
+    <div class="row">
+        <h5 class="text-center font-worksans-bold">Level 30</h5>
+        {% for i in model.level30 %}
+            {% for talent in talentList %}
+                {% if i == talent.name %}
+                <div class="col-md-4 py-2 px-3">
+                    <div class="card h-100 row">
+                        <div class="card-body h-100 weaponBorder d-flex align-items-center trait-card">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-3 d-flex justify-content-center">
+                                    <img src="{{ talent.image }}" class="icon-abilities" alt="...">
+                                </div>
+                                <div class="col-9">
+                                    <h6 class="font-worksans-bold text-white">{{ talent.name }}</h6>
+                                    <p class="font-worksans-light mb-0">{{ talent.description }}</p>        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </div>
+</div>

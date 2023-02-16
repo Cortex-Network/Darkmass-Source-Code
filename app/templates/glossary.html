@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block head %}
+    <link href="{{ url_for('static', filename='css/stats.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block background %}
+    class="mainPage"
+{% endblock %}
+
+{% block content %}
+
+<div class="container text-center py-5 overflow-x-hidden overflow-y-hidden">
+  <h1 class="font-anton-upp display-2 py-3">
+      <span class="font-anton-cracked">
+          darktide
+      </span>
+      <span class="font-anton-outline">
+          keyword glossary
+      </span>  
+  </h1>
+  <p class="font-worksans-light w-max-xl mx-auto">The data behind the calculations for some of these damage types and the descriptions in general is very much a work in progress. Data has been compiled through in-game testing, various discord servers and other community sources. If you notice that something on this table may be incorrect or you have done testing yourself for how certain damage types or modifiers are calculated, please reach out to us on discord! You can find a direct link to our server on the home page.</p>
+  {% include "statsDisplays/glossaryButtons.html" %}
+  {% include "statsDisplays/glossaryDisplay.html" %}
+  {% include "statsDisplays/glossaryCritTable.html" %}
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/glossary.js') }}"></script>
+<script src="{{ url_for('static', filename='js/tableSearch.js') }}"></script>
+{% endblock scripts %}
+
+
+
+
+
+
+
+
+
+

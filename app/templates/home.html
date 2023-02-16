@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block head %}
+    <link href="{{ url_for('static', filename='css/home.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block background %}
+    class="mainPage"
+{% endblock %}
+
+{% block content %}
+<main id="homePage" class="web-bg-1 bg-fixed bg-cover bg-darken ">
+    <div class="container-sm text-center">
+        <div class="row pt-5">
+            <div class="col-12">
+                <div class="home-page-box text-center p-3">
+                    <div class="w-max-xl mx-auto">
+                        <h1 class="font-anton-upp my-4">Darktide Weapons, Classes, Melee & Ranged Stat Breakdowns and more</h1>
+                        <p class="font-worksans">Calling all Rejects - Welcome to Darkmass.gg, where you can find the most detailed information about Warhammer 40K: Darktide on the web, alongside a growing community of dedicated players.</p>
+                        <p class="font-worksans">Explore our extensive classes and weapons list, or dive into our comprehensive breakdown of all stats within the game.</p>    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-4">
+            <!-- ourPages -->
+            {% include  "homeDisplays/ourPages.html" %}
+            <div class="col-12 col-lg-6">
+                <!-- boxCards -->
+                {% include  "homeDisplays/boxCards.html" %}
+                <!-- majorPages -->
+                {% include  "homeDisplays/majorPages.html" %}
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

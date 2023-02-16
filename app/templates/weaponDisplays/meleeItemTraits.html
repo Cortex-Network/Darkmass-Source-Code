@@ -1,0 +1,47 @@
+<div class="container py-2 text-center">
+    <h1>Weapon Blessings</h1>
+    {% include "components/skullbanner.html" %}
+</div>
+<div class="container-lg py-2 justify-content-center">
+    <div class="row">
+        {% for i in subtypeWeapon.traits %}
+            {% for trait in traitList %}
+                {% if i == trait.name %}
+                <div class="col-md-4 py-3 px-4">
+                    <div class="card h-100 row">
+                        <div class="card-body d-flex align-items-center trait-card">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-3">
+                                    <img src="{{ trait.image }}" class="icon-traits" alt="...">
+                                </div>
+                                <div class="col-9">
+                                    <h6 class="font-worksans-bold text-white">{{ trait.name }}</h6>
+                                    <p class="font-worksans-light mb-0">{{ trait.description }}</p>        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-frame-top d-flex align-items-center px-0">
+                            <div class="card-frame-side-wrapper frame-top">
+                                <img class="frame-left" src="/static/img/borders/card-frame-top-left.png" alt="">
+                            </div>
+                            <div class="card-frame-side-wrapper frame-top">
+                                <img class="frame-right" src="/static/img/borders/card-frame-top-right.png" alt="">
+                            </div>
+                            <img class="frame-center" src="/static/img/borders/card-frame-top-middle.png" alt="">
+                        </div>
+                        <div class="card-frame-bottom d-flex align-items-center px-0">
+                            <div class="card-frame-side-wrapper frame-bot">
+                                <img class="frame-left" src="/static/img/borders/card-frame-bottom-left.png" alt="">
+                            </div>
+                            <div class="card-frame-side-wrapper frame-bot">
+                                <img class="frame-right" src="/static/img/borders/card-frame-bottom-right.png" alt="">
+                            </div>
+                            <img class="frame-center" src="/static/img/borders/card-frame-bottom-middle.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </div>
+</div>

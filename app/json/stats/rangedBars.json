@@ -1,0 +1,124 @@
+{
+"rangedBars": [
+{
+    "name": "Ammo",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "Weapon's Ammo Capacity.",
+    "modifiers": ["Ammo Reserve", "Clip Size"]
+},
+{
+    "name": "Blast Damage",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "Measure of the explosion Damage.",
+    "modifiers": ["Damage", "Damage vs Infested", "Damage vs Unarmoured"]
+},
+{
+    "name": "Blast Radius",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "Measure of the explosion Radius.",
+    "modifiers": ["Area Suppression", "Area Suppression Radius", "Blast Radius", "Epicentre Radius"]
+},
+{
+    "name": "Burn",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "Strength of the Weapons's Damage over Time (DoT) effects",
+    "modifiers": ["Damage Over Time Application Rate", "Max Damage Over Time Stacks"]
+},
+{
+    "name": "Charge Rate",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "How fast the Charge Attack charges.",
+    "modifiers": ["Aim Down Sights Charge Speed: /s", "Braced Charged Speed: /s", "Charge Rate: /s", "Hip Fire Charge Speed: /s", "Secondary Action Charge Speed: /s"]
+},
+{
+    "name": "Cloud Radius",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "The Range and Size of the Flame. Affects how many enemies are Hit and Suppressed.",
+    "modifiers": ["Area of Effect", "Area Suppression Radius", "Effective Range"]
+},
+{
+    "name": "Collateral",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "Increases the Weapon's Stagger, Impact and Suppression.",
+    "modifiers": ["Accumulative Stagger", "Area Suppression on Kill", "Area Suppression on Kill Radius", "Damage vs Flak Armoured (Near): %", "Damage vs Flak Armoured (Far): %", "Damage vs Carapace Armoured (Near): %", "Damage vs Carapace Armoured (Far): %", "Damage against Unyielding (Near): %", "Damage against Unyielding (Far): %", "Damage vs Maniacs (Near): %", "Damage vs Maniacs (Far): %", "Stagger vs Flak Armoured (Near): %", "Stagger vs Flak Armoured (Far): %", "Stagger vs Carapace Armoured (Near): %", "Stagger vs Carapace Armoured (Far): %", "Stagger vs Unyielding (Near): %", "Stagger vs Unyielding (Far): %", "Stagger vs Maniacs (Near): %", "Stagger vs Maniacs (Far): %", "Suppression", "Weapon Stagger"]
+},
+{
+    "name": "Critical Bonus",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "Chance of landing a Critical Hit and how much Damage it will do.",
+    "modifiers": ["Critical Damage vs Unarmoured: %", "Critical Damage vs Flak Armoured: %", "Critical Damage vs Unyielding: %", "Critical Damage vs Maniac: %", "Critical Damage vs Carapace Armoured: %", "Critical Damage vs Infested: %", "Primary Action Critical Damage vs Unarmoured: %", "Primary Action Critical Damage vs Flak Armoured: %", "Primary Action Critical Damage vs Maniac: %", "Primary Action Critical Damage vs Carapace Armoured: %", "Primary Action Critical Damage vs Infested: %", "Secondary Action Critical Damage vs Unarmoured: %", "Secondary Action Critical Damage vs Unyielding: %", "Secondary Action Critical Damage vs Maniac: %", "Secondary Action Critical Damage vs Infested: %", "Primary Action Melee Critical Chance: %", "Secondary Action Melee Critical Chance: %", "Melee Critical Chance: %"]
+},
+{
+    "name": "Damage",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "How much Damage the weapon inflicts.",
+    "modifiers": ["Area of Effect Power", "Braced Fire Damage", "Braced Fire Burning Intensity", "Damage vs Unarmoured", "Damage vs Infested", "Damage vs Unarmoured (Near): %", "Damage vs Unarmoured (Far): %", "Damage vs Infested (Near): %", "Damage vs Infested (Far): %", "Power", "Primary Action Damage", "Primary Action Power", "Secondary Action Damage", "Secondary Action Burning Intensity", "Secondary Action Damage vs First Target"]
+},
+{
+    "name": "Melee Damage",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "How much Damage the weapon inflicts in Melee.",
+    "modifiers": ["Light Attack Damage", "Heavy Attack Damage"]
+},
+{
+    "name": "Mobility",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "Measure of the Movement Speed, Sprint Speed, and Dodge distance bonus while the weapon is active.",
+    "modifiers": ["Aim Down Sights Moving Recoil", "Dodge Distance: %", "Dodge Limit", "Dodge Speed: %", "Hip Fire Moving Recoil", "Moving Spread", "Sprint Speed"]
+},
+{
+    "name": "Penetration",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "Weapon's effectiveness against Armoured enemies.",
+    "modifiers": ["Damage vs Flak Armoured (Near): %", "Damage vs Flak Armoured (Far): %", "Damage vs Carapace Armoured (Near): %", "Damage vs Carapace Armoured (Far): %", "Damage against Unyielding (Near): %", "Damage against Unyielding (Far): %"]
+},
+{
+    "name": "Penetration (Blast)",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "Explosion's effectiveness against Armoured enemies",
+    "modifiers": ["Damage vs Flak Armoured: %", "Damage vs Flak Armoured (Near): %", "Damage vs Unyielding: %", "Damage vs Unyielding (Near): %", "Damage vs Carapace Armoured: %", "Damage vs Carapace Armoured (Near): %", "Stagger vs Flak Armoured: %", "Stagger vs Unyielding: %", "Stagger vs Carapace Armoured: %"]
+},
+{
+    "name": "Quell Speed",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "Bonus to Quelling the wielder's Peril or Venting the Weapon's Overcharge (as appropriate).",
+    "modifiers": ["Quell Speed: %"]
+},
+{
+    "name": "Range",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "Effective Range of the weapon before Damage fall-off kicks in.",
+    "modifiers": ["Effective Range (Near): x Meters", "Effective Range (Far): x Meters", "Damage vs Unarmoured (Far): %", "Damage vs Flak Armoured (Far): %", "Damage against Unyielding (Far): %", "Damage vs Maniacs (Far): %", "Damage vs Infested (Far): %"]
+},
+{
+    "name": "Reload Speed",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "Measure of the time it takes to reload.",
+    "modifiers": ["Reload Speed: %"]
+},
+{
+    "name": "Stability",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "Affects Recoil, Spread and Sway after firing the weapon.",
+    "modifiers": ["Aim Down Sights Recoil,", "Aim Down Sights Moving Recoil", "Braced Fire Recoil", "Braced Fire Moving Recoil", "Hip Fire Recoil", "Hip Fire Moving Recoil", "Spread", "Sway"]
+},
+{
+    "name": "Stopping Power",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "Measure of the Impact and Stagger inflicted on enemies.",
+    "modifiers": ["Damage vs Flak Armoured (Near): %", "Damage vs Flak Armoured (Far): %", "Damage vs Carapace Armoured (Near): %", "Damage vs Carapace Armoured (Far): %", "Damage against Unyielding (Near): %", "Damage against Unyielding (Far): %", "Damage vs Maniacs (Near): %", "Damage vs Maniacs (Far): %", "Stagger vs Flak Armoured (Near): %", "Stagger vs Flak Armoured (Far): %", "Stagger vs Carapace Armoured (Near): %", "Stagger vs Carapace Armoured (Far): %", "Stagger against Unyielding (Near): %", "Stagger against Unyielding (Far): %", "Stagger vs Maniacs (Near): %", "Stagger vs Maniacs (Far): %", "Weapon Stagger"]
+},
+{
+    "name": "Thermal Resistance",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "Use of this weapon generates Heat. The higher the Thermal Resistance value, the less Heat is generated with each attack.",
+    "modifiers": ["Braced Heat Generation", "Hip Fire Heat Generation"]
+},
+{
+    "name": "Warp Resistance",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "Use of this weapon increases a Psyker's Peril. The higher the Warp Resistance, the less Peril is generated with each attack.",
+    "modifiers": ["Primary Action Peril Generation: %", "Secondary Action Peril Generation: %"]
+}
+]
+}

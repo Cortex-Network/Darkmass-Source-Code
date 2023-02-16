@@ -1,0 +1,101 @@
+{% set count = namespace(value=1) %}
+{% for wep in meleeSubtypeList %}
+    {% if count.value == 1 %}
+        <div class="col-9 col-md-5 mb-4 mb-md-0 no-hover d-flex flex-column">
+            <div class="flex-grow-1" x-data="
+            {
+                weapon_id: '{{ wep.id }}',
+                weapon: '{{ wep.name }}',
+                weaponImage: '{{ wep.image }}',
+                weaponTraits: '',
+                meleePerkOne: '',
+                meleePerkTwo: '',
+                meleeBlessingOne: '',
+                meleeBlessingOneImage: '/static/img/assets/unknown.webp',
+                meleeBlessingOneDescription: '',
+                meleeBlessingTwo: '',
+                meleeBlessingTwoImage: '/static/img/assets/unknown.webp',
+                meleeBlessingTwoDescription: '',
+                reset_blessing(){
+                    this.meleeBlessingOne = '';
+                    this.meleeBlessingOneImage = '/static/img/assets/unknown.webp';
+                    this.meleeBlessingOneDescription = '';
+                    this.meleeBlessingTwo = '';
+                    this.meleeBlessingTwoImage = '/static/img/assets/unknown.webp';
+                    this.meleeBlessingTwoDescription = '';
+                }
+            }">
+                <div class="card h-100 build-editor-weapon melee-ranged mx-auto">
+                    <div class="d-flex flex-column h-100">
+                        <a class="card-body build-editor-weapon-card d-flex align-items-center flex-column justify-content-between text-decoration-none editor-card-border box-shadow-editor" type="button" data-bs-toggle="modal"
+                            data-bs-target="#meleeModal">
+                            <h1 class="py-3 pt-sm-2 font-worksans-bold small-text-14 px-2 px-sm-1 text-center" x-text="weapon"></h1>
+                            <img x-bind:src="`${weaponImage}`" class="editor-weapon-img" alt="Weapon Image">
+                        </a>
+                    </div>
+                    <div class="weapon-frame-middle w-100">
+                        <img class="frame-middle melee w-100" src="/static/img/borders/weapon-frame-middle.png" alt="">
+                    </div>
+                    <div class="card-body blessing-wrapper top-editor-bg text-white text-start editor-card-border box-shadow-editor">
+                        <a class="pointer d-flex flex-row justify-content-start align-items-center p-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#meleePerkOneModal">
+                            <svg width="8" height="8">
+                                <polygon points="0 4,4 8,8 4,4 0" fill="rgba(170, 202, 171, 1)"/>
+                            </svg>
+                            <p class="ps-4 m-0 text-gr-light font-worksans-bold small-text-14" x-text="meleePerkOne ? meleePerkOne : 'Select a melee perk'"></p>
+                        </a>
+                        <a class="pointer d-flex flex-row justify-content-start align-items-center p-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#meleePerkTwoModal">
+                            <svg width="8" height="8">
+                                <polygon points="0 4,4 8,8 4,4 0" fill="rgba(170, 202, 171, 1)"/>
+                            </svg>
+                            <p class="ps-4 m-0 text-gr-light font-worksans-bold small-text-14" x-text="meleePerkTwo ? meleePerkTwo : 'Select a melee perk'"></p>
+                        </a>
+                    </div>
+                    <div class="weapon-frame-middle w-100">
+                        <img class="frame-middle melee w-100" src="/static/img/borders/weapon-frame-middle.png" alt="">
+                    </div>
+                    <div class="card-body blessing-wrapper bottom-editor-bg text-white text-start editor-card-border box-shadow-editor">
+                        <a class="pointer card-text d-flex flex-row justify-content-start align-items-center text-decoration-none"
+                            type="button" data-bs-toggle="modal"
+                            data-bs-target="#meleeBlessingOneModal">
+                            <img x-bind:src="`${meleeBlessingOneImage}`" class="editor-blessing-img p-1" alt="Blessing image">
+                            <div class="ps-2">
+                                <p style="color:white; margin-bottom: 0; font-family: 'Work Sans', sans-serif; font-weight: 600; font-size: 14px;" :class="meleeBlessingOneDescription ? '' : 'm-0 font-worksans-bold'"
+                                    x-text="meleeBlessingOne ? meleeBlessingOne : 'Select a blessing'"></p>
+                                <p class="m-0 font-worksans-light small-text text-decoration-none text-white" x-show="meleeBlessingOneDescription" x-text="meleeBlessingOneDescription"></p>
+                            </div>
+                        </a>
+                        <a class="pointer card-text d-flex flex-row justify-content-start align-items-center text-decoration-none"
+                            type="button" data-bs-toggle="modal"
+                            data-bs-target="#meleeBlessingTwoModal">
+                            <img x-bind:src="`${meleeBlessingTwoImage}`" class="editor-blessing-img p-1" alt="Blessing image">
+                            <div class="ps-2">
+                                <p style="color:white; margin-bottom: 0; font-family: 'Work Sans', sans-serif; font-weight: 600; font-size: 14px;" :class="meleeBlessingTwoDescription ? '' : 'm-0 font-worksans-bold'"
+                                    x-text="meleeBlessingTwo ? meleeBlessingTwo : 'Select a blessing'"></p>
+                                <p class="m-0 font-worksans-light small-text text-decoration-none text-white" x-show="meleeBlessingTwoDescription" x-text="meleeBlessingTwoDescription"></p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Second Blessing Test -->
+                    <!-- End Second Blessing Test -->
+                    <div class="weapon-frame-top d-flex align-items-center px-0">
+                        <img src="/static/img/borders/weapon-frame-top.png" alt="" class="frame-center melee">
+                    </div>
+                    <div class="weapon-frame-bottom d-flex align-items-center px-0">
+                        <img src="/static/img/borders/weapon-frame-bottom.png" alt="" class="frame-center melee">
+                    </div>
+                </div>
+                <input type="hidden" id="weaponSelected" name="weaponSelected" x-model="weapon">
+                <input type="hidden" id="meleePerkOneSelected" name="meleePerkOneSelected" x-model="meleePerkOne">
+                <input type="hidden" id="meleePerkTwoSelected" name="meleePerkTwoSelected" x-model="meleePerkTwo">
+                <input type="hidden" id="meleeBlessingOneSelected" name="meleeBlessingOneSelected" x-model="meleeBlessingOne">
+                <input type="hidden" id="meleeBlessingTwoSelected" name="meleeBlessingTwoSelected" x-model="meleeBlessingTwo">
+                {% include "buildEditor/melee/meleeModal.html" %}
+                {% include "buildEditor/melee/meleePerkOneModal.html" %}
+                {% include "buildEditor/melee/meleePerkTwoModal.html" %}
+                {% include "buildEditor/melee/meleeBlessingOneModal.html" %}
+                {% include "buildEditor/melee/meleeBlessingTwoModal.html" %}
+            </div>
+        </div>
+    {% endif %}
+    {% set count.value = count.value + 1 %}
+{% endfor %}

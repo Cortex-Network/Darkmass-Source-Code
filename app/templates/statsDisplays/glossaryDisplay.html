@@ -1,0 +1,21 @@
+<div class="container py-5" id="glossaryTable" style="display: block;">
+  <div class="table-responsive">
+    <input class="w-100 weaponBorder table-search text-white" type="text" id="glossaryInput" onkeyup="glossarySearch()" placeholder="Search for a keyword">
+      <table class="table weaponBorder text-white text-start table-bordered">
+          <thead>
+            <tr class="font-worksans-bold">
+              <th scope="col">Keyword</th>
+              <th scope="col">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for keyword in glossaryList %}
+            <tr class="{{ loop.cycle('odd', 'even') }} font-worksans-light">
+              <td class="font-worksans-bold">{{ keyword.name }}</td>
+              <td>{{ keyword.description }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+      </table>
+  </div>
+</div>

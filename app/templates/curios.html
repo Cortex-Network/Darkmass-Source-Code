@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block head %}
+    <link href="{{ url_for('static', filename='css/curio.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block background %}
+    class="mainPage"
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid text-center py-3 mt-2">
+        <h1 class="font-anton-upp display-3">
+            <span class="font-anton-cracked">darktide</span>
+            <span class="font-anton-outline">Curios</span>
+        </h1>
+    </div>
+    {% include "curioDisplays/curioDisplay.html" %}
+    <div class="container-lg">
+        <div class="row justify-content-center">
+            {% include "curioDisplays/curioBlessing.html" %}
+            {% include "curioDisplays/curioPerks.html" %}
+        </div>
+    </div>
+{% endblock %}

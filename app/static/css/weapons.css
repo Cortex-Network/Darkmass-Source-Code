@@ -1,0 +1,165 @@
+/** @format */
+
+/* Images */
+
+.card-img-wrapper {
+    height: 100px;
+    padding: .5rem;
+}
+
+/* Subtypes */
+
+.subtype-heading {
+    height: 50px;
+}
+
+/* Main Weapons */
+
+.weapon-card-melee .card-img-top,
+.weapon-card-ranged .card-img-top {
+    max-width: 75%;
+    max-height: 100%;
+    height: auto;
+}
+
+.weapon-card {
+    background-color: transparent;
+    border: none;
+}
+
+.weapon-card:hover {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.melee-background-image {
+    background-image: url(/static/img/melee.png);
+    width: 50%;
+    height: 50%;
+}
+
+.weaponImages {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    position: relative;
+}
+
+.weapon-skull-banner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    margin: -13px auto 0 auto;
+    max-width: 75%;
+    z-index: 1;
+}
+
+.weapon-selector-visual {
+    border: none;
+    display: block;
+    position: relative;
+}
+
+.weapon-image-wrapper {
+    overflow: hidden;
+    -webkit-transition: background 1s; /* For Safari 3.0 to 6.0 */
+    transition: background 1s; /* For modern browsers */
+}
+
+.weapon-image-wrapper img {
+    transition: 1s ease;
+}
+
+.weapon-image-wrapper:hover img:nth-child(1) {
+    transform: scale(1.1);
+}
+
+.weapon-image-wrapper:hover img:nth-child(2) {
+    transform: scale(1.25);
+}
+
+.icon-classes-weapons-responsive {
+    width: 25%;
+    height: 25%;
+}
+
+.weapon-card-icon-sm {
+    width: 15%;
+    height: auto;
+}
+
+.fa-circle {
+    color: white;
+}
+
+.weapon-card h2,
+.weapon-card h3,
+.weapon-card .weaponImages {
+    z-index: 1;
+}
+
+/* Melee & Ranged */
+
+.weapon-card-melee,
+.weapon-card-ranged {
+    background-color: rgba(0, 0, 0, .3);
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+.card.melee-weapon,
+.card.ranged-weapon {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+/* Media Breakpoints */
+
+.weapon-card {
+    width: 290px;
+}
+
+@media only screen and (max-width: 767px) {
+    .melee-weapon,
+    .ranged-weapon {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .card-img-wrapper {
+        height: 135px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .weapon-card {
+        width: 310px;
+    }
+
+    .card.melee-weapon,
+    .card.ranged-weapon {
+        width: 222px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .weapon-skull-banner {
+        margin: -19px auto 0 auto;
+    }
+
+    .icon-classes-weapons-responsive {
+        width: 15%;
+        height: 15%;
+    }
+
+    .weapon-card {
+        width: 340px;
+    }
+}
+

@@ -1,0 +1,94 @@
+{
+"ogrynTalents": [
+{
+    "name": "Lynchpin",
+    "image": "/static/img/classes/Ogryn/Level 5/Lynchpin.webp",
+    "description": "+100% Toughness Replenishment (Allies in Coherency)."
+},
+{
+    "name": "Smash'Em Good!",
+    "image": "/static/img/classes/Ogryn/Level 5/SmashEmGood!.webp",
+    "description": "Replenish 20% Toughness on Single Enemy Heavy Melee Hit."
+},
+{
+    "name": "Best Form of Defence...",
+    "image": "/static/img/classes/Ogryn/Level 5/BestFormofDefence.webp",
+    "description": "Replenish 20% Toughness on Hitting Multiple Enemies with a single Heavy Melee Attack."
+},
+{
+    "name": "Heavyweight",
+    "image": "/static/img/classes/Ogryn/Level 10/Heavyweight.webp",
+    "description": "+50% Melee Damage (Bulwarks, Crushers, Plague classes/Ogryns, Reapers). +50% Damage Reduction (Bulwarks, Crushers, Plague classes/Ogryns, Reapers)."
+},
+{
+    "name": "Bombs Away!",
+    "image": "/static/img/classes/Ogryn/Level 10/BombsAway.webp",
+    "description": "Hitting a Carapace Armoured enemy with your Big Box of Hurt causes it to open, releasing grenades around the target."
+},
+{
+    "name": "Blood and Thunder",
+    "image": "/static/img/classes/Ogryn/Level 10/BloodAndThunder.webp",
+    "description": "+1 Bleed Stack on Heavy Melee Hit."
+},
+{
+    "name": "Towering Presence",
+    "image": "/static/img/classes/Ogryn/Level 15/ToweringPresence.webp",
+    "description": "+50% Coherency Radius."
+},
+{
+    "name": "Lead the Charge",
+    "image": "/static/img/classes/Ogryn/Level 15/LeadTheCharge.webp",
+    "description": "When you activate Bull Rush, allies in Coherency gain 25% movement speed for 4 seconds."
+},
+{
+    "name": "Bullfighter",
+    "image": "/static/img/classes/Ogryn/Level 15/Bullfighter.webp",
+    "description": "+10% Bull Rush Cooldown Reduction when you or an ally in Coherency kills an Elite enemy."
+},
+{
+    "name": "Bloodthirst",
+    "image": "/static/img/classes/Ogryn/Level 20/Bloodthirst.webp",
+    "description": "+10% Damage Resistance per Bleeding Enemy in Melee range. Stacks 5 times."
+},
+{
+    "name": "Hard As Nails",
+    "image": "/static/img/classes/Ogryn/Level 20/HardAsNails.webp",
+    "description": "-25% Damage Taken for each ally currently Knocked Down or Incapacitated."
+},
+{
+    "name": "Die Hard",
+    "image": "/static/img/classes/Ogryn/Level 20/DieHard.webp",
+    "description": "+100% Toughness replenishment while below 25% health."
+},
+{
+    "name": "Payback Time",
+    "image": "/static/img/classes/Ogryn/Level 25/PaybackTime.webp",
+    "description": "When an enemy damages you, gain +20% damage against enemies of the same type for 5 seconds."
+},
+{
+    "name": "Knife Through Butter",
+    "image": "/static/img/classes/Ogryn/Level 25/KnifeThroughButter.png",
+    "description": "Fully charged heavy attacks have unlimited Cleave."
+},
+{
+    "name": "Raging Bull",
+    "image": "/static/img/classes/Ogryn/Level 25/RagingBull.png",
+    "description": "+5% Damage (Next Melee Hit) on Melee Hit for each enemy Hit with the initial Attack."
+},
+{
+    "name": "Bull Gore",
+    "image": "/static/img/classes/Ogryn/Level 30/BullGore.webp",
+    "description": "+2 Bleed Stacks on Enemies Hit by Bull Rush."
+},
+{
+    "name": "Unstoppable",
+    "image": "/static/img/classes/Ogryn/Level 30/Unstoppable.webp",
+    "description": "Increases the distance you travel with Bull Rush by 100%, and you cannot be blocked by enemies except Monstrosities."
+},
+{
+    "name": "Non-stop Violence",
+    "image": "/static/img/classes/Ogryn/Level 30/NonStopViolence.webp",
+    "description": "Replenish 10% Toughness per Bull Rush Hit."
+}
+]
+}

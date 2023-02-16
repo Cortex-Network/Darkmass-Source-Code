@@ -1,0 +1,49 @@
+<div class="container-fluid py-2 text-center">
+    <h1 class="font-anton">Actions</h1>
+    {% include "components/skullbanner.html" %}
+</div>
+<div class="container text-center py-3">
+    <div class="row">
+        {% for action in meleeActionList %}
+        {% if action.name == subtypeWeapon.primaryAction %}
+                <div class="col-md-4 py-2">
+                    <h2 class="card-text text-white">
+                        Primary Action: 
+                        <br>
+                        <img src="{{ action.image }}" alt="{{ action.name }}" class="icon-weapon-actions">  
+                        <span class="font-worksans-light">{{ action.name }}</span>
+                        <br>
+                    </h2>
+                </div>
+        {% endif %}
+        {% endfor %}
+        {% for action in meleeActionList %}
+            {% if action.name == subtypeWeapon.secondaryAction %}
+                <div class="col-md-4 py-2">
+                    <h2 class="card-text text-white">
+                        Secondary Action: 
+                        <br>
+                        <img src="{{ action.image }}" alt="{{ action.name }}" class="icon-weapon-actions">
+                        <span class="font-worksans-light">{{ action.name }}</span>
+                        <br>
+                    </h2>
+                </div>
+            {% endif %}
+        {% endfor %}
+        {% for action in meleeSpecialActionsList %}
+            {% if action.name == subtypeWeapon.specialAction %}
+            <div class="col-md-4 py-2">
+                <h2 class="card-text text-white">
+                    Special Action: 
+                    <br>
+                    <img src="{{ action.image }}" alt="{{ action.name }}" class="icon-weapon-actions">
+                    <span class="font-worksans-light">{{ action.name }}</span>
+                    <br>
+                </h2>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <br>
+    <br>
+</div>

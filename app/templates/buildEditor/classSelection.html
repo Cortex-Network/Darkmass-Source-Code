@@ -1,0 +1,19 @@
+<div class="row g-3">
+    {% for class in classList %}
+        {% if class.shortName == shortName %}
+            <div class="col-10 col-sm-8 col-md-6 d-flex align-items-center px-md-2 mx-auto">
+                <a href="/buildeditor/{{class.shortName}}" class="h-100 w-100 build-editor-class-card weaponBorder grd-bg d-flex flex-row p-3 text-decoration-none text-white">
+                    <img src="{{class.normalIcon}}" alt="{{class.shortname}}'s Icon" class="build-editor-class-icon">
+                    <h2 class="text-xl d-flex align-items-center m-0 ps-3">{{ class.name }}</h2>
+                </a>
+            </div>
+        {% else %}
+            <div class="col-10 col-sm-8 col-md-6 px-md-2 align-items-center d-flex mx-auto"> 
+                <a href="/buildeditor/{{class.shortName}}" class="h-100 w-100 build-editor-class-card weaponBorder bl-bg d-flex flex-row p-3 text-decoration-none text-white">
+                    <img src="{{class.normalIcon}}" alt="{{class.shortname}}'s Icon" class="build-editor-class-icon">
+                    <h2 class="text-xl d-flex align-items-center m-0 ps-3">{{ class.name }}</h2>
+                </a> 
+            </div> 
+        {% endif %}
+    {% endfor %}
+</div>

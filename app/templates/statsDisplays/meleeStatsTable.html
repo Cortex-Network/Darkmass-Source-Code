@@ -1,0 +1,42 @@
+<div class="container" id="meleeTable" style="display: none;">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10">
+            <h1 class="pt-5 pb-3 font-anton-upp font-anton-cracked">Weapon Table</h1>
+            <input class="w-100 weaponBorder table-search text-white" type="text" id="weaponsTableInput" onkeyup="meleeTableSearch()" placeholder="Search for weapons...">
+            <div class="table-responsive">
+                <table class="table weaponBorder text-white text-start" id="weaponsTable">
+                    <thead>
+                        <tr class="font-worksans-bold">
+                        <th scope="col">Weapon Name</th>
+                        <th scope="col">Bar 1</th>
+                        <th scope="col">Bar 2</th>
+                        <th scope="col">Bar 3</th>
+                        <th scope="col">Bar 4</th>
+                        <th scope="col">Bar 5</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for weapon in meleeTable %}
+                        <tr class="{{ loop.cycle('odd', 'even') }} font-worksans-light">
+                        <td><a class="text-decoration-none text-white font-worksans-bold" href="/weapons/melee/{{weapon.name}}">{{ weapon.name }}</th>
+                        {% for bar in weapon.bars %}
+                        <td>{{ bar }}</td>
+                        {% endfor %}
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <p class="py-2 font-worksans-light w-max-xl mx-auto">Note: When inspecting a weapon in-game, the bars are seperated into two rows. There are 2 across the top row, and 3 along the second row.</p>
+            <img src="/static/img/statsBreakdown/barExample.png" class="img-fluid" alt="Bar Example">
+            <p class="pt-4 font-worksans-light w-max-xl mx-auto">The columns in this table simply represents this. Bars 1-2 are equivalent to the top row, and bars 3-5 the bottom row. There is currently a total of 12 different bars for melee weapons.</p>
+            <p class="font-worksans-light w-max-xl mx-auto">Damage is always present on every weapon. You may notice that some bars such as Moblity appear in different columns (2 and 5 in this case).</p>
+            <p class="font-worksans-light w-max-xl mx-auto">These do not differ in any way and share the same modifers as above. This table is simply just a representation of how they are displayed in-game.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+

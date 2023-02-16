@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block background %}
+    class="mainPage"
+{% endblock %}
+
+
+{% block head %}
+<link href="{{ url_for('static', filename='css/buildEditor.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ url_for('static', filename='css/shopChecker.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block content %}
+    <div class="container-sm w-max 3xl py-4 text-center">
+        {% if current_user.is_authenticated and current_user.accountID == None and current_user.refreshToken == None %}
+            <h1>Test - if account ID and refresh token NULL</h1>
+            <form action="shopchecker/submit" method="POST" id="shopChecker">
+                <div class="row justify-content-center my-5">
+                    <div class="col-12 col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <input class="w-100 mb-1" type="text" id="accountID" name="accountID" placeholder="Please enter your account ID">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <input class="w-100 mb-1" type="text" id="refreshToken" name="refreshToken" placeholder="Please enter your refresh token">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                <div class="row justify-content-center my-5">
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>
+                </div>
+            </form> 
+        {% elif current_user.is_authenticated and current_user.accountID != None and current_user.refreshToken != None %}
+            {% set count = namespace(value=1) %}
+            <div class="container-xl" id="shop-group">
+                <div class="row">
+                    {% for result in getDetails %}
+                    <div class="col weaponBorder character-wrapper text-white">
+                        <button class="shop-character-btn position-relative" type="button" data-bs-parent="#shop-group" data-bs-toggle="collapse" data-bs-target=".collapse-{{ result[1] }}" aria-expanded="false" aria-controls="#shop-results-{{ result[1] }}">
+                            <div class="d-flex flex-row font-worksans-bold">
+                                <div class="character-class-icon-wrapper me-4 d-flex align-items-center">
+                                    {% if result[2] == "psyker" %}
+                                        <img src="/static/img/classes/psyker.png" alt="Psyker Icon" class="shop-class-icon">
+                                    {% elif result[2] == "ogryn" %}
+                                        <img src="/static/img/classes/ogryn.png" alt="Ogryn Icon" class="shop-class-icon">
+                                    {% elif result[2] == "veteran" %}
+                                        <img src="/static/img/classes/veteran.png" alt="Veteran Icon" class="shop-class-icon">
+                                    {% elif result[2] == "zealot" %}
+                                        <img src="/static/img/classes/zealot.png" alt="Zealot Icon" class="shop-class-icon">
+                                    {% endif %}
+                                </div>
+                                <div class="d-flex flex-column text-capitalize text-start">
+                                    <p>{{ result[0] }}</p>
+                                    <p class="m-0">{{ result[2] }} {{ result[3] }}</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    {% endfor %}
+                </div>             
+            {% for result in getDetails %}
+                <div class="row accordion-group">
+                    {% if count.value == 1 %}
+                        {% include "shopChecker/character/1.html" %}
+                    {% elif count.value == 2 %}
+                        {% include "shopChecker/character/2.html" %}
+                    {% elif count.value == 3 %}
+                        {% include "shopChecker/character/3.html" %}
+                    {% elif count.value == 4 %}
+                        {% include "shopChecker/character/4.html" %}
+                    {% elif count.value == 5 %}
+                        {% include "shopChecker/character/5.html" %}
+                    {% endif %}
+                </div>
+                {% set count.value = count.value + 1 %}
+            {% endfor %}
+            </div>
+        {% else %}
+            {% include "buildEditor/pleaselogin.html" %}
+        {% endif %}
+    </div>
+{% endblock %}
+{% block scripts %}
+    <script src="{{ url_for('static', filename='js/shopChecker.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/flashedMessages.js') }}"></script>
+{% endblock %}

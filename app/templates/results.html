@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block background %}
+    class="mainPage"
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid text-center">
+    <h1>Results for search query: {{searchQuery}}</h1>
+    <br>
+    {% include "components/search.html" %}
+</div>
+{% if lenrangedList > 0 %}
+<div class="container py-2">
+    <div class="row gx-3">
+        <h1>Ranged Weapons</h1>
+        {% include "weaponDisplays/searchResultsRanged.html"%}
+    </div>
+</div>
+{% endif %}
+{% if lenrangedSubtypeList > 0 %}
+<div class="container py-2">
+    <div class="row gx-3">
+        <h1>Ranged Subtypes Weapons</h1>
+        {% include "weaponDisplays/searchResultsRangedSubtypes.html"%}
+    </div>
+</div>
+{% endif %}
+{% if lenmeleeList > 0 %}
+<div class="container py-2">
+    <div class="row gx-3">
+        <h1>Melee Weapons</h1>
+        {% include "weaponDisplays/searchResultsMelee.html"%}
+    </div>
+</div>
+{% endif %}
+{% if lenmeleeSubtypeList > 0 %}
+<div class="container py-2">
+    <div class="row gx-3">
+        <h1>Melee Subtypes Weapons</h1>
+        {% include "weaponDisplays/searchResultsMeleeSubtypes.html"%}
+    </div>
+</div>
+{% endif %}
+{% if lenmeleeSubtypeList == 0 and lenmeleeList == 0 and lenrangedSubtypeList == 0 and lenrangedList == 0%}
+<div class="container py-2">
+    <div class="row gx-3">
+        <h1>No results found</h1>
+    </div>
+</div>
+{% endif %}
+{% endblock %}

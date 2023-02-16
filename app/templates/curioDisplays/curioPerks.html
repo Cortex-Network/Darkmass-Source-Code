@@ -1,0 +1,20 @@
+<div class="col-12 col-sm-6 col-md-5 text-center py-5">
+    <h3 class="font-anton-upp font-anton-cracked m-0 pb-3">Perks</h4>
+    <div class="curio-bg position-relative mt-3">
+        <div class="curio-text-box">
+            <ul class="px-3-5 py-3 text-start mb-0">
+                {% for trait in curioTraitList %}
+                    {% if trait.type == "Modifier" %}
+                        <li class="px-2 px-md-4 py-1">{{ trait.description }}</li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="weapon-frame-top d-flex align-items-center px-0">
+            <img src="/static/img/borders/text-box-frame-top.png" alt="" class="frame-center melee">
+        </div>
+        <div class="weapon-frame-bottom d-flex align-items-center px-0">
+            <img src="/static/img/borders/text-box-frame-bot.png" alt="" class="frame-center melee">
+        </div>
+    </div>
+</div>

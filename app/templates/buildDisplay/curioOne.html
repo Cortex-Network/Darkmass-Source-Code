@@ -1,0 +1,72 @@
+<div class="col-9 col-sm-6 col-md-4 mb-4 mb-md-0 no-hover d-flex flex-column">
+    <div class="flex-grow-1">
+        <div class="card h-100 build-editor-weapon mx-auto">
+            <div class="d-flex flex-column h-100 ">
+                <div class="card-body build-editor-weapon-card d-flex align-items-center flex-column editor-card-border box-shadow-editor">
+                    {% for curio in curioList %}
+                    {% if curio.name == selected.curioNameOne %}
+                        <h1 class="font-worksans-bold small-text-14 px-2 px-sm-1 text-center">{{ curio.name }}</h1>
+                        <img src="{{ curio.image }}"  class="icon-curios p-2">
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="weapon-frame-middle w-100">
+                <img class="frame-middle melee w-100" src="/static/img/borders/weapon-frame-middle.png" alt="">
+            </div>
+            <div class="card-body blessing-wrapper top-editor-bg text-white text-start editor-card-border box-shadow-editor">
+                <div class="d-flex flex-row justify-content-start align-items-center p-2 text-decoration-none">
+                    <svg width="8" height="8">
+                        <polygon points="0 4,4 8,8 4,4 0" fill="rgba(170, 202, 171, 1)"/>
+                    </svg>
+                    {% for blessing in curioTraitsList %}
+                    {% if blessing.id == selected.curioBlessingOne|int %}
+                        <p class="ps-4 m-0 text-gr-light font-worksans-bold">{{ blessing.description }}</p>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="weapon-frame-middle w-100">
+                <img class="frame-middle melee w-100" src="/static/img/borders/weapon-frame-middle.png" alt="">
+            </div>
+            <div class="card-body perk-wrapper bottom-editor-bg text-white text-start editor-card-border box-shadow-editor">
+                <div class="d-flex flex-row justify-content-start align-items-center p-2 text-decoration-none">
+                    <svg width="8" height="8">
+                        <polygon points="0 4,4 8,8 4,4 0" fill="rgba(170, 202, 171, 1)"/>
+                    </svg>
+                    {% for perk in curioTraitsList %}
+                    {% if perk.id == selected.curioPerkOneOne|int %}
+                        <p class="ps-4 m-0 text-gr-light font-worksans-bold small-text-14">{{ perk.description }}</p>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="d-flex flex-row justify-content-start align-items-center p-2 text-decoration-none">
+                    <svg width="8" height="8">
+                        <polygon points="0 4,4 8,8 4,4 0" fill="rgba(170, 202, 171, 1)"/>
+                    </svg>
+                    {% for perk in curioTraitsList %}
+                    {% if perk.id == selected.curioPerkOneTwo|int %}
+                    <p class="ps-4 m-0 text-gr-light font-worksans-bold small-text-14">{{ perk.description }}</p>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="d-flex flex-row justify-content-start align-items-center p-2 text-decoration-none">
+                    <svg width="8" height="8">
+                        <polygon points="0 4,4 8,8 4,4 0" fill="rgba(170, 202, 171, 1)"/>
+                    </svg>
+                    {% for perk in curioTraitsList %}
+                    {% if perk.id == selected.curioPerkOneThree|int %}
+                    <p class="ps-4 m-0 text-gr-light font-worksans-bold small-text-14">{{ perk.description }}</p>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="weapon-frame-top d-flex align-items-center px-0">
+                <img src="/static/img/borders/weapon-frame-top.png" alt="" class="frame-center melee">
+            </div>
+            <div class="weapon-frame-bottom d-flex align-items-center px-0">
+                <img src="/static/img/borders/weapon-frame-bottom.png" alt="" class="frame-center melee">
+            </div>
+        </div>
+    </div>
+</div>

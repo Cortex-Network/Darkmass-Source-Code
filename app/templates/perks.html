@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block head %}
+    <link href="{{ url_for('static', filename='css/curio.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block background %}
+    class="mainPage"
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid text-center py-3 mt-2">
+    <h1 class="font-anton-upp display-3">
+        <span class="font-anton-cracked">darktide</span>
+        <span class="font-anton-outline">weapon</span>
+        <span class="font-anton-outline">perks</span>
+    </h1>
+</div>
+<div class="container-lg">
+    <div class="row justify-content-center">
+        <div class="col-12 col-sm-8 col-md-5 text-center py-5">
+            <h3 class="font-anton-upp font-anton-cracked  mb-5 m-0">Perks</h4>
+            <div class="curio-bg position-relative mt-3">
+                <div class="curio-text-box">
+                    <ul class="px-3-5 py-3 text-start mb-0">
+                        {% for perk in perkList %}
+                            <li class="py-2">{{ perk.description }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="weapon-frame-top d-flex align-items-center px-0">
+                    <img src="/static/img/borders/text-box-frame-top.png" alt="" class="frame-center melee">
+                </div>
+                <div class="weapon-frame-bottom d-flex align-items-center px-0">
+                    <img src="/static/img/borders/text-box-frame-bot.png" alt="" class="frame-center melee">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

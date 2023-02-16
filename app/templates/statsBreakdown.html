@@ -1,0 +1,107 @@
+{% extends "layout.html" %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block head %}
+    <link href="{{ url_for('static', filename='css/stats.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block background %}
+    class="mainPage"
+{% endblock %}
+
+{% block content %}
+<div class="container text-center w-max-xl">
+    <h1 class="font-anton-upp display-3 py-3">
+        <span class="font-anton-cracked">
+            Stats
+        </span>
+        <span class="font-anton-outline">
+            Breakdown
+        </span>  
+    </h1>
+</div>
+<div class="container-sm text-center pt-4 w-max-3xl">
+    <div class="row my-5 justify-content-center gy-6">
+        <div class="col-12 col-sm-8 col-md-6 col-lg-4 mb-5 mb-md-0">
+            <a href="/statsbreakdown/meleestats" class="text-decoration-none">
+                <div class="card stats-card mx-auto">
+                    <h4 class="stats font-anton-upp font-anton-cracked py-2 pb-sm-0 mb-0 mb-sm-2">
+                        Melee Breakdown
+                    </h4>
+                    <div class="card-body">
+                        <div class="stats-selector-wrapper h-100">
+                            <div class="stats-image-wrapper d-flex align-items-center h-100">
+                                <img
+                                    src="/static/img/meleeWeapons/thunderhammer.png"
+                                    alt="Melee Weapons"
+                                    class="img-fluid mx-auto my-3 py-sm-3"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stats-frame-top">
+                        <img class="stats-frame" src="/static/img/borders/stats-top-frame.png" alt="">
+                    </div>
+                    <div class="stats-frame-bottom">
+                        <img class="stats-frame" src="/static/img/borders/text-box-frame-bot.png" alt="">
+                    </div>    
+                </div>
+            </a>
+        </div>
+        <div class="col-12 col-sm-8 col-md-6 col-lg-4 my-5 mt-md-0">
+            <a href="/statsbreakdown/rangedstats" class="text-decoration-none">
+                <div class="card stats-card mx-auto">
+                    <h4 class="stats font-anton-upp font-anton-cracked py-2 pb-sm-0 mb-0 mb-sm-2">
+                        Ranged Breakdown
+                    </h4>
+                    <div class="card-body">
+                        <div class="stats-selector-wrapper h-100">
+                            <div class="stats-image-wrapper d-flex align-items-center h-100">
+                                <img
+                                    src="/static/img/rangedWeapons/flamer.png"
+                                    alt="Melee Weapons"
+                                    class="img-fluid mx-auto my-3 py-sm-3"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stats-frame-top">
+                        <img class="stats-frame" src="/static/img/borders/stats-top-frame.png" alt="">
+                    </div>
+                    <div class="stats-frame-bottom">
+                        <img class="stats-frame" src="/static/img/borders/text-box-frame-bot.png" alt="">
+                    </div>    
+                </div>
+            </a>
+        </div>
+        <div class="col-12 col-sm-8 col-md-6 col-lg-4 mt-5 mt-lg-0">
+            <a href="/statsbreakdown/glossary" class="text-decoration-none">
+                <div class="card stats-card mx-auto">
+                    <h4 class="stats font-anton-upp font-anton-cracked py-2 pb-sm-0 mb-0 mb-sm-2">
+                        Glossary
+                    </h4>
+                    <div class="card-body">
+                        <div class="stats-selector-wrapper h-100">
+                            <div class="stats-image-wrapper d-flex align-items-center h-100">
+                                <img
+                                    src="/static/img/assets/grimoire.png"
+                                    alt="Glossary"
+                                    class="img-fluid w-75 mx-auto my-3 py-sm-3"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stats-frame-top">
+                        <img class="stats-frame" src="/static/img/borders/stats-top-frame.png" alt="">
+                    </div>
+                    <div class="stats-frame-bottom">
+                        <img class="stats-frame" src="/static/img/borders/text-box-frame-bot.png" alt="">
+                    </div>    
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,28 @@
+<div x-show="curioTwo" x-cloak>
+    <div class="modal fade" id="curioTwoModal" tabindex="-1" aria-labelledby="curioTwoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    {% for curio in curiosList %}
+                        <div class="row">
+                            <button type="button" class="curioTwoSelectButton border-0" @click='curioSecond = "{{curio.name}}", curioSecondImage = "{{curio.image}}"' x-cloak>
+                                <div class="row"  x-model="curioSecond" name="curioTwo-select" id="curioTwo-select" x-cloak>
+                                    <div class="d-flex flex-row modal-select-bg align-items-center py-3">
+                                        <img src="{{ curio.image }}" class="editor-icon-curios">
+                                        <p class="px-3 m-0 font-worksans-bold" style="color:white;" value="{{curio.name}}">{{ curio.name }}</p>    
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    {% endfor %}                                            
+                </div>
+                <div class="weapon-frame-top d-flex align-items-center px-0">
+                    <img src="/static/img/borders/talent-border-top.png" alt="" class="frame-center ranged">
+                </div>
+                <div class="weapon-frame-bottom d-flex align-items-center px-0">
+                    <img src="/static/img/borders/talent-border-bot.png" alt="" class="frame-center ranged">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

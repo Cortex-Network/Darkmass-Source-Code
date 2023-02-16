@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block head %}
+    <link href="{{ url_for('static', filename='css/builds.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='css/buildEditor.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block background %}
+    class="mainPage"
+{% endblock %}
+
+{% block content %}
+<div class="container-sm w-max-3xl py-5">
+    <div class="row gx-3 text-center">
+        <h1> {{ selected.selectedClass }} </h1>
+        <img src="/static/img/classes/{{selected.selectedClass}}-metal-icon-cropped.png" class="class-image mx-auto d-block">
+        <h1> {{ selected.buildName }} </h1>
+    </div>
+    <div class="row justify-content-center py-5">
+        <h1 class="font-anton-upp font-anton-cracked text-center py-5">Weapons</h1>
+        {% include "buildDisplay/weapons.html" %}
+    </div>
+    <div class="row justify-content-center py-5">
+        <h1 class="font-anton-upp font-anton-cracked text-center py-5">Curios</h1>
+        {% include "buildDisplay/curioOne.html" %}
+        {% include "buildDisplay/curioTwo.html" %}
+        {% include "buildDisplay/curioThree.html" %}
+    </div>
+    <div class="row justify-content-center py-5">
+        <h2 class="font-anton-upp font-anton-cracked text-center py-4">Feats</h2>
+        {% include "buildDisplay/classTalents.html" %}
+    </div>
+    <div class="container-sm row justify-content-center py-5">
+        <h2 class="font-anton-upp font-anton-cracked text-center py-4">Description</h2>
+        <div class="quill-reader">
+            {{ selected.description | safe }}
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block scripts %}
+{% endblock %}

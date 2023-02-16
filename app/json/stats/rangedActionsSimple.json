@@ -1,0 +1,28 @@
+{
+"rangedActionsSimple": [
+{
+    "name": "ADS",
+    "image": "/static/img/statsBreakdown/rangedActions/ads.png",
+    "description": "Aim Down Sights for better targeting.",
+    "detailedDescription": ["Found on all Lasgun variants, alongside most autoguns (except Headhunter variants) and a few more weapons. ADSing increases accuracy and stability, making it easier to hit priority targets. Not the best for hordes, as hip-fire is more suited for that purpose."]
+},
+{
+    "name": "Braced",
+    "image": "/static/img/statsBreakdown/rangedActions/braced.png",
+    "description": "Weapon can be braced to increase accuracy and stability.",
+    "detailedDescription": ["Similar to ADS, but not quite as accurate. Suited for more close range engagements and horde clearing. Found on weapons which excel at low to mid range, such as the Heavy Stubber, Braced Autogun, etc."]
+},
+{
+    "name": "Charged Attack",
+    "image": "/static/img/statsBreakdown/rangedActions/chargedattack.png",
+    "description": "This weapon can be charged to deliver a more powerful attack. The higher the charge level, the more damage is inflicted.",
+    "detailedDescription": ["Found on the Helbore Lasgun, Plasma Gun and Psyker Staffs. These are slow attacks that take time to charge up, but deal a lot of damage when released. Most useful to deal with high priority specials, and deal consistent high damage against monstrosities."]
+},
+{
+    "name": "Hip Fire",
+    "image": "/static/img/statsBreakdown/rangedActions/hipfire.png",
+    "description": "Shooting quickly at the expense of some accuracy.",
+    "detailedDescription": ["The most inaccurate of all shooting styles, but also the fastest. Found across all ranged weapons that are guns. Shines when dealing with hordes, and specials that get too close (mutant, ragers, etc)."]
+}
+]
+}

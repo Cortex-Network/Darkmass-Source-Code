@@ -1,0 +1,97 @@
+{% set count = namespace(value=1) %}
+{% for wep in rangedSubtypeList %}
+    {% if count.value == 1 %}
+        <div class="col-9 col-md-5 mt-4 mt-md-0 no-hover d-flex flex-column">
+            <div class="flex-grow-1" x-data='
+            {
+                rangedWeapon_id: "{{ wep.id }}",
+                rangedWeapon: "{{ wep.name }}",
+                rangedWeaponImage: "{{ wep.image }}",
+                rangedWeaponTraits: "",
+                rangedPerkOne: "",
+                rangedPerkTwo: "",
+                rangedBlessingOne: "",
+                rangedBlessingOneImage: "/static/img/assets/unknown.webp",
+                rangedBlessingOneDescription: "",
+                rangedBlessingTwo: "",
+                rangedBlessingTwoImage: "/static/img/assets/unknown.webp",
+                rangedBlessingTwoDescription: "",
+                reset_blessing(){
+                    this.rangedBlessingOne = "";
+                    this.rangedBlessingOneImage = "/static/img/assets/unknown.webp";
+                    this.rangedBlessingOneDescription = "";
+                    this.rangedBlessingTwo = "";
+                    this.rangedBlessingTwoImage = "/static/img/assets/unknown.webp";
+                    this.rangedBlessingTwoDescription = "";
+                }
+            }'>
+                <div class="card h-100 build-editor-weapon melee-ranged mx-auto">
+                    <div class="d-flex flex-column h-100">
+                        <a class="card-body build-editor-weapon-card d-flex align-items-center flex-column justify-content-between text-decoration-none editor-card-border box-shadow-editor" type="button" data-bs-toggle="modal"
+                            data-bs-target="#rangedModal">
+                            <h1 class="py-3 pt-sm-2 font-worksans-bold small-text-14 px-2 px-sm-1 text-center" x-text="rangedWeapon"></h1>
+                            <img x-bind:src="`${rangedWeaponImage}`" class="editor-weapon-img" alt="Weapon Image">
+                        </a>
+                    </div>
+                    <div class="weapon-frame-middle w-100">
+                        <img class="frame-middle ranged w-100" src="/static/img/borders/weapon-frame-middle.png" alt="">
+                    </div>
+                    <div class="card-body blessing-wrapper top-editor-bg text-white text-start editor-card-border box-shadow-editor">
+                        <a class="pointer d-flex flex-row justify-content-start align-items-center p-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#rangedPerkOneModal">
+                            <svg width="8" height="8">
+                                <polygon points="0 4,4 8,8 4,4 0" fill="rgba(170, 202, 171, 1)"/>
+                            </svg>
+                            <p class="ps-4 m-0 text-gr-light font-worksans-bold small-text-14" x-text="rangedPerkOne ? rangedPerkOne : 'Select a ranged perk'"></p>
+                        </a>
+                        <a class="pointer d-flex flex-row justify-content-start align-items-center p-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#rangedPerkTwoModal">
+                            <svg width="8" height="8">
+                                <polygon points="0 4,4 8,8 4,4 0" fill="rgba(170, 202, 171, 1)"/>
+                            </svg>
+                            <p class="ps-4 m-0 text-gr-light font-worksans-bold small-text-14" x-text="rangedPerkTwo ? rangedPerkTwo : 'Select a ranged perk'"></p>
+                        </a>
+                    </div>
+                    <div class="weapon-frame-middle w-100">
+                        <img class="frame-middle ranged w-100" src="/static/img/borders/weapon-frame-middle.png" alt="">
+                    </div>
+                    <div class="card-body blessing-wrapper bottom-editor-bg text-white text-start editor-card-border box-shadow-editor">
+                        <a class="pointer card-text d-flex flex-row justify-content-start align-items-center text-decoration-none" type="button" data-bs-toggle="modal"
+                            data-bs-target="#rangedBlessingOneModal">
+                            <img x-bind:src="`${rangedBlessingOneImage}`" class="editor-blessing-img p-1" alt="Blessing image">
+                            <div class="ps-2">
+                                <p style="color:white; margin-bottom: 0; font-family: 'Work Sans', sans-serif; font-weight: 600; font-size: 14px;" :class="rangedBlessingOneDescription ? '' : 'm-0 font-worksans-bold'"
+                                    x-text="rangedBlessingOne ? rangedBlessingOne : 'Select a blessing'"></p>
+                                <p class="m-0 font-worksans-light small-text text-decoration-none text-white" x-show="rangedBlessingOneDescription" x-text="rangedBlessingOneDescription"></p>
+                            </div>
+                        </a>
+                        <a class="pointer card-text d-flex flex-row justify-content-start align-items-center text-decoration-none"
+                            type="button" data-bs-toggle="modal" data-bs-target="#rangedBlessingTwoModal">
+                            <img x-bind:src="`${rangedBlessingTwoImage}`" class="editor-blessing-img p-1" alt="Blessing image">
+                            <div class="ps-2">
+                                <p style="color:white; margin-bottom: 0; font-family: 'Work Sans', sans-serif; font-weight: 600; font-size: 14px;" :class="rangedBlessingTwoDescription ? '' : 'm-0 font-worksans-bold'"
+                                    x-text="rangedBlessingTwo ? rangedBlessingTwo : 'Select a blessing'"></p>
+                                <p class="m-0 font-worksans-light small-text text-decoration-none text-white" x-show="rangedBlessingTwoDescription" x-text="rangedBlessingTwoDescription"></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="weapon-frame-top d-flex align-items-center px-0">
+                        <img src="/static/img/borders/weapon-frame-top.png" alt="" class="frame-center ranged">
+                    </div>
+                    <div class="weapon-frame-bottom d-flex align-items-center px-0">
+                        <img src="/static/img/borders/weapon-frame-bottom.png" alt="" class="frame-center ranged">
+                    </div>
+                </div>
+                <input type="hidden" id="rangedSelected" name="rangedSelected" x-model="rangedWeapon">
+                <input type="hidden" id="rangedPerkOneSelected" name="rangedPerkOneSelected" x-model="rangedPerkOne">
+                <input type="hidden" id="rangedPerkTwoSelected" name="rangedPerkTwoSelected" x-model="rangedPerkTwo">
+                <input type="hidden" id="rangedBlessingOneSelected" name="rangedBlessingOneSelected" x-model="rangedBlessingOne">
+                <input type="hidden" id="rangedBlessingTwoSelected" name="rangedBlessingTwoSelected" x-model="rangedBlessingTwo">
+                {% include "buildEditor/ranged/rangedModal.html" %}
+                {% include "buildEditor/ranged/rangedPerkOneModal.html" %}
+                {% include "buildEditor/ranged/rangedPerkTwoModal.html" %}
+                {% include "buildEditor/ranged/rangedBlessingOneModal.html" %}
+                {% include "buildEditor/ranged/rangedBlessingTwoModal.html" %}
+            </div>
+        </div>
+    {% endif %}
+    {% set count.value = count.value + 1 %}
+{% endfor %}

@@ -1,0 +1,209 @@
+.class-image {
+    height: 20vh;
+    width: 20vh;    
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.big-padding {
+    margin-bottom: 100px;
+}
+
+.buildDisplay-card {
+    max-width: 350px;
+}
+
+/* Class Icon + Model */
+
+.build-class-icon-wrapper {
+
+}
+
+.build-class-icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    margin: .5rem 0 0 .5rem;
+}
+
+.build-class-model-wrapper {
+    height: 100px;
+    overflow: hidden;
+}
+
+.build-class-model {
+    width: 180px;
+    height: auto;
+}
+
+/* Name */
+
+.build-name-sect {
+    max-width: 130px;
+}
+
+/* Weapon Sect */
+
+.build-display-w-img-wrapper {
+    height: 50px;
+    width: 50px;
+}
+
+.build-display-w-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Talent Sect */
+
+.build-talent-icon {
+    height: 35px;
+    max-width: 35px;
+}
+
+.build-talent-border-icon {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+}
+
+/* Experiment with Clickable Card */
+
+.card__link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.card__link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* Button */
+
+.display-btn-wrapper {
+    width: 100%;
+}
+
+/* Container */
+
+
+
+.build-display-btn {
+    background-color: rgba(0,0,0,.5);
+    border: 1px solid;
+    border-color: rgba(79,103,78,.7);
+    color: white;
+    font-size: 12px;
+    padding: 0.25rem 0.5rem;
+    width: 100px;
+}
+
+@media only screen and (min-width: 576px) {
+    .buildDisplay-card {
+        max-width: 500px;
+    }
+
+    .build-name-sect {
+        width: 125px;
+    }
+
+    .display-btn-wrapper {
+        width: auto;
+    }
+
+    .build-feats-sect {
+        width: 280px;
+        margin-left: 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .buildDisplay-card {
+        max-width: 350px;
+    }
+
+    .build-name-sect {
+        max-width: 130px;
+    }
+
+    .build-container {
+        max-width: 750px;
+        margin: auto;
+    }
+
+    .display-btn-wrapper {
+        width: 100%;
+    }
+
+    .build-feats-sect {
+        width: auto;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .build-container {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .display-btn-wrapper {
+        width: auto;
+    }
+
+    .buildDisplay-card {
+        max-width: 100%;
+    }
+
+    .build-feats-sect {
+        max-width: 100%;
+        width: auto;
+    }
+
+    .build-display-w-img-wrapper {
+        height: 65px;
+        width: 65px;
+    }
+
+    .collapse.dont-collapse-sm {
+        display: block;
+        height: auto !important;
+        visibility: visible;
+    }
+
+    .build-name-sect .row {
+        width: auto;
+    }
+
+    .build-display-w-img-wrapper {
+        height: 80px;
+        width: 80px;
+    }
+
+    .build-name-sect {
+        width: 200px;
+        max-width: 200px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .build-talent-icon {
+        height: 45px;
+        max-width: 45px;
+    }
+
+    .buildDisplay-card {
+        max-width: 100%;
+    }
+}

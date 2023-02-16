@@ -1,0 +1,95 @@
+{
+"curio": [
+{
+    "name": "Blessed Bullet",
+    "codeName": ["curio_b_f01", "curio_a_f01", "curio_c_f01", "defensive_gadget_11"],
+    "image": "/static/img/curios/blessedbullet.webp"
+},
+{
+    "name": "Gilded Inquisitorial Rosette",
+    "codeName": ["curio_c_e02", "curio_b_e02", "curio_a_e02", "defensive_gadget_10"],
+    "image": "/static/img/curios/gildedinquisitorialrosette.webp"
+},
+{
+    "name": "Gilded Mandible",
+    "codeName": ["defensive_gadget_4", "curio_c_b02", "curio_b_b02", "curio_a_b02"],
+    "image": "/static/img/curios/gildedmandible.webp"
+},
+{
+    "name": "Guardian Nocturnus",
+    "codeName": ["curio_a_k01", "curio_b_k01", "curio_c_k01", "defensive_gadget_21"],
+    "image": "/static/img/curios/guardiannocturnus.webp"
+},
+{
+    "name": "Guardian of the Hateful",
+    "codeName": ["curio_c_j02", "curio_b_j02", "curio_a_j02", "defensive_gadget_20"],
+    "image": "/static/img/curios/guardianofthehateful.webp"
+},
+{
+    "name": "Guardian of the Lost",
+    "codeName": ["curio_b_j01", "curio_c_j01", "curio_a_j01", "defensive_gadget_19"],
+    "image": "/static/img/curios/guardianofthelost.webp"
+},
+{
+    "name": "Herald's Seal",
+    "codeName": ["curio_c_g02", "curio_b_g02", "curio_a_g02", "defensive_gadget_14"],
+    "image": "/static/img/curios/heraldsseal.webp"
+},
+{
+    "name": "Inquisitorial Rosette",
+    "codeName": ["curio_a_e01", "curio_b_e01", "curio_c_e01", "defensive_gadget_9"],
+    "image": "/static/img/curios/inquisitorialrosette.png"
+},
+{
+    "name": "Laurel of the Just",
+    "codeName": ["curio_b_h02", "curio_c_h02", "curio_a_h02", "defensive_gadget_16"],
+    "image": "/static/img/curios/laurelofthejust.webp"
+},
+{
+    "name": "Laurel of the Righteous",
+    "codeName": ["curio_a_h01", "curio_b_h01", "curio_c_h01", "defensive_gadget_15"],
+    "image": "/static/img/curios/laureloftherighteous.webp"
+},
+{
+    "name": "Mechanicus Icon Exemplar",
+    "codeName": ["curio_c_i01", "curio_b_i01", "curio_a_i01", "defensive_gadget_17"],
+    "image": "/static/img/curios/mechanicusiconexemplar.png"
+},
+{
+    "name": "Mechanicus Icon Illustrious",
+    "codeName": ["curio_b_i02", "curio_c_i02", "curio_a_i02", "defensive_gadget_18"],
+    "image": "/static/img/curios/mechanicusiconillustrious.webp"
+},
+{
+    "name": "Obsidiax-Sheathed Bullet",
+    "codeName": ["curio_a_f02", "curio_b_f02", "curio_c_f02", "defensive_gadget_12"],
+    "image": "/static/img/curios/obsidiaxsheathedbullet.webp"
+},
+{
+    "name": "Redeemer's Gilded Hand",
+    "codeName": ["curio_c_c02", "curio_b_c02", "curio_a_c02", "defensive_gadget_6"],
+    "image": "/static/img/curios/redeemersgildedhand.webp"
+},
+{
+    "name": "Redeemer's Hand",
+    "codeName": ["curio_a_c01", "curio_b_c01", "curio_c_c01", "defensive_gadget_5"],
+    "image": "/static/img/curios/redeemershand.png"
+},
+{
+    "name": "Saintly Fragment",
+    "codeName": ["curio_b_a01", "curio_c_a01", "curio_a_a01", "defensive_gadget_1"],
+    "image": "/static/img/curios/saintlyfragment.webp"
+},
+{
+    "name": "Scrap of Scripture",
+    "codeName": ["curio_a_d01", "curio_b_d01", "curio_c_d01", "defensive_gadget_8", "defensive_gadget_7"],
+    "image": "/static/img/curios/scrapofscripture.webp"
+},
+{
+    "name": "Stalwart's Mandible",
+    "codeName": ["curio_b_b01", "curio_c_b01", "curio_a_b01", "defensive_gadget_3"],
+    "image": "/static/img/curios/stalwartsmandible.webp"
+}
+]
+}
+

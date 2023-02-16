@@ -1,0 +1,305 @@
+/* Traits */
+
+.card-frame-top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin-top: -5px;
+}
+
+.card-frame-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: -7px;
+}
+
+.card-frame-side-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    height: 20px;
+}
+
+.card-frame-side-wrapper.frame-top {
+    margin-top: -9px;
+}
+
+.card-frame-side-wrapper.frame-bottom {
+    height: 22px;
+}
+
+.frame-left {
+    position: absolute;
+    left: -1px;
+    width: 200px;
+    max-width: none;
+}
+
+.frame-left.frame-bottom,
+.frame-right.frame-bottom {
+    width: 180px;
+    max-width: none;
+}
+
+.frame-right {
+    position: absolute;
+    right: -1px;
+    width: 200px;
+    max-width: none;
+}
+
+.frame-center.melee,
+.frame-center.ranged {
+    width: 348px;
+}
+
+.weapon-frame-top .frame-center.melee,
+.weapon-frame-top .frame-center.ranged {
+    margin-top: 8px;
+}
+
+.weapon-frame-bottom .frame-center.melee,
+.weapon-frame-bottom .frame-center.ranged {
+    margin-top: -16px;
+}
+
+.weapon-frame-middle {
+    margin-top: -13px;
+    margin-bottom: -12px;
+    z-index: 1;
+}
+
+
+/* Weapon Cards */
+
+.weapon-frame-top,
+.stats-frame-top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin-top: -5px;
+}
+
+.weapon-frame-bottom,
+.stats-frame-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: -7px;
+}
+
+.frame-center {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 120px;
+    margin-top: 4px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Main Weapons */
+
+.weapon-card-frame {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.weapon-card-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.weapon-frame {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: none;
+}
+
+.weapon-frame {
+    margin-top: -95px;
+}
+
+.frame-center.melee,
+.frame-center.ranged {
+    width: 100%;
+}
+
+/* Stats Frame */
+
+.stats-frame {
+    width: 100%;
+}
+
+.stats-frame-top {
+    margin-top: -43px;
+}
+
+.stats-button-frame {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.stats-button-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.stats-button-wrapper .stats-frame {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: none;
+    margin-top: -10px;
+}
+
+/* Home Stats Btn */
+
+.home-stats-btn {
+    width: 300px;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.home-stats-btn .card-body {
+    background-color: rgba(78,103,79,.4);
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.home-stats-btn:hover {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.home-stats-btn:hover .card-body {
+    background-color: rgba(78,103,79, .6);
+}
+
+.home-stats-btn-frame {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.home-stats-btn-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.stats-btn-frame {
+    width: 100%;
+}
+
+.home-stats-btn-wrapper .stats-btn-frame {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: none;
+    margin-top: -11px;
+}
+
+/* Section Frame */
+
+.section-frame-top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.section-frame-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.section-left,
+.section-right {
+    height: 5rem;
+    width: auto;
+    z-index: 1030;
+}
+
+.section-left {
+    position: absolute;
+    left: 0;
+}
+
+.section-right {
+    position: absolute;
+    right: 0;
+}
+
+.section-middle {
+    position: absolute;
+    z-index: 1029;
+}
+
+/* Media queries */
+
+@media only screen and (min-width: 576px) {
+    .stats-button-wrapper .stats-frame {
+        margin-top: -4px;
+    }
+
+    .home-stats-btn-wrapper .stats-btn-frame {
+        margin-top: -7px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .weapon-frame-middle {
+        margin-top: -14px;
+        margin-bottom: -10px;
+    }
+
+    .stats-button-wrapper .stats-frame {
+        margin-top: -16px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .weapon-frame {
+        margin-top: -103px;
+    }
+
+    .stats-frame-top {
+        margin-top: -41px;
+    }
+
+    .stats-button-wrapper .stats-frame {
+        margin-top: -12px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .weapon-frame {
+        margin-top: -113px;
+    }
+
+    .weapon-frame-middle {
+        margin-top: -12px;
+        margin-bottom: -13px;
+    }
+
+    .stats-button-wrapper .stats-frame {
+        margin-top: -15px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .weapon-frame-middle {
+        margin-top: -14px;
+    }
+}

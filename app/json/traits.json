@@ -1,0 +1,279 @@
+{
+    "traits": [
+    {
+        "name": "Thrust",
+        "image": "/static/img/traits/thrust.webp",
+        "description": "Up to +5-20% Power, scaling with Charge Time (Heavy Attack). Stacks 3 times."
+    },
+    {
+        "name": "Deathblow",
+        "image": "/static/img/traits/deathblow.png",
+        "description": "Ignore Enemy Hit Mass for 3.5 seconds on Weak Spot Kill."
+    },
+    {
+        "name": "All or Nothing",
+        "image": "/static/img/traits/allornothing.webp",
+        "description": "Up to +2-5% Power, scaling with Stamina."
+    },
+    {
+        "name": "Brutal Momentum",
+        "image": "/static/img/traits/brutalmomentum.webp",
+        "description": "Ignore Enemy Hit Mass for 2-4.5 seconds on Weak Spot Kill."
+    },
+    {
+        "name": "Decapitator",
+        "image": "/static/img/traits/decapitator.webp",
+        "description": "+10-25% Rending for 5 seconds on Enemy One-Shot. Stacks 3-5 times."
+    },
+    {
+        "name": "Decimator (Combat Axe)",
+        "image": "/static/img/traits/decimator.webp",
+        "description": "Continuously chaining more than 2 attacks gives +8-20% Power on Hit. Stacks 5 times."
+    },
+    {
+        "name": "Decimator (Tactical Axe)",
+        "image": "/static/img/traits/decimator.webp",
+        "description": "Continuously chaining more than 2 attacks gives +8-20% Power on Hit. Stacks 10 times."
+    },
+    {
+        "name": "Decimator (Sapper Shovel)",
+        "image": "/static/img/traits/decimator.webp",
+        "description": "Continuously chaining more than 2 attacks gives +8-20% Power on Hit. Stacks 5 times."
+    },
+    {
+        "name": "Headtaker",
+        "image": "/static/img/traits/headtaker.webp",
+        "description": "+2-5% Power for 3.5s on Hit. Stacks 5 times."
+    },
+    {
+        "name": "Headtaker (Heavy Sword)",
+        "image": "/static/img/traits/headtaker.webp",
+        "description": "+7.5-15% Power for 3.5s on Hit. Stacks 5 times."
+    },
+    {
+        "name": "Limbsplitter",
+        "image": "/static/img/traits/limbsplitter.webp",
+        "description": "+10-25% on First Attack in a Chain. Subsequent Attacks have -10-25% Power."
+    },
+    {
+        "name": "Shred",
+        "image": "/static/img/traits/shred.webp",
+        "description": "+2-5% Bonus Critical Chance on repeated hit. Stacks 5 times."
+    },
+    {
+        "name": "Slaughterer",
+        "image": "/static/img/traits/slaughterer.webp",
+        "description": "+10-15% Power for 3.5 seconds on kill. Stacks 5 times."
+    },
+    {
+        "name": "Thunderous",
+        "image": "/static/img/traits/thunderous.webp",
+        "description": "Target receives 1-4 Stacks of 5% Brittelness on Hit. Lasts 5s."
+    },
+    {
+        "name": "Unstoppable Force",
+        "image": "/static/img/traits/unstoppableforce.webp",
+        "description": "Heavy Attacks ignore Hit Mass Bonus From Armour."
+    },
+    {
+        "name": "Wrath",
+        "image": "/static/img/traits/wrath.webp",
+        "description": "+10-20% Cleave on Hit. Stacks 5 times."
+    },
+    {
+        "name": "Bloodletter",
+        "image": "/static/img/traits/bloodletter.webp",
+        "description": "+2-4 Bleed Stacks from Special Attacks."
+    },
+    {
+        "name": "Rampage",
+        "image": "/static/img/traits/rampage.webp",
+        "description": "+10-20% damage for 3 seconds on Multiple Hit."
+    },
+    {
+        "name": "Bloodthirsty",
+        "image": "/static/img/traits/bloodthirsty.webp",
+        "description": "100% Critical Chance on Special Attack Kill."
+    },
+    {
+        "name": "Executor",
+        "image": "/static/img/traits/executor.webp",
+        "description": "+2-5% on Repeated Weak Spot Hit. Stacks 5 times."
+    },
+    {
+        "name": "Hammerblow",
+        "image": "/static/img/traits/hammerblow.webp",
+        "description": "+10-25% Impact for 1.5 seconds on Hit. Stacks 5 times."
+    },
+    {
+        "name": "Inspiring Barrage",
+        "image": "/static/img/rangedTraits/inspiringbarrage.webp",
+        "description": "Replenish 10% Toughness over time during Continuous Fire. Stacks up to 5 times."
+    },
+    {
+        "name": "Rev It Up",
+        "image": "/static/img/traits/revitup.webp",
+        "description": "+5-15% Movement Speed for 2 seconds on Weapon Speical Activation."
+    },
+    {
+        "name": "Riposte",
+        "image": "/static/img/traits/riposte.webp",
+        "description": "+2-5% Critical Chance for 5 seconds on successful Dodge."
+    },
+    {
+        "name": "Savage Sweep",
+        "image": "/static/img/traits/savagesweep.webp",
+        "description": "+100-200% Cleave for 3 seconds on Multiple Melee Hit."
+    },
+    {
+        "name": "Skullcrusher",
+        "image": "/static/img/traits/skullcrusher.webp",
+        "description": "Target receives 1-4 Stacks of 5% Damage on Stagger. Lasts 1-5 seconds."
+    },
+    {
+        "name": "Trauma",
+        "image": "/static/img/traits/trauma.webp",
+        "description": "+5-10% Impact for 2 seconds on Repeated Hit. Stacks 5 times."
+    },
+    {
+        "name": "Bash",
+        "image": "/static/img/traits/bash.webp",
+        "description": "+1-4% Critical Chance for 3 seconds on Punishing Enemies."
+    },
+    {
+        "name": "Confident Strike",
+        "image": "/static/img/traits/confidentstrike.webp",
+        "description": "+5-8% Toughness on Chained Hit"
+    },
+    {
+        "name": "Devastating Strike",
+        "image": "/static/img/traits/devastatingstrike.webp",
+        "description": "Ignore Enemy hit mass on critical hit. Lasts 2-4 seconds."
+    },
+    {
+        "name": "Devastating Strike (Cleaver)",
+        "image": "/static/img/traits/devastatingstrikecleaver.png",
+        "description": "Ignore Enemy hit mass on critical hit. Lasts 3-4 seconds."
+    },
+    {
+        "name": "Devastating Strike (Chainsword)",
+        "image": "/static/img/traits/devastatingstrikechainsword.png",
+        "description": "Ignore Enemy hit mass on critical hit. Lasts 3-4 seconds."
+    },
+    {
+        "name": "Momentum",
+        "image": "/static/img/traits/momentum.webp",
+        "description": "+7.5-15% Toughness on Multiple Melee Hit."
+    },
+    {
+        "name": "Flesh Tearer",
+        "image": "/static/img/traits/fleshtearer.webp",
+        "description": "1-4 Bleed Stacks on Critical Hits"
+    },
+    {
+        "name": "Tenderiser",
+        "image": "/static/img/traits/tenderiser.webp",
+        "description": "+10-15% Power (next attack) on Special Action Hit."
+    },
+    {
+        "name": "Haymaker",
+        "image": "/static/img/traits/haymaker.webp",
+        "description": "+1-4% to Instakill human-sized enemies on Chained Heavy Hit. Stacks 5 Times."
+    },
+    {
+        "name": "Lacerate",
+        "image": "/static/img/traits/lacerate.webp",
+        "description": "+1-4 Bleed Stacks on non-Weak Spot Hits."
+    },
+    {
+        "name": "Mercy Killer",
+        "image": "/static/img/traits/mercykiller.webp",
+        "description": "+20-50% Weak Spot Damage (Enemies with Bleed Stacks)."
+    },
+    {
+        "name": "Precognition",
+        "image": "/static/img/traits/precognition.webp",
+        "description": "+2-5% Weak Spot Damage & Critical Damage for 5 seconds on successful Dodge."
+    },
+    {
+        "name": "Ruthless Backstab",
+        "image": "/static/img/traits/ruthlessbackstab.webp",
+        "description": "+20-50% Rending on Backstab Hit."
+    },
+    {
+        "name": "Smackdown",
+        "image": "/static/img/traits/smackdown.webp",
+        "description": "+5-10% Critical Chance for 2 seconds on Special Action Hit (Staggered Enemy)."
+    },
+    {
+        "name": "Uncanny Strike",
+        "image": "/static/img/traits/uncannystrike.webp",
+        "description": "+6-20% Rending on enemy weak spot hit for 2.5 seconds. Stacks 5 times."
+    },
+    {
+        "name": "Perfect Strike",
+        "image": "/static/img/traits/perfectstrike.webp",
+        "description": "Critical Hits ignore Hit Mass Bonus from Armour"
+    },
+    {
+        "name": "Thunderstrike",
+        "image": "/static/img/traits/thunderstrike.webp",
+        "description": "Target receives 1-4 Stacks of 5% Impact on Hit. Lasts 5s."
+    },
+    {
+        "name": "Supercharge",
+        "image": "/static/img/traits/supercharge.webp",
+        "description": "+1-4 Rending on Energised Hit."
+    },
+    {
+        "name": "Vicious Slice",
+        "image": "/static/img/traits/viciousslice.webp",
+        "description": "+2-5% Damage to Target for each Enemy already Hit by the same Attack."
+    },
+    {
+        "name": "Blazing Spirit (Force Sword)",
+        "image": "/static/img/traits/blazingspirit.webp",
+        "description": "Enemy gains +2-4 Stacks of Soulblaze on Critical Hit."
+    },
+    {
+        "name": "Deflector",
+        "image": "/static/img/traits/deflector.webp",
+        "description": "This Weapon blocks both Melee and Ranged attacks. Additionally, Block Cost is reduced by 0-15%."
+    },
+    {
+        "name": "Exorcist",
+        "image": "/static/img/traits/exorcist.webp",
+        "description": "Quell 2-5% of Peril on repeated weak spot hit."
+    },
+    {
+        "name": "Superiority",
+        "image": "/static/img/traits/superiority.webp",
+        "description": "+5% Power for 5 seconds on Elite Kill. Stacks 5 times."
+    },
+    {
+        "name": "Unstable Power",
+        "image": "/static/img/traits/unstablepower.webp",
+        "description": "Up to +2-5% Power, scaling with Peril."
+    },
+    {
+        "name": "Sunder",
+        "image": "/static/img/traits/sunder.webp",
+        "description": "Your Energised Attacks have increased Cleave."
+    },
+    {
+        "name": "Power Cycler",
+        "image": "/static/img/traits/sunder.webp",
+        "description": "Increased Energised Duration on Chained Energised Hits."
+    },
+    {
+        "name": "Shock & Awe",
+        "image": "/static/img/traits/shock&awe.webp",
+        "description": "-25-40% Enemy Hit Mass for 0.5 seconds on kill. Stacks 5 times."
+    },
+    {
+        "name": "Take a Swing",
+        "image": "/static/img/traits/takeaswing.png",
+        "description": "+7.5-15% Weak Spot Damage for 3 seconds on Pushing Enemies."
+    }
+]
+}

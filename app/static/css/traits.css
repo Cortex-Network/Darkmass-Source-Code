@@ -1,0 +1,19 @@
+.icon-traits {
+    width: auto;
+    height: 65px;
+}
+
+.trait-card {
+    height: 100px;
+}
+
+.trait-card p {
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 930px) {
+    .trait-card {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}

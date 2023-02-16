@@ -1,0 +1,30 @@
+<div class="modal fade" id="rangedModal" tabindex="-1" aria-labelledby="rangedModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                {% for wep in rangedSubtypeList %}
+                    <div class="d-flex align-items-center rangedSelectButton modal-select-bg weapon-select my-3 p-2 pointer" @click='
+                        rangedWeapon_id = "{{ wep.id }}",
+                        rangedWeapon = "{{ wep.name }}",
+                        rangedWeaponImage = "{{ wep.image }}",
+                        rangedWeaponTraits= "{{ wep.traits }}",
+                        reset_blessing(),
+                        $fragmentor("buildeditor/blessings/ranged/{{ wep.id }}", $refs.RangedblessingModal),
+                        $fragmentor("buildeditor/blessings/ranged/two/{{ wep.id }}", $refs.RangedblessingModalTwo)
+                    '>
+                        <img src="{{ wep.image }}" class="modal-weapon-img p-0 px-2" alt="{{ wep.name }} Image">
+                        <div class="ps-2">
+                            <p style="color:white;" class="m-0 font-worksans-bold px-2">{{ wep.name }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="weapon-frame-top d-flex align-items-center px-0">
+                <img src="/static/img/borders/talent-border-top.png" alt="" class="frame-center ranged">
+            </div>
+            <div class="weapon-frame-bottom d-flex align-items-center px-0">
+                <img src="/static/img/borders/talent-border-bot.png" alt="" class="frame-center ranged">
+            </div>
+        </div>
+    </div>
+</div>

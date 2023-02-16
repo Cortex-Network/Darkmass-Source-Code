@@ -1,0 +1,29 @@
+<div x-show="curioThreeBlessing" x-cloak>
+    <div class="modal fade" id="curioThreeBlessingModal" tabindex="-1" aria-labelledby="curioTwoBlessingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    {% for b in curioTraitList %}
+                    {% if b.type == "Trait" %}
+                        <div class="row">
+                            <button type="button" class="curioThreeBlessingSelectButton border-0" @click='curioThirdBlessing = "{{b.description}}"' x-cloak>
+                                <div class="row modal-select-bg"  x-model="curioThirdBlessing" name="curioThreeBlessing-select" id="curioTwoBlessing-select" x-cloak>
+                                    <div class="align-self-center p-3 px-4 font-worksans-bold">
+                                        <p class="m-0 text-start" style="color:white;" value="{{b.description}}">{{ b.description }}</p>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    {% endif %}
+                    {% endfor %}                                            
+                </div>
+                <div class="weapon-frame-top d-flex align-items-center px-0">
+                    <img src="/static/img/borders/talent-border-top.png" alt="" class="frame-center ranged">
+                </div>
+                <div class="weapon-frame-bottom d-flex align-items-center px-0">
+                    <img src="/static/img/borders/talent-border-bot.png" alt="" class="frame-center ranged">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

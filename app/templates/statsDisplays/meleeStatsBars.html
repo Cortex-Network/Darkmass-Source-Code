@@ -1,0 +1,46 @@
+<div class="container" id="meleeBars" style="display: none;">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10">
+            <h1 class="pt-5 font-anton-upp font-anton-cracked">Melee Bars</h1>
+            <div class="row mt-3 g-3">
+                {% for bar in meleeBarsList %}
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card stat-action-card h-100">
+                        <div class="card-body weaponBorder h-100 d-flex flex-column bl-bg p-1">
+                            <h6 class="py-2 mb-0">{{ bar.name }}</h6>
+                            <img src="{{ bar.image }}" class="img-fluid font-worksans-bold py-1 w-75 mx-auto" alt="Yellow Bar">
+                            <p class="font-worksans-light small-text px-0 py-2 mb-0">{{ bar.description }}</p>
+                            <details>
+                                <summary class="font-worksans-bold small-text">Bar Modifiers</summary>
+                                <ul class="pt-2 ps-3 mb-0">
+                                    {% for mod in bar.modifiers %}
+                                    <li class="font-worksans-light small-text text-start">{{ mod }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </details> 
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-12 col-md-10">
+            <p class="pt-4 font-worksans-light w-max-xl mx-auto">Note: All weapons of a specific Mark (Mk) have the same base behaviour. However, each weapon gets five Bonus Stats that work as multipliers making the weapon strong (or weaker) than other weapons of the same Mark.</p>
+            <p class="font-worksans-light w-max-xl mx-auto">Modifiers remain the same across all melee weapons and their subtypes. For example, a Krourk MK IV Cleaver and Rashad MK II Combat axe both have a penetration bar, which effects light attack damage vs Flak Armoured, etc in the exact same fashion.</p>
+            <p class="font-worksans-light w-max-xl mx-auto">The effects of modifiers are calculated in different ways. For example, Light Attack Damage under the Damage bar is a flat number, whereas Dodge Distance is % based.</p>
+            <p class="font-worksans-light w-max-xl mx-auto">The only thing that differs within these modifiers between weapons is the exact number ranges.</p>
+            <div class="row">
+                <div class="col-md-6 pt-3">
+                    <p class="font-worksans-bold">Sword</p>
+                    <img src="/static/img/statsBreakdown/comparison1.png"  alt="Comparison 1" class="img-fluid">
+                </div>
+                <div class="col-md-6 pt-3">
+                    <p class="font-worksans-bold">Power Sword</p>
+                    <img src="/static/img/statsBreakdown/comparison2.png"  alt="Comparison 2" class="img-fluid">
+                </div>
+            </div>
+            <p class="pt-4 font-worksans-light w-max-xl mx-auto">This example is comparing the modifiers of the Cleave Damage bar between the normal Sword and Power Sword. As you can see, the modifiers themselves remain the same, but the number ranges within them are different.</p>
+            <p class="font-worksans-light w-max-xl mx-auto">This is the case for the majority of the weapons. We are currently in the process of collecting all the raw data for these number ranges, across all modifiers. Once complete, this information will be integrated within each individual weapon page.</p>
+        </div>
+    </div>
+</div>

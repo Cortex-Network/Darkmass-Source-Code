@@ -1,0 +1,61 @@
+{
+    "perks": [
+    {
+        "description": "+5-20% Block Efficiency"
+    },
+    {
+        "description": "+4-10% Critical Hit Damage"
+    },
+    {
+        "description": "+10-25% Damage (Carapace Armoured Enemies)"
+    },
+    {
+        "description": "+10-25% Damage (Flak Armoured Enemies)"
+    },
+    {
+        "description": "+10-25% Damage (Infested Enemies)"
+    },
+    {
+        "description": "+10-25% Damage (Maniacs)"
+    },
+    {
+        "description": "+10-25% Damage (Unarmoured Enemies)"
+    },
+    {
+        "description": "+10-25% Damage (Unyielding Enemies)"
+    },
+    {
+        "description": "+6-10% Damage (Elites)"
+    },
+    {
+        "description": "+4-10% Damage (Groaners, Poxwalkers)"
+    },
+    {
+        "description": "+4-10% Damage (Specialists)"
+    },
+    {
+        "description": "+2-5% Increased Attack Speed"
+    },
+    {
+        "description": "+2-5% Increased Crit Chance"
+    },
+    {
+        "description": "+1-4% Increased Damage"
+    },
+    {
+        "description": "+5-10% Reload Speed"
+    },
+    {
+        "description": "+5-20% Sprint Efficiency"
+    },
+    {
+        "description": "+1 Stamina"
+    },
+    {
+        "description": "+1 Stamina (Weapon is active)"
+    },
+    {
+        "description": "+4-12% Weak Spot Damage"
+    }
+    ]
+    }

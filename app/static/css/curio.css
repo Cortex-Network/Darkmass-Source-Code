@@ -1,0 +1,35 @@
+.icon-curios {
+    width: 80px;
+    height: auto;
+    aspect-ratio: auto 80 / 80;
+}
+
+.curio .frame-center {
+    width: 85px;
+}
+
+.curio .card-frame-bottom .frame-center,
+.curio .card-frame-top .frame-center {
+    margin-top: 5px;
+}
+
+.card-body.curios-card {
+    padding: .75rem .5rem .5rem .5rem;
+}
+
+@media only screen and (max-width: 397px) {
+    .curios-card h5 {
+        height: 28.8px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .col-lg-25 {
+        flex: 0 0 auto;
+        width: 20%;
+    }
+
+    .curios-card h5 {
+        height: 28.8px;
+    }
+}

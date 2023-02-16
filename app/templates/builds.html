@@ -1,0 +1,215 @@
+{% extends "layout.html" %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block background %}
+    class="mainPage"
+{% endblock %}
+
+{% block head %}
+<link href="{{ url_for('static', filename='css/builds.css') }}" rel="stylesheet" type="text/css"/>
+{% endblock %}
+
+{% block content %}
+<div class="container-lg py-4">
+    <div class="row gx-3 text-center">
+        <h1>Builds</h1>
+        <div class="row d-flex justify-content-center align-items-center mb-3">
+            <div class="col-sm col-md-8">
+                <div class="search">
+                    <form action="{{ url_for('buildSearch')}}" method="POST">
+                        <i class="fa fa-search"></i>
+                        <input type="text" class="form-control bg-special-linear text-white" name="searchQuery" placeholder="Search for a build...">
+                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                        <button class="btn btn-primary">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <div>
+    </div>
+    <div class="container-lg py-4">
+    <div class="row gx-3 text-center">
+        <div class="col-6">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Filter By Class
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="/builds/Ogryn">Ogryn</a>
+            <a class="dropdown-item" href="/builds/Zealot">Zealot</a>
+            <a class="dropdown-item" href="/builds/Veteran">Veteran</a>
+            <a class="dropdown-item" href="/builds/Psyker">Psyker</a>
+            <a class="dropdown-item" href="/builds">Reset</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Filter By Influencer
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="/builds/social/Claysthetics">Claysthetics</a>
+            <a class="dropdown-item" href="/builds">Reset</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    <div class="row gx-3 py-5 text-center mb-5 build-container">
+        {% for build in buildsList %}
+        <div class="col-12 col-md-6 col-lg-12 col-xl-10 mx-auto gy-3 no-hover">
+            <div class="card h-100 weaponBorder buildDisplay-card mx-auto">
+                <div class="card-body pb-sm-0 pb-md-2 pb-lg-0">
+                    <div class="d-flex flex-row flex-wrap flex-lg-nowrap">
+                        <div class="build-class-img-sect">
+                            <div class="build-class-icon-wrapper">
+                                <img src="/static/img/classes/{{build.selectedClass}}.png" class="build-class-icon">
+                            </div>
+                            <div class="build-class-model-wrapper">
+                                <img src ="/static/img/classes/{{build.selectedClass}}-model.png" class="build-class-model" alt="{{ build.selectedClass }}">
+                            </div>
+                        </div>
+                        <div class="build-name-sect d-flex flex-column text-start justify-content-between me-0 me-sm-4 me-md-0 me-lg-4">
+                            <h5 class="card-title font-worksans-bold text-elip"><a href="/builds/{{build.urlHASH}}/{{build.buildName}}" class="card__link"></a>  {{ build.buildName }}</h5>
+                            {% for user in userList %}
+                                {% if user.id == build.UserID %}
+                                    <p class="m-0 font-worksans small-text-14 pb-0 pb-lg-3 text-elip">By: <span class="font-worksans-bold">{{ user.username }}</span></p>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                        <div class="display-btn-wrapper mt-3 mt-sm-0 mt-md-3 mt-lg-0">
+                            <button class="build-display-btn position-relative d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse{{build.id}}" aria-expanded="false" aria-controls="build-weapons-sect{{build.id}} build-feats-sect{{build.id}}">
+                                More info
+                            </button>    
+                        </div>
+                        <div class="build-weapons-sect me-0 me-sm-4 me-md-0 me-lg-4 ms-3 mt-3 mt-lg-0 collapse multi-collapse{{build.id}} dont-collapse-sm" id="build-weapons-sect{{build.id}}">
+                            <div class="row">
+                                <div class="col text-start">
+                                    <h5 class="font-worksans-light small-text-14 m-0 pb-2">Weapons</h5>
+                                </div>
+                            </div>
+                            <div class="row flex-column flex-sm-row flex-md-column flex-lg-row">
+                                <div class="col">
+                                    <div class="build-display-w-img-wrapper d-flex align-items-center">
+                                        {% for weapon in subtypeMeleeList %}
+                                            {% if weapon.name == build.meleeWeapon %}
+                                                <img src="{{weapon.image}}" alt="{{weapon.name}}" class="build-display-w-img">
+                                            {% endif %}
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                                <div class="col pe-sm-0">
+                                    <div class="build-display-w-img-wrapper d-flex align-items-center">
+                                        {% for weapon in subtypeRangedList %}
+                                            {% if weapon.name == build.rangedWeapon %}
+                                                <img src="{{weapon.image}}" alt="{{weapon.name}}" class="build-display-w-img">
+                                            {% endif %}
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="build-feats-sect mt-3 ms-lg-3 mt-md-3 mt-lg-0 collapse multi-collapse{{build.id}} dont-collapse-sm" id="build-feats-sect{{build.id}}">
+                            <div class="row pb-3">
+                                <div class="col text-start ps-sm-0 ps-md-2 ps-lg-0">
+                                    <h5 class="font-worksans-light small-text-14 m-0 ps-3">Feats</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 col-sm col-md-4 col-lg px-1">
+                                    {% for talent in talentsList %}
+                                        {% if talent.name == build.level5Talent %}
+                                            <div class="p-0 d-flex position-relative align-items-center justify-content-center">
+                                                <picture class="position-relative flex-shrink-0">
+                                                    <img src="{{ talent.image }}" class="build-talent-icon" alt="{{talent.name}}">
+                                                </picture>
+                                                <picture class="build-talent-border-icon">
+                                                    <img src="/static/img/borders/talents-border.png" class="build-talent-icon" alt="Talents border">
+                                                </picture>
+                                            </div>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                                <div class="col-4 col-sm col-md-4 col-lg px-1">
+                                    {% for talent in talentsList %}
+                                        {% if talent.name == build.level10Talent %}
+                                        <div class="p-0 d-flex position-relative align-items-center justify-content-center">
+                                            <picture class="position-relative flex-shrink-0">
+                                                <img src="{{ talent.image }}" class="build-talent-icon" alt="{{talent.name}}">
+                                            </picture>
+                                            <picture class="build-talent-border-icon">
+                                                <img src="/static/img/borders/talents-border.png" class="build-talent-icon" alt="Talents border">
+                                            </picture>
+                                        </div>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                                <div class="col-4 col-sm col-md-4 col-lg px-1">
+                                    {% for talent in talentsList %}
+                                        {% if talent.name == build.level15Talent %}
+                                        <div class="p-0 d-flex position-relative align-items-center justify-content-center">
+                                            <picture class="position-relative flex-shrink-0">
+                                                <img src="{{ talent.image }}" class="build-talent-icon" alt="{{talent.name}}">
+                                            </picture>
+                                            <picture class="build-talent-border-icon">
+                                                <img src="/static/img/borders/talents-border.png" class="build-talent-icon" alt="Talents border">
+                                            </picture>
+                                        </div>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                                <div class="col-4 col-sm col-md-4 col-lg px-1 pt-2 pt-sm-0 pt-md-2 pt-lg-0">
+                                    {% for talent in talentsList %}
+                                        {% if talent.name == build.level20Talent %}
+                                        <div class="p-0 d-flex position-relative align-items-center justify-content-center">
+                                            <picture class="position-relative flex-shrink-0">
+                                                <img src="{{ talent.image }}" class="build-talent-icon" alt="{{talent.name}}">
+                                            </picture>
+                                            <picture class="build-talent-border-icon">
+                                                <img src="/static/img/borders/talents-border.png" class="build-talent-icon" alt="Talents border">
+                                            </picture>
+                                        </div>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                                <div class="col-4 col-sm col-md-4 col-lg px-1 pt-2 pt-sm-0 pt-md-2 pt-lg-0">
+                                    {% for talent in talentsList %}
+                                        {% if talent.name == build.level25Talent %}
+                                        <div class="p-0 d-flex position-relative align-items-center justify-content-center">
+                                            <picture class="position-relative flex-shrink-0">
+                                                <img src="{{ talent.image }}" class="build-talent-icon" alt="{{talent.name}}">
+                                            </picture>
+                                            <picture class="build-talent-border-icon">
+                                                <img src="/static/img/borders/talents-border.png" class="build-talent-icon" alt="Talents border">
+                                            </picture>
+                                        </div>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                                <div class="col-4 col-sm col-md-4 col-lg px-1 pt-2 pt-sm-0 pt-md-2 pt-lg-0">
+                                    {% for talent in talentsList %}
+                                        {% if talent.name == build.level30Talent %}
+                                        <div class="p-0 d-flex position-relative align-items-center justify-content-center">
+                                            <picture class="position-relative flex-shrink-0">
+                                                <img src="{{ talent.image }}" class="build-talent-icon" alt="{{talent.name}}">
+                                            </picture>
+                                            <picture class="build-talent-border-icon">
+                                                <img src="/static/img/borders/talents-border.png" class="build-talent-icon" alt="Talents border">
+                                            </picture>
+                                        </div>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

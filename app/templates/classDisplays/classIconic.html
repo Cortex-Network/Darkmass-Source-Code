@@ -1,0 +1,96 @@
+{% if model.iconicName3|string == "None" %}
+    <div class="col p-0 py-2 py-md-0 px-2">
+        <div class="card h-100 no-pointer">
+            <h5 class="font-worksans-bold text-white p-1 m-0 text-center weaponBorder">Iconic</h5>
+            <div class="card-body p-0 weaponBorder d-flex align-items-center border-top-0 justify-content-center">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="card h-100 bg-transparent border-0">
+                            <div class="card-body bottom-border-iconic d-flex align-items-center">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-3 d-flex justify-content-center">
+                                        <img src="{{ model.iconicName1Image }}" class="icon-abilities" alt="Image of {{ model.iconicName1 }}">
+                                    </div>
+                                    <div class="col-9">
+                                        <h6 class="font-worksans-bold text-white">{{ model.iconicName1 }}</h6>
+                                        <p class="font-worksans-light mb-0 small-text">{{ model.iconicName1Description }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card h-100 bg-transparent border-0">
+                            <div class="card-body bottom-border-iconic d-flex align-items-center">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-3 d-flex justify-content-center">
+                                        <img src="{{ model.iconicName2Image }}" class="icon-abilities" alt="Image of {{ model.iconicName2 }}">
+                                    </div>
+                                    <div class="col-9">
+                                        <h6 class="font-worksans-bold text-white">{{ model.iconicName2 }}</h6>
+                                        <p class="font-worksans-light mb-0 small-text">{{ model.iconicName2Description }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% else %}
+    <div class="col p-0 py-2 py-md-0 px-2">
+        <div class="card h-100 no-pointer">
+            <h5 class="font-worksans-bold text-white p-1 m-0 text-center weaponBorder">Iconic</h5>
+            <div class="card-body p-0 weaponBorder d-flex align-items-center border-top-0">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 bg-transparent border-0">
+                            <div class="card-body bottom-border-iconic d-flex align-items-center">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-3 d-flex justify-content-center">
+                                        <img src="{{ model.iconicName1Image }}" class="icon-abilities" alt="Image of {{ model.iconicName1 }}">
+                                    </div>
+                                    <div class="col-9">
+                                        <h6 class="font-worksans-bold text-white">{{ model.iconicName1 }}</h6>
+                                        <p class="font-worksans-light mb-0 small-text">{{ model.iconicName1Description }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 bg-transparent border-0">
+                            <div class="card-body bottom-border-iconic d-flex align-items-center">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-3 d-flex justify-content-center">
+                                        <img src="{{ model.iconicName2Image }}" class="icon-abilities" alt="Image of {{ model.iconicName2 }}">
+                                    </div>
+                                    <div class="col-9">
+                                        <h6 class="font-worksans-bold text-white">{{ model.iconicName2 }}</h6>
+                                        <p class="font-worksans-light mb-0 small-text">{{ model.iconicName2Description }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 bg-transparent border-0">
+                            <div class="card-body d-flex align-items-center">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-3 d-flex justify-content-center">
+                                        <img src="{{ model.iconicName3Image }}" class="icon-abilities" alt="Image of {{ model.iconicName3 }}">
+                                    </div>
+                                    <div class="col-9">
+                                        <h6 class="font-worksans-bold text-white">{{ model.iconicName3 }}</h6>
+                                        <p class="font-worksans-light mb-0 small-text">{{ model.iconicName3Description }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}

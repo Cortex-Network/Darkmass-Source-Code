@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block background %}
+    class="mainPage"
+{% endblock %}
+
+{% block head %}
+<link href="{{ url_for('static', filename='css/buildEditor.css') }}" rel="stylesheet" type="text/css">
+    <script defer src="https://unpkg.com/@uilix/fragmentor@0.0.7/dist/cdn.min.js"></script>
+<script defer src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div class="container-sm w-max-3xl pb-5">
+        {% if current_user.is_authenticated %}
+        {% include "buildEditor/pageheading.html" %}
+        <form action="/buildeditor/submit/{{shortName}}" method="POST" id="build-editor">
+            <div class="row justify-content-center my-5">
+                {% include "buildEditor/toprow.html" %}
+            </div>
+            <div class="row justify-content-center my-5">
+                <h2 class="font-anton-upp font-anton-cracked text-center">Class</h2>
+                {% include "buildEditor/classSelection.html" %}
+            </div>
+            <div class="row justify-content-center">
+                <h2 class="font-anton-upp font-anton-cracked text-center py-5">Weapons</h2>
+                {% include "buildEditor/melee/meleeWeaponSelection.html" %}
+                {% include "buildEditor/ranged/rangedWeaponSelection.html" %}
+            </div>
+            <div class="row justify-content-center py-5">
+                <h2 class="font-anton-upp font-anton-cracked text-center py-5">Curios</h2>
+                {% include "buildEditor/curioOne/curiosOne.html" %}
+                {% include "buildEditor/curioTwo/curiosTwo.html" %}
+                {% include "buildEditor/curioThree/curiosThree.html" %}
+            </div>
+            <div class="row justify-content-center py-5">
+                <h2 class="font-anton-upp font-anton-cracked text-center py-4">Feats</h2>
+                {% include "buildEditor/classTalents/classTalents.html" %}
+            </div>
+            <div class="container-sm row justify-content-center py-5">
+                <h2 class="font-anton-upp font-anton-cracked text-center py-4">Description</h2>
+                <input type="hidden" name="quillEditor" id="quillEditor">
+                <div id="editor" class="quill-custom">
+                </div>
+            </div>
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+            <div class="container d-flex justify-content-center no-hover">
+                <button type="submit" class="editor-button-hhhghhhghhhghhh">
+                    <div class="card editor-submit-button mx-auto">
+                        <div class="card-body bl-bg">
+                            <h5 class="font-worksans-bold text-white my-sm-1">Submit</h5>
+                        </div>
+                        <div class="editor-button-frame d-flex align-items-center px-0">
+                            <div class="editor-button-wrapper">
+                                <img class="editor-frame" src="/static/img/borders/button-alt.png" alt="Styled button frame">
+                            </div>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </form>
+            {% else %}
+                {% include "buildEditor/pleaselogin.html" %}
+            {% endif %}
+    </div>
+{% endblock %}
+{% block scripts %}
+    <script src="{{ url_for('static', filename='js/buildEditor.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/flashedMessages.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/validations.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/quillEditor.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+{% endblock %}

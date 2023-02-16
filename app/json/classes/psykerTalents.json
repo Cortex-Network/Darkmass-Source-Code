@@ -1,0 +1,94 @@
+{
+"psykerTalents": [
+{
+    "name": "Essence Harvest",
+    "image": "/static/img/classes/Psyker/Level 5/EssenceHarvest.webp",
+    "description": "Replenish 30% Toughness over 5 seconds on gaining Warp Charge."
+},
+{
+    "name": "Warp Absorbtion",
+    "image": "/static/img/classes/Psyker/Level 5/WarpAbsorbtion.webp",
+    "description": "Replenish 10% Toughness when you kill an enemy with a Warp attack."
+},
+{
+    "name": "Quietitude",
+    "image": "/static/img/classes/Psyker/Level 5/Quietitude.webp",
+    "description": "Replenish 5% Toughness for each 10% of Peril quelled."
+},
+{
+    "name": "Psykinetic's Wrath",
+    "image": "/static/img/classes/Psyker/Level 10/PsykineticsWrath.webp",
+    "description": "Gain between 5% and 15% damage with force weapon attacks, based on your current Peril."
+},
+{
+    "name": "Inner Tranquility",
+    "image": "/static/img/classes/Psyker/Level 10/InnerTranquility.webp",
+    "description": "+6% Peril Resistance per Warp Charge."
+},
+{
+    "name": "Wrack And Ruin",
+    "image": "/static/img/classes/Psyker/Level 10/WrackAndRuin.webp",
+    "description": "Killing an Elite or Specialist with Brain Burst applies 2 stacks of Soulblaze to all enemies within 3 meters of the target."
+},
+{
+    "name": "Psychic Communion",
+    "image": "/static/img/classes/Psyker/Level 15/PsychicCommunion.webp",
+    "description": "Whenever you or an ally in Coherency kills an enemy, you have 4% chance to gain a Warp Charge."
+},
+{
+    "name": "Psykinetic's Aura",
+    "image": "/static/img/classes/Psyker/Level 15/PsykineticsAura.webp",
+    "description": "+15% combat ability cooldown reduction on Elite kill (Allies in Coherency)."
+},
+{
+    "name": "Cerebral Lacerations",
+    "image": "/static/img/classes/Psyker/Level 15/CerebralLacerations.webp",
+    "description": "Damaging an enemy with your Brain Burst ability causes them to take +15% damage from all non-Warp sources for 5 seconds."
+},
+{
+    "name": "Kinetic Deflection",
+    "image": "/static/img/classes/Psyker/Level 20/KineticDeflection.webp",
+    "description": "While below critical Peril, blocking an attack causes you to gain Peril instead of losing Stamina."
+},
+{
+    "name": "Kinetic Shield",
+    "image": "/static/img/classes/Psyker/Level 20/KineticShield.webp",
+    "description": "Take between 10% and 33% reduced Toughness damage from Ranged Attacks based on Peril."
+},
+{
+    "name": "Mind In Motion",
+    "image": "/static/img/classes/Psyker/Level 20/MindInMotion.webp",
+    "description": "Your movement speed is not reduced while quelling Peril."
+},
+{
+    "name": "Warp Battery",
+    "image": "/static/img/classes/Psyker/Level 25/WarpBattery.webp",
+    "description": "You can store up to 6 Warp Charges."
+},
+{
+    "name": "Kinetic Overload",
+    "image": "/static/img/classes/Psyker/Level 25/KineticOverload.webp",
+    "description": "While you have maximum Warp Charges, gaining a Warp Charge instead applies 4 stacks of Soulblaze to a nearby enemy, prioritizing Elite enemies."
+},
+{
+    "name": "Kinetic Flayer",
+    "image": "/static/img/classes/Psyker/Level 25/KineticFlayer.webp",
+    "description": "All attacks have 10% chance on hit to Brain Burst the target. This cannot occur while at critical peril and has a cooldown of 15 seconds."
+},
+{
+    "name": "Quicken",
+    "image": "/static/img/classes/Psyker/Level 30/Quicken.webp",
+    "description": "Psykinetic's Wrath expends all Warp Charges, reducing the cooldown by 12.5% for each Warp Charge removed."
+},
+{
+    "name": "Ascending Blaze",
+    "image": "/static/img/classes/Psyker/Level 30/AscendingBlaze.webp",
+    "description": "Psykinetic's Wrath expends all Warp Charges and applies stacks of Soulblaze to enemies hit based on the number of Warp Charges expended. Enemies killed by your Soulblaze effects (from any source) have a 10% chance to grant you a Warp Charge."
+},
+{
+    "name": "Kinetic Barrage",
+    "image": "/static/img/classes/Psyker/Level 30/KineticBarrage.webp",
+    "description": "For 10 seconds after using Psykinetic's Wrath, your Brain Burst charges 25% faster and consumes 50% less Peril."
+}
+]
+}

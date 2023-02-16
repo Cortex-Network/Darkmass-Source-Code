@@ -1,0 +1,51 @@
+.card-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.card-icon {
+    width: 25%;
+    height: 25%;
+}
+
+/* Colours ---------------------------- */
+
+.card-classes {
+    background-color: #050505;
+    color: rgb(12, 10, 10);
+}
+
+.card {
+    background-color: rgba(0,0,0,.3);
+}
+
+.card:hover {
+    background-color: rgba(79, 103, 78, .65);
+}
+
+.card-border {
+    border: 2px solid rgb(79 103 78);
+}
+
+/* Card Hover ---------------------------- */
+
+.card:hover {
+    transform: scale(1.05);
+    transition: .25s ease-in-out;
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.card:focus {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.class-icon-hover:hover{
+    /* make it red */
+    filter: invert(50%) sepia(530%) saturate(2200%) hue-rotate(339deg) brightness(55%) contrast(500%);
+}
+
+.card:hover .class-icon-hover{
+    /* make it red */
+    filter: invert(50%) sepia(530%) saturate(2200%) hue-rotate(339deg) brightness(55%) contrast(500%);
+}

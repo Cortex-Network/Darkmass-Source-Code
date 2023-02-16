@@ -1,0 +1,73 @@
+<div class="container-fluid text-center">
+    <h1 class="font-anton-upp display-3 py-3">
+        <span class="font-anton-cracked">darktide</span>
+        <span class="font-anton-outline">blessings</span>  
+    </h1>
+    {% include "components/blessingSearchAll.html" %}
+    {% include "components/skullbanner.html" %}
+</div>
+<div class="container text-center pt-4" id="meleeFilter">
+    <div class="row">
+        {% for blessing in blessingList %}
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xxl-3 py-3 px-4" id="blessingName">
+            <div class="card h-100 row">
+                <div class="card-body h-100 trait-card d-flex align-items-center" id="blessingDescription">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-4">
+                            <img src="{{ blessing.image }}" class="icon-traits" alt="...">
+                        </div>
+                        <div class="col-8 text-start">
+                            <h6 class="font-worksans-bold text-white">{{ blessing.name }}</h6>
+                            <p class="font-worksans-light mb-0">{{ blessing.description }}</p>
+                            <details>
+                                <summary class="font-worksans-bold small-text pt-2">Show weapons</summary>
+                                <ul class="pt-2 ps-4 mb-0">
+                                    {% for i in subtypeRangedList %}
+                                    {% if blessing.name in i.traits %}
+                                        {% for j in rangedList %}
+                                            {% if i.parentID == j.id %}
+                                            <li class="line-height-small"><a class="line-height-small text-decoration-none text-white small-text font-worksans-light" href="/weapons/ranged/{{ j.name }}/{{ i.name }}">{{ i.name }}</li></a>
+                                            {% endif %}
+                                        {% endfor %}
+                                    {% endif %}
+                                {% endfor %}
+                                {% for i in subtypeMeleeList %}
+                                    {% if blessing.name in i.traits %}
+                                        {% for j in meleeList %}
+                                            {% if i.parentID == j.id %}
+                                            <li class="line-height-small"><a class="text-decoration-none text-white small-text font-worksans-light" href="/weapons/melee/{{ j.name }}/{{ i.name }}">{{ i.name }}</li></a>
+                                            {% endif %}
+                                        {% endfor %}
+                                    {% endif %}
+                                {% endfor %}
+                                </ul>
+                            </details>    
+                        </div>
+                    </div>
+                </div>
+                <div class="card-frame-top d-flex align-items-center px-0">
+                    <div class="card-frame-side-wrapper frame-top">
+                        <img class="frame-left" src="/static/img/borders/card-frame-top-left.png" alt="">
+                    </div>
+                    <div class="card-frame-side-wrapper frame-top">
+                        <img class="frame-right" src="/static/img/borders/card-frame-top-right.png" alt="">
+                    </div>
+                    <img class="frame-center" src="/static/img/borders/card-frame-top-middle.png" alt="">
+                </div>
+                <div class="card-frame-bottom d-flex align-items-center px-0">
+                    <div class="card-frame-side-wrapper frame-bot">
+                        <img class="frame-left" src="/static/img/borders/card-frame-bottom-left.png" alt="">
+                    </div>
+                    <div class="card-frame-side-wrapper frame-bot">
+                        <img class="frame-right" src="/static/img/borders/card-frame-bottom-right.png" alt="">
+                    </div>
+                    <img class="frame-center" src="/static/img/borders/card-frame-bottom-middle.png" alt="">
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+        

@@ -1,0 +1,24 @@
+.class-icon {
+    height: 100px;
+    width: 100px;
+}
+
+.icon-abilities {
+    width: auto;
+    height: 65px;
+}
+
+.no-pointer {
+    pointer-events: none;
+}
+
+.stats-border-iconic {
+    border-bottom: 2px solid rgb(79 103 78);
+}
+
+@media only screen and (max-width: 768px) {
+    .bottom-border-iconic {
+        border-bottom: 2px solid rgb(79 103 78);
+    }
+}
+

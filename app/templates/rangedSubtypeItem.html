@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block background %}
+    class="mainPage"
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6 py-4">
+            <div class="container-fluid text-center px-auto mx-auto">
+                <div class="weaponBorder">
+                    <img src="{{ subtypeWeapon.image }}" class="img-fluid mb-2" alt="...">
+                    <h1 class="font-anton my-3">{{ subtypeWeapon.name }}</h1>
+                    <h5 class="font-worksans mb-3">{{ subtypeWeapon.description }}</h5>    
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            {% include "weaponDisplays/rangedSubtypeClasses.html" %}
+        </div>
+    </div>
+</div>
+<br>
+{% include "weaponDisplays/rangedSubtypeActions.html" %}
+{% include "weaponDisplays/rangedItemTraits.html" %}
+{% endblock %}

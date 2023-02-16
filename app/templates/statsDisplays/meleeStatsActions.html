@@ -1,0 +1,47 @@
+<div class="position-relative" id="meleeActions" style="display: block;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <h1 class="pt-5 font-anton-upp font-anton-cracked">Melee Actions</h1>
+                <div class="d-flex flex-column">
+                    <p class="pt-3 font-worksans mx-auto w-max-lg">Melee weapons currently have 4 different 'actions', which have different attack animations and are what weapon combos consist of.</p>
+                    <p class="font-worksans mx-auto w-max-lg">Below is a simple breakdown of the different attack animations, and what the keywords actually mean.</p>    
+                </div>
+                <div class="row mt-3 g-3">
+                    {% for action in meleeActionsList %}
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="card stat-action-card h-100">
+                            <div class="card-body weaponBorder h-100 bl-bg">
+                                <img src="{{ action.image }}" alt="Action Image" class="stat-action-img">
+                                <h5 class="font-worksans-bold small-text px-0">{{ action.name }}</h5>
+                                <p class="font-worksans small-text-14">{{ action.description }}</p>
+                                {% for d in action.detailedDescription %}
+                                    <p class="font-worksans-light small-text-14">{{ d }}</p>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <h1 class="pt-5 font-anton-upp font-anton-cracked">Melee Special Actions</h1>
+                <div class="row mt-3 g-3">
+                    {% for action in meleeSpecialActionsList %}
+                    <div class="col-6 col-md-4">
+                        <div class="card stat-action-card h-100">
+                            <div class="card-body weaponBorder h-100 bl-bg">
+                                <img src="{{ action.image }}" alt="{{ action.name }}" class="stat-action-img">
+                                <h5 class="font-worksans-bold small-text px-0">{{ action.name }}</h5>
+                                <p class="font-worksans small-text-14 pt-2">{{ action.description }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

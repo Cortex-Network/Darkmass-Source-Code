@@ -1,0 +1,79 @@
+{% for wep in rangedList %}
+    <div class="col-6 col-sm-4 col-lg-3 pl-3 pt-3 mb-4" id="weapon">
+        <a href="/weapons/ranged/{{ wep.name }}" class="card-link font-anton">
+        <div class="card h-100 ranged-weapon">
+            <div class="h-100 d-flex flex-column">
+                <div class="text-center weapon-card-ranged">
+                    <div class="d-flex align-items-center card-img-wrapper justify-content-center">
+                        <img src="{{ wep.image }}" class="card-img-top w-auto" alt="...">
+                    </div>
+                    <h6 class="card-title pb-2 mb-0">{{wep.name}}</h6>
+                    {% set count = namespace(value=0) %}
+                    {% for subtype in SubtypeRangedList %}
+                        {% if subtype.parentID == wep.id %}
+                            {% set count.value = count.value + 1 %}
+                        {% endif %}
+                    {% endfor %}
+                    {% if count.value > 1 %}
+                        <p class="card-text text-white font-worksans small-text pb-2">{{ count.value }} Subtypes</p>
+                    {% elif count.value == 1 %}
+                        <p class="card-text text-white font-worksans small-text pb-2">{{ count.value }} Subtype</p>
+                    {% elif count.value == 0 %}
+                        <p class="card-text text-white font-worksans small-text pb-2">No Subtypes</p>
+                    {% endif %}
+                </div>
+                <div class="weapon-frame-middle w-100">
+                    <img class="frame-middle melee w-100" src="/static/img/borders/weapon-frame-middle.png" alt="">
+                </div>
+                <div class="card-body text-center weapon-card-melee d-flex flex-column align-items-center">
+                    {% set count = namespace(value=1) %}
+                    {% for i in wep.tag %}
+                        {% if count.value == 1 %}
+                            <span class="card-text font-worksans-light text-white small-text">
+                                {{i}}
+                            </span>
+                            <br>
+                            <i class="fa-solid fa-circle fa-2xs"></i>
+                            <br>
+                            {% set count.value = count.value + 1 %}
+                        {% else %}
+                            <span class="card-text font-worksans-light text-white small-text">
+                                {{i}}
+                            </span>
+                        {% endif%}
+                    {% endfor %}
+                </div>
+                <div class="weapon-frame-middle w-100">
+                    <img class="frame-middle melee w-100" src="/static/img/borders/weapon-frame-middle.png" alt="">
+                </div>
+                <div class="card-body text-center weapon-card-melee">
+                    {% if "Zealot" in wep.classes and "Psyker" in wep.classes and "Veteran" in wep.classes and "Ogryn" in wep.classes %}
+                    <p class="card-text"> <img class="class-icon-hover weapon-card-icon-sm" src="/static/img/classes/zealot.png"> <img class="class-icon-hover weapon-card-icon-sm" src="/static/img/classes/veteran.png"> <img class="class-icon-hover weapon-card-icon-sm" src="/static/img/classes/psyker.png"> <img class="class-icon-hover weapon-card-icon-sm" src="/static/img/classes/ogryn.png"> </p>
+                    {% elif "Zealot" in wep.classes and "Psyker" in wep.classes and "Veteran" in wep.classes %}
+                    <p class="card-text"> <img class="class-icon-hover weapon-card-icon-sm" src="/static/img/classes/zealot.png"> <img class="class-icon-hover weapon-card-icon-sm" src="/static/img/classes/veteran.png"> <img class="class-icon-hover weapon-card-icon-sm" src="/static/img/classes/psyker.png"> </p>
+                    {% elif "Zealot" in wep.classes and "Veteran" in wep.classes %}
+                    <p class="card-text"> <img class="class-icon-hover weapon-card-icon-sm" src="/static/img/classes/zealot.png"> <img class="class-icon-hover weapon-card-icon-sm" src="/static/img/classes/veteran.png"> </p>
+                    {% elif "Psyker" in wep.classes and "Veteran" in wep.classes %}
+                    <p class="card-text"> <img class="class-icon-hover weapon-card-icon-sm" src="/static/img/classes/psyker.png"> <img class="class-icon-hover weapon-card-icon-sm" src="/static/img/classes/veteran.png"> </p>
+                    {% elif "Psyker" in wep.classes and "Zealot" in wep.classes %}
+                    <p class="card-text"> <img class="class-icon-hover weapon-card-icon-sm" src="/static/img/classes/psyker.png"> <img class="class-icon-hover weapon-card-icon-sm" src="/static/img/classes/zealot.png"> </p>
+                    {% elif "Zealot" in wep.classes %}
+                    <p class="card-text"> <img class="class-icon-hover weapon-card-icon-sm" src="/static/img/classes/zealot.png"> </p>
+                    {% elif "Psyker" in wep.classes %}
+                    <p class="card-text"> <img class="class-icon-hover weapon-card-icon-sm" src="/static/img/classes/psyker.png"> </p>
+                    {% elif "Ogryn" in wep.classes %}
+                    <p class="card-text"> <img class="class-icon-hover weapon-card-icon-sm" src="/static/img/classes/ogryn.png"> </p>
+                    {% elif "Veteran" in wep.classes %}
+                    <p class="card-text"> <img class="class-icon-hover weapon-card-icon-sm" src="/static/img/classes/veteran.png"> </p>                  
+                    {% endif %}
+                </div>
+            </div>
+            <div class="weapon-frame-top d-flex align-items-center px-0">
+                <img src="/static/img/borders/weapon-frame-top.png" alt="" class="frame-center ranged">
+            </div>
+            <div class="weapon-frame-bottom d-flex align-items-center px-0">
+                <img src="/static/img/borders/weapon-frame-bottom.png" alt="" class="frame-center ranged">
+            </div>
+        </div></a>
+    </div>  
+{% endfor %}

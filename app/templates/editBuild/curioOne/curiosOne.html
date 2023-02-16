@@ -1,0 +1,100 @@
+{% set count = namespace(value=1) %}
+{% for curio in curiosList %}
+    {% if count.value == 1 %}
+        <div class="col-9 col-sm-6 col-md-4 mb-4 mb-md-0 no-hover d-flex flex-column">
+            <div class="flex-grow-1" x-data='
+            {
+                curioOne: false, 
+                curioFirst: "{{build.curioNameOne}}",
+                {% for curio in curiosList %}
+                    {% if curio.name == build.curioNameOne %}
+                        curioFirstImage: "{{curio.image}}",
+                    {% endif %}
+                {% endfor %}
+
+                curioOneBlessing: false,
+                curioOnePerkOne: false,
+                curioOnePerkTwo: false,
+                curioOnePerkThree: false,
+                {% for blessing in curioTraitList %}
+                    {% if blessing.id == build.curioBlessingOne|int %}
+                        curioFirstBlessing: "{{blessing.description}}",
+                    {% endif %}
+                    {% if blessing.id == build.curioPerkOneOne|int %}
+                        curioFirstPerk: "{{blessing.description}}",
+                    {% endif %}
+                    {% if blessing.id == build.curioPerkOneTwo|int %}
+                        curioSecondPerk: "{{blessing.description}}",
+                    {% endif %}
+                    {% if blessing.id == build.curioPerkOneThree|int %}
+                        curioThirdPerk: "{{blessing.description}}",
+                    {% endif %}
+                {% endfor %}
+            }'>
+                <div class="card h-100 build-editor-weapon mx-auto" x-cloak>
+                    <div class="d-flex flex-column h-100 ">
+                        <div @click="curioOne = true" data-bs-toggle="modal" data-bs-target="#curioOneModal" class="pointer card-body build-editor-weapon-card d-flex align-items-center flex-column editor-card-border box-shadow-editor">
+                            <h1 class="font-worksans-bold small-text-14 px-2 px-sm-1 text-center" x-text="curioFirst" x-cloak></h1>
+                            <img x-bind:src="`${curioFirstImage}`"  class="icon-curios p-2" x-cloak>
+                        </div>
+                    </div>
+                    <div class="weapon-frame-middle w-100">
+                        <img class="frame-middle melee w-100" src="/static/img/borders/weapon-frame-middle.png" alt="">
+                    </div>
+                    <div @click="curioOneBlessing = true" data-bs-toggle="modal" data-bs-target="#curioOneBlessingModal" class="card-body blessing-wrapper top-editor-bg text-white text-start editor-card-border box-shadow-editor">
+                        <div class="pointer d-flex flex-row justify-content-start align-items-center p-2 text-decoration-none">
+                            <svg width="8" height="8">
+                                <polygon points="0 4,4 8,8 4,4 0" fill="rgba(170, 202, 171, 1)"/>
+                            </svg>
+                            <p class="ps-4 m-0 text-gr-light font-worksans-bold" x-text="curioFirstBlessing ? curioFirstBlessing: 'Select a blessing'" x-cloak></p>
+                        </div>
+                    </div>
+                    <div class="weapon-frame-middle w-100">
+                        <img class="frame-middle melee w-100" src="/static/img/borders/weapon-frame-middle.png" alt="">
+                    </div>
+                    <div class="card-body perk-wrapper bottom-editor-bg text-white text-start editor-card-border box-shadow-editor">
+                        <div @click="curioOnePerkOne = true" data-bs-toggle="modal" data-bs-target="#curioOnePerkOneModal"  
+                            class="pointer d-flex flex-row justify-content-start align-items-center p-2 text-decoration-none">
+                            <svg width="8" height="8">
+                                <polygon points="0 4,4 8,8 4,4 0" fill="rgba(170, 202, 171, 1)"/>
+                            </svg>
+                            <p class="ps-4 m-0 text-gr-light font-worksans-bold small-text-14" x-text="curioFirstPerk ? curioFirstPerk: 'Select a perk'" x-cloak></p>
+                        </div>
+                        <div @click="curioOnePerkTwo = true" data-bs-toggle="modal" data-bs-target="#curioOnePerkTwoModal" 
+                            class="pointer d-flex flex-row justify-content-start align-items-center p-2 text-decoration-none">
+                            <svg width="8" height="8">
+                                <polygon points="0 4,4 8,8 4,4 0" fill="rgba(170, 202, 171, 1)"/>
+                            </svg>
+                            <p class="ps-4 m-0 text-gr-light font-worksans-bold small-text-14" x-text="curioSecondPerk ? curioSecondPerk: 'Select a perk'" x-cloak></p>
+                        </div>
+                        <div @click="curioOnePerkThree = true" data-bs-toggle="modal" data-bs-target="#curioOnePerkThreeModal" 
+                            class="pointer d-flex flex-row justify-content-start align-items-center p-2 text-decoration-none">
+                            <svg width="8" height="8">
+                                <polygon points="0 4,4 8,8 4,4 0" fill="rgba(170, 202, 171, 1)"/>
+                            </svg>
+                            <p class="ps-4 m-0 text-gr-light font-worksans-bold small-text-14" x-text="curioThirdPerk ? curioThirdPerk: 'Select a perk'" x-cloak></p>
+                        </div>
+                    </div>
+                    <div class="weapon-frame-top d-flex align-items-center px-0">
+                        <img src="/static/img/borders/weapon-frame-top.png" alt="" class="frame-center melee">
+                    </div>
+                    <div class="weapon-frame-bottom d-flex align-items-center px-0">
+                        <img src="/static/img/borders/weapon-frame-bottom.png" alt="" class="frame-center melee">
+                    </div>
+                </div>
+                <br>
+                <input type="hidden" id="curioOneSelected" name="curioOneSelected" value="{{ curio.name }}">
+                <input type="hidden" id="curioOneBlessingSelected" name="curioOneBlessingSelected" x-model="curioFirstBlessing">
+                <input type="hidden" id="curioOnePerkOneSelected" name="curioOnePerkOneSelected" x-model="curioFirstPerk">
+                <input type="hidden" id="curioOnePerkTwoSelected" name="curioOnePerkTwoSelected" x-model="curioSecondPerk">
+                <input type="hidden" id="curioOnePerkThreeSelected" name="curioOnePerkThreeSelected" x-model="curioThirdPerk">
+                {% include "editBuild/curioOne/modal.html" %}
+                {% include "editBuild/curioOne/blessingModal.html" %}
+                {% include "editBuild/curioOne/perkOneModal.html" %}
+                {% include "editBuild/curioOne/perkTwoModal.html" %}
+                {% include "editBuild/curioOne/perkThreeModal.html" %}
+            </div>
+        </div>
+    {% endif %}
+    {% set count.value = count.value + 1 %}
+{% endfor %}

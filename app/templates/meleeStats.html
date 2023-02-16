@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block head %}
+    <link href="{{ url_for('static', filename='css/stats.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block background %}
+    class="mainPage"
+{% endblock %}
+
+{% block content %}
+
+<div class="container text-center py-3 overflow-x-hidden overflow-y-hidden">
+    <h1 class="font-anton-upp display-3 py-3">
+        <span class="font-anton-cracked">
+            darktide
+        </span>
+        <span class="font-anton-outline">
+            melee stats
+        </span>  
+    </h1>
+    {% include "statsDisplays/meleeStatsButtons.html" %}
+    {% include "statsDisplays/meleeStatsActions.html" %}
+    {% include "statsDisplays/meleeStatsBars.html" %}
+    {% include "statsDisplays/meleeStatsTable.html" %}
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/stats.js') }}"></script>
+<script src="{{ url_for('static', filename='js/tableSearch.js') }}"></script>
+{% endblock scripts %}

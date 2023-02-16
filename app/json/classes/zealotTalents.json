@@ -1,0 +1,94 @@
+{
+"zealotTalents": [
+{
+    "name": "Enemies Within, Enemies Without",
+    "image": "/static/img/classes/Zealot/Level 5/EnemiesWithinEnemiesWithout.webp",
+    "description": "Replenish 5% Toughness per second while within 5 meters of 3 enemies."
+},
+{
+    "name": "Faith Restored",
+    "image": "/static/img/classes/Zealot/Level 5/FaithRestored.webp",
+    "description": "+75% Toughness damage reduction on critical hit for 4 seconds."
+},
+{
+    "name": "Purify In Blood",
+    "image": "/static/img/classes/Zealot/Level 5/PurifyInBlood.webp",
+    "description": "Replenish 50% more Toughness on melee kills."
+},
+{
+    "name": "Bloodletting",
+    "image": "/static/img/classes/Zealot/Level 10/Bloodletting.webp",
+    "description": "+10% Melee Crit Chance for 3 seconds on Melee Hit against Bleeding Enemies. Melee Critical Hits apply Bleed."
+},
+{
+    "name": "Punishment",
+    "image": "/static/img/classes/Zealot/Level 10/Punishment.webp",
+    "description": "Attacks that Hit 3 or more enemies grant +30% Impact for 5 seconds. Stacks 5 times. At max stacks, gain Uninterruptible."
+},
+{
+    "name": "Retribution",
+    "image": "/static/img/classes/Zealot/Level 10/Retribution.webp",
+    "description": "10% attack speed below 50% health. Bonus is doubled below 20% health."
+},
+{
+    "name": "Benediction",
+    "image": "/static/img/classes/Zealot/Level 15/Benediction.webp",
+    "description": "+15% Toughness damage reduction (Allies in Coherency)."
+},
+{
+    "name": "Holy Fervour",
+    "image": "/static/img/classes/Zealot/Level 15/HolyFervour.webp",
+    "description": "+20% Power to allies in Coherency for 5 seconds. On gaining a stack of Martyrdom."
+},
+{
+    "name": "Inspiring Excoriation",
+    "image": "/static/img/classes/Zealot/Level 15/InspiringExcoriation.webp",
+    "description": "Using Chastise The Wicked replenishes 20% Toughness to allies in Coherency."
+},
+{
+    "name": "Faith Restores All",
+    "image": "/static/img/classes/Zealot/Level 20/FaithRestoresAll.webp",
+    "description": "After taking damage you regain 25% of the damage taken over 5 seconds."
+},
+{
+    "name": "Holy Revenant",
+    "image": "/static/img/classes/Zealot/Level 20/HolyRevenant.webp",
+    "description": "When Until Death ends, you gain health based on the damage you dealt during Until Death. Melee damage dealt heals for twice the amount."
+},
+{
+    "name": "Thy Wrath Be Swift",
+    "image": "/static/img/classes/Zealot/Level 20/ThyWrathBeSwift.webp",
+    "description": "You no longer get stunned by enemy melee attacks. When you take damage, gain +20% movement speed for 2 seconds."
+},
+{
+    "name": "Emperor's Executioner",
+    "image": "/static/img/classes/Zealot/Level 25/EmperorsExecutioner.webp",
+    "description": "Deal up to 25% increased ranged damage based on the proximity to the target."
+},
+{
+    "name": "Rising Conviction",
+    "image": "/static/img/classes/Zealot/Level 25/RisingConviction.webp",
+    "description": "+4% damage for 5 seconds on hit. Max stacks 5."
+},
+{
+    "name": "Honour The Martyr",
+    "image": "/static/img/classes/Zealot/Level 25/HonourTheMartyr.webp",
+    "description": "Martyrdom has 6 max stacks."
+},
+{
+    "name": "Fury Of The Faithful",
+    "image": "/static/img/classes/Zealot/Level 30/FuryOfTheFaithful.webp",
+    "description": "+20% attack speed for 5 seconds on using Chastise The Wicked."
+},
+{
+    "name": "Invocation Of Death",
+    "image": "/static/img/classes/Zealot/Level 30/InvocationOfDeath.webp",
+    "description": "Melee critical hits reduce the cooldown of Chastise The Wicked by 1.5 second."
+},
+{
+    "name": "Purge The Wicked",
+    "image": "/static/img/classes/Zealot/Level 30/PurgeTheWicked.webp",
+    "description": "Chastise The Wicked now has two charges."
+}
+]
+}

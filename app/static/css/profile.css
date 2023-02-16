@@ -1,0 +1,10 @@
+.profile-table {
+    border-color: rgba(78,103,79, .75);
+    background-color: rgba(0,0,0,.3);
+}
+
+.discord-avatar-profile {
+    width: auto;
+    height: 100px;
+    border-radius: 50%;
+}

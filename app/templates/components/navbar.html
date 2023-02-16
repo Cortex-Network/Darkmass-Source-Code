@@ -1,0 +1,78 @@
+<nav class="navbar navbar-expand-lg navbarBackground justify-content-center fixed-top">
+  <div class="container-xl">
+    <a class="navbar-brand navbarTitle me-auto" href="/">
+      <img 
+        src="{{url_for('static', filename='img/LOGO.png')}}" 
+        alt="logo" 
+        height="33"
+        width="33"
+      >
+        <span class="align-middle font-anton-cracked">Darkmass</span>
+    </a>
+    <button 
+      class="navbar-toggler collapsed custom-toggler d-flex d-lg-none flex-column justify-content-around" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#navbarSupportedContent" 
+      aria-controls="navbarSupportedContent" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation"
+    >
+      <span class="toggler-icon"></span>
+      <span class="toggler-icon"></span>
+      <span class="toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse w-100 shift-fill" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link px-2 px-lg-2-5 px-xl-4 shift-fill-link" href="/weapons">Weapons</a> 
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-2 px-lg-2-5 px-xl-4 shift-fill-link" href="/classes">Classes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-2 px-lg-2-5 px-xl-4shift-fill-link" href="/statsbreakdown">Stats</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-2 px-lg-2-5 px-xl-4 shift-fill-link" href="/builds">Builds</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-2 px-lg-2-5 px-xl-4 shift-fill-link" href="/buildeditor/Ogryn">Build Editor</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-2 px-lg-2-5 px-xl-4 shift-fill-link" href="/shopchecker">Shop Checker</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle px-2 px-lg-2-5 px-xl-4" id="extrasDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Extras
+          </a>
+          <ul class="dropdown-menu bg-blue">
+            <li><a class="nav-link shift-fill-link font-worksans-light text-upp px-2" href="/blessings">blessings</a></li>
+            <li><a class="nav-link shift-fill-link font-worksans-light text-upp px-2" href="/curios">curios</a></li>
+            <li><a class="nav-link shift-fill-link font-worksans-light text-upp px-2" href="/perks">Perks</a></li>
+            <li><a class="nav-link shift-fill-link font-worksans-light text-upp px-2" target="_blank" href="https://steamcommunity.com/app/1361210/guides/">Guides</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto d-flex align-items-lg-center justify-content-end">
+        {% if current_user.is_authenticated %}
+          <li class="nav-item">
+            {% if current_user.avatar == "https://cdn.discordapp.com/embed/avatars/0.png" %}
+              <a class="nav-link px-2 px-xl-4" href="/profile"><img class="discord-avatar-small" src="https://cdn.discordapp.com/embed/avatars/0.png"> {{current_user.username}}</a>
+            {% else %}
+              <a class="nav-link px-2 px-xl-4" href="/profile"><img class="discord-avatar-small" src="https://cdn.discordapp.com/avatars/{{ current_user.discordID }}/{{ current_user.avatar }}"> {{current_user.username}}</a>
+            {% endif %}
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ps-2 ps-xl-4" href="/logout">Logout</a>
+          </li>
+        {% else %}
+        
+          <li class="nav-item">
+            <a class="nav-link ps-2 ps-xl-4" href="/login"><i class="fa-brands fa-discord discord-icon"></i>Login</a>
+          </li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+</nav>

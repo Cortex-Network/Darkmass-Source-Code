@@ -1,0 +1,25 @@
+<div class="container py-5" id="critTable" style="display: none;">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10">
+            <div class="table-responsive">
+                <table class="table weaponBorder text-white text-start" id="critTable">
+                    <thead>
+                        <tr class="font-worksans-bold">
+                          <th scope="col">Weapon</th>
+                          <th scope="col">Base Crit</th>
+                        </tr>
+                      </thead>
+                    <tbody>
+                        {% for c in baseCritList %}
+                        <tr class="{{ loop.cycle('odd', 'even') }} font-worksans-light">
+                          <td class="font-worksans-bold">{{ c.name }}</td>
+                          <td>{{ c.crit }}</td>
+                        </tr>
+                        {% endfor %}
+                      </tbody>
+                </table>
+            </div>
+            <p class="font-worksans-light w-max-xl mx-auto">All classes have a base crit rate of 5%, aside from the Veteran who has 10%. The rates from the weapons in this table are additive, or in a few cases subtractive. For example, a Veteran with a Combat Blade would have 25% crit, whereas an Ogryn with a Heavy Stubber Would have 3%. The weapons with variable ranges such as the Tactical Axe all have the Critical Bonus bar, which has a modifier that directly defines their bonus crit chance.</p>
+        </div>
+    </div>
+</div>

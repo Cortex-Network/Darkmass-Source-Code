@@ -1,0 +1,108 @@
+{
+"curioTraits": [
+{
+    "type": "Trait",
+    "description": "+10-21% Max Health"
+},
+{
+    "type": "Trait",
+    "description": "+1-3 Max Stamina"
+},
+{
+    "type": "Trait",
+    "description": "+10-17% Toughness"
+},
+{
+    "type": "Trait",
+    "description": "+1 Wound(s)"
+},
+{
+    "type": "Modifier",
+    "description": "+8-12% Block Efficiency"
+},
+{
+    "type": "Modifier",
+    "description": "+5-20% chance of Curio as Mission Reward (Instead of Weapon)"
+},
+{
+    "type": "Modifier",
+    "description": "+3-4% Combat Ability Regeneration"
+},
+{
+    "type": "Modifier",
+    "description": "+1-4% Cooldown Reduction"
+},
+{
+    "type": "Modifier",
+    "description": "+6-15% Corruption Resistance"
+},
+{
+    "type": "Modifier",
+    "description": "+10-20% Corruption Resistance (Grimoires)"
+},
+{
+    "type": "Modifier",
+    "description": "+5-20% Damage Resistance (Bombers)"
+},
+{
+    "type": "Modifier",
+    "description": "+5-20% Damage Resistance (Gunners)"
+},
+{
+    "type": "Modifier",
+    "description": "+5-20% Damage Resistance (Mutants)"
+},
+{
+    "type": "Modifier",
+    "description": "+5-20% Damage Resistance (Pox Hounds)"
+},
+{
+    "type": "Modifier",
+    "description": "+5-20% Damage Resitance (Snipers)"
+},
+{
+    "type": "Modifier",
+    "description": "+5-20% Damage Resistance (Tox Flamers)"
+},
+{
+    "type": "Modifier",
+    "description": "+2-10% Experience"
+},
+{
+    "type": "Modifier",
+    "description": "+2-5% Health"
+},
+{
+    "type": "Modifier",
+    "description": "+4-10% Ordo Dockets (Mission Rewards)"
+},
+{
+    "type": "Modifier",
+    "description": "+6-12% Revive Speed (Ally)"
+},
+{
+    "type": "Modifier",
+    "description": "+6-15% Sprint Cost Reduction"
+},
+{
+    "type": "Modifier",
+    "description": "+6-12% Sprint Efficiency"
+},
+{
+    "type": "Modifier",
+    "description": "+6-12% Stamina Regeneration"
+},
+{
+    "type": "Modifier",
+    "description": "+2-5% Toughness"
+},
+{
+    "type": "Modifier",
+    "description": "+5-30% Toughness Damage Reduction (Currently unavailable)"
+},
+{
+    "type": "Modifier",
+    "description": "+5-20% Toughness Regeneration Speed"
+}
+]
+}

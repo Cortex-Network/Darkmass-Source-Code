@@ -1,0 +1,15 @@
+{% for blessing_name, blessing_info in blessings.items() %}
+    <div class="d-flex align-items-center justify-content-start modal-select-bg rangedBlessingTwoSelectButton my-3 p-2 pointer"
+         @click="
+        rangedBlessingTwo = '{{ blessing_info.name }}',
+        rangedBlessingTwoImage = '{{ blessing_info.image }}',
+        rangedBlessingTwoDescription = '{{ blessing_info.description }}',
+        rangedBlessingTwoModal.toggle()
+        ">
+        <img src="{{ url_for('static', filename='img/rangedTraits/' + get_stem(blessing_info.image)) }}" class="icon-curios p-1" alt="Blessing image">
+        <div class="ps-2">
+            <p style="color:white;">{{ blessing_info.name }}</p>
+            <p class="m-0" style="color:white;">{{ blessing_info.description }}</p>
+        </div>
+    </div>
+{% endfor %}

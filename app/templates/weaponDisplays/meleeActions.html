@@ -1,0 +1,46 @@
+<div class="container-fluid py-2 text-center">
+    <h1 class="font-anton">Actions</h1>
+    {% include "components/skullbanner.html" %}
+</div>
+<div class="container-fluid py-2 justify-content-center">
+    <div class="row">
+        <div class="col-12">
+            {% for action in meleeActionsList %}
+            {% if action.name == meleeWeapon.primaryAction %}
+                <div class="row justify-content-center d-flex align-items-center">
+                    <img src="{{ action.image }}" alt="{{ action.name }}" class="icon-weapon-classes col-3">    
+                    <h2 class="col-9 font-worksans-bold text-white">
+                        Primary Action: 
+                        <br>
+                        <span class="font-worksans-light">{{ action.name }}</span>
+                    </h2>
+                </div>
+            {% endif %}
+            {% endfor %}
+            {% for action in meleeActionsList %}
+                {% if action.name == meleeWeapon.secondaryAction %}
+                    <div class="row justify-content-center d-flex align-items-center">
+                        <img src="{{ action.image }}" alt="{{ action.name }}" class="icon-weapon-classes col-3">
+                        <h2 class="col-9 font-worksans-bold text-white">
+                            Secondary Action: 
+                            <br>
+                            <span class="font-worksans-light">{{ action.name }}</span>
+                        </h2>
+                    </div>
+                {% endif %}
+            {% endfor %}
+            {% for action in meleeSpecialActionsList %}
+                {% if action.name == meleeWeapon.specialAction %}
+                <div class="row justify-content-center d-flex align-items-center">
+                    <img src="{{ action.image }}" alt="{{ action.name }}" class="icon-weapon-classes col-3">
+                    <h2 class="col-9 font-worksans-bold text-white">
+                        Special Action: 
+                        <br>
+                        <span class="font-worksans-light">{{ action.name }}</span>
+                    </h2>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

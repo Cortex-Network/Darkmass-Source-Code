@@ -1,0 +1,201 @@
+<div x-data='{
+    level5 : "",
+    level10 : "",
+    level15 : "",
+    level20 : "",
+    level25 : "",
+    level30 : "",
+}'>
+    <div class="py-2">
+        <div class="row justify-content-center no-hover">
+            <h5 class="text-center font-worksans-bold">Level 5</h5>
+            {% for i in model.level5 %}
+                {% for talent in talentList %}
+                    {% if i == talent.name %}
+                    <div @click='level5 = "{{talent.name}}"' class="col-12 col-sm-10 col-md-4 py-2 px-3 level5-card pointer">
+                        <div class="card h-100 row">
+                            <div class="card-body h-100 weaponBorder d-flex align-items-center bl-bg">
+                                <div class="d-flex flex-row align-items-center">
+                                    <div class="p-0 d-flex position-relative">
+                                        <picture class="position-relative flex-shrink-0">
+                                            <img src="{{ talent.image }}" class="talent-icon p-1" alt="{{talent.name}}">
+                                        </picture>
+                                        <picture class="talent-border-icon">
+                                            <img src="/static/img/borders/talents-border.png" class="talent-icon" alt="Talents border">
+                                        </picture>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6 class="font-worksans-bold text-white">{{ talent.name }}</h6>
+                                        <p class="font-worksans-light small-text mb-0">{{ talent.description }}</p>        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="py-2">
+        <div class="row justify-content-center no-hover">
+            <h5 class="text-center font-worksans-bold">Level 10</h5>
+            {% for i in model.level10 %}
+                {% for talent in talentList %}
+                    {% if i == talent.name %}
+                    <div @click='level10 = "{{talent.name}}"' class="col-12 col-sm-10 col-md-4 py-2 px-3 level10-card pointer">
+                        <div class="card h-100 row">
+                            <div class="card-body h-100 weaponBorder d-flex align-items-center bl-bg">
+                                <div class="d-flex flex-row align-items-center">
+                                    <div class="p-0 d-flex position-relative">
+                                        <picture class="position-relative flex-shrink-0">
+                                            <img src="{{ talent.image }}" class="talent-icon p-1" alt="{{talent.name}}">
+                                        </picture>
+                                        <picture class="talent-border-icon">
+                                            <img src="/static/img/borders/talents-border.png" class="talent-icon" alt="Talents border">
+                                        </picture>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6 class="font-worksans-bold text-white">{{ talent.name }}</h6>
+                                        <p class="font-worksans-light small-text mb-0">{{ talent.description }}</p>        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="py-2">
+        <div class="row justify-content-center no-hover">
+            <h5 class="text-center font-worksans-bold">Level 15</h5>
+            {% for i in model.level15 %}
+                {% for talent in talentList %}
+                    {% if i == talent.name %}
+                    <div @click='level15 = "{{talent.name}}"' class="col-12 col-sm-10 col-md-4 py-2 px-3 level15-card pointer">
+                        <div class="card h-100 row">
+                            <div class="card-body h-100 weaponBorder d-flex align-items-center bl-bg">
+                                <div class="d-flex flex-row align-items-center">
+                                    <div class="p-0 d-flex position-relative">
+                                        <picture class="position-relative flex-shrink-0">
+                                            <img src="{{ talent.image }}" class="talent-icon p-1" alt="{{talent.name}}">
+                                        </picture>
+                                        <picture class="talent-border-icon">
+                                            <img src="/static/img/borders/talents-border.png" class="talent-icon" alt="Talents border">
+                                        </picture>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6 class="font-worksans-bold text-white">{{ talent.name }}</h6>
+                                        <p class="font-worksans-light small-text mb-0">{{ talent.description }}</p>        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="py-2">
+        <div class="row justify-content-center no-hover">
+            <h5 class="text-center font-worksans-bold">Level 20</h5>
+            {% for i in model.level20 %}
+                {% for talent in talentList %}
+                    {% if i == talent.name %}
+                    <div @click='level20 = "{{talent.name}}"' class="col-12 col-sm-10 col-md-4 py-2 px-3 level20-card pointer">
+                        <div class="card h-100 row">
+                            <div class="card-body h-100 weaponBorder d-flex align-items-center bl-bg">
+                                <div class="d-flex flex-row align-items-center">
+                                    <div class="p-0 d-flex position-relative">
+                                        <picture class="position-relative flex-shrink-0">
+                                            <img src="{{ talent.image }}" class="talent-icon p-1" alt="{{talent.name}}">
+                                        </picture>
+                                        <picture class="talent-border-icon">
+                                            <img src="/static/img/borders/talents-border.png" class="talent-icon" alt="Talents border">
+                                        </picture>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6 class="font-worksans-bold text-white">{{ talent.name }}</h6>
+                                        <p class="font-worksans-light small-text mb-0">{{ talent.description }}</p>        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="py-2">
+        <div class="row justify-content-center no-hover">
+            <h5 class="text-center font-worksans-bold">Level 25</h5>
+            {% for i in model.level25 %}
+                {% for talent in talentList %}
+                    {% if i == talent.name %}
+                    <div @click='level25 = "{{talent.name}}"' class="col-12 col-sm-10 col-md-4 py-2 px-3 level25-card pointer">
+                        <div class="card h-100 row">
+                            <div class="card-body h-100 weaponBorder d-flex align-items-center bl-bg">
+                                <div class="d-flex flex-row align-items-center">
+                                    <div class="p-0 d-flex position-relative">
+                                        <picture class="position-relative flex-shrink-0">
+                                            <img src="{{ talent.image }}" class="talent-icon p-1" alt="{{talent.name}}">
+                                        </picture>
+                                        <picture class="talent-border-icon">
+                                            <img src="/static/img/borders/talents-border.png" class="talent-icon" alt="Talents border">
+                                        </picture>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6 class="font-worksans-bold text-white">{{ talent.name }}</h6>
+                                        <p class="font-worksans-light small-text mb-0">{{ talent.description }}</p>        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="py-2">
+        <div class="row justify-content-center no-hover">
+            <h5 class="text-center font-worksans-bold">Level 30</h5>
+            {% for i in model.level30 %}
+                {% for talent in talentList %}
+                    {% if i == talent.name %}
+                    <div @click='level30 = "{{talent.name}}"' class="col-12 col-sm-10 col-md-4 py-2 px-3 level30-card pointer">
+                        <div class="card h-100 row">
+                            <div class="card-body h-100 weaponBorder d-flex align-items-center bl-bg">
+                                <div class="d-flex flex-row align-items-center">
+                                    <div class="p-0 d-flex position-relative">
+                                        <picture class="position-relative flex-shrink-0">
+                                            <img src="{{ talent.image }}" class="talent-icon p-1" alt="{{talent.name}}">
+                                        </picture>
+                                        <picture class="talent-border-icon">
+                                            <img src="/static/img/borders/talents-border.png" class="talent-icon" alt="Talents border">
+                                        </picture>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6 class="font-worksans-bold text-white">{{ talent.name }}</h6>
+                                        <p class="font-worksans-light small-text mb-0">{{ talent.description }}</p>        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
+    <input type="hidden" id="level5Selected" name="level5Selected" x-model="level5">
+    <input type="hidden" id="level10Selected" name="level10Selected" x-model="level10">
+    <input type="hidden" id="level15Selected" name="level15Selected" x-model="level15">
+    <input type="hidden" id="level20Selected" name="level20Selected" x-model="level20">
+    <input type="hidden" id="level25Selected" name="level25Selected" x-model="level25">
+    <input type="hidden" id="level30Selected" name="level30Selected" x-model="level30">
+</div>

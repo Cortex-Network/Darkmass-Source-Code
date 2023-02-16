@@ -1,0 +1,330 @@
+<div class="py-2">
+    <div class="row justify-content-center no-hover">
+        <h5 class="text-center font-worksans-bold">Level 5</h5>
+        {% for class in classesList %}
+        {% if class.shortName == selected.selectedClass %}
+            {% for talent in class.level5 %}
+            {% for t in talentList %}
+            {% if t.name == talent %}
+            {% if selected.level5Talent == talent %}
+                <div class="col-12 col-sm-10 col-md-4 py-2 px-3 level5-card pointer selectedCard">
+                    <div class="card h-100 row">
+                        <div class="card-body h-100 weaponBorder d-flex align-items-center bl-bg">
+                            <div class="d-flex flex-row align-items-center">
+                                    <div class="p-0 d-flex position-relative">
+                                        <picture class="position-relative flex-shrink-0">
+                                            <img src="{{ t.image }}" class="talent-icon p-1" alt="{{t.name}}">
+                                        </picture>
+                                        <picture class="talent-border-icon">
+                                            <img src="/static/img/borders/talents-border.png" class="talent-icon" alt="Talents border">
+                                        </picture>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6 class="font-worksans-bold text-white">{{ t.name }}</h6>
+                                        <p class="font-worksans-light small-text mb-0">{{ t.description }}</p>        
+                                    </div>
+                                {% else %}
+                                <div class="col-12 col-sm-10 col-md-4 py-2 px-3 level5-card pointer">
+                                    <div class="card h-100 row">
+                                        <div class="card-body h-100 weaponBorder d-flex align-items-center bl-bg">
+                                            <div class="d-flex flex-row align-items-center">
+                                    <div class="p-0 d-flex position-relative">
+                                        <picture class="position-relative flex-shrink-0">
+                                            <img src="{{ t.image }}" class="talent-icon p-1" alt="{{t.name}}">
+                                        </picture>
+                                        <picture class="talent-border-icon">
+                                            <img src="/static/img/borders/talents-border.png" class="talent-icon" alt="Talents border">
+                                        </picture>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6 class="font-worksans-bold text-white">{{ t.name }}</h6>
+                                        <p class="font-worksans-light small-text mb-0">{{ t.description }}</p>        
+                                    </div>
+                                {% endif %}
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
+<!-- Level 10 -->
+<div class="py-2">
+    <div class="row justify-content-center no-hover">
+        <h5 class="text-center font-worksans-bold">Level 10</h5>
+        {% for class in classesList %}
+        {% if class.shortName == selected.selectedClass %}
+            {% for talent in class.level10 %}
+            {% for t in talentList %}
+            {% if t.name == talent %}
+            {% if selected.level10Talent == talent %}
+                <div class="col-12 col-sm-10 col-md-4 py-2 px-3 level10-card pointer selectedCard">
+                    <div class="card h-100 row">
+                        <div class="card-body h-100 weaponBorder d-flex align-items-center bl-bg">
+                            <div class="d-flex flex-row align-items-center">
+                                    <div class="p-0 d-flex position-relative">
+                                        <picture class="position-relative flex-shrink-0">
+                                            <img src="{{ t.image }}" class="talent-icon p-1" alt="{{t.name}}">
+                                        </picture>
+                                        <picture class="talent-border-icon">
+                                            <img src="/static/img/borders/talents-border.png" class="talent-icon" alt="Talents border">
+                                        </picture>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6 class="font-worksans-bold text-white">{{ t.name }}</h6>
+                                        <p class="font-worksans-light small-text mb-0">{{ t.description }}</p>        
+                                    </div>
+                                {% else %}
+                                <div class="col-12 col-sm-10 col-md-4 py-2 px-3 level10-card pointer">
+                                    <div class="card h-100 row">
+                                        <div class="card-body h-100 weaponBorder d-flex align-items-center bl-bg">
+                                            <div class="d-flex flex-row align-items-center">
+                                    <div class="p-0 d-flex position-relative">
+                                        <picture class="position-relative flex-shrink-0">
+                                            <img src="{{ t.image }}" class="talent-icon p-1" alt="{{t.name}}">
+                                        </picture>
+                                        <picture class="talent-border-icon">
+                                            <img src="/static/img/borders/talents-border.png" class="talent-icon" alt="Talents border">
+                                        </picture>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6 class="font-worksans-bold text-white">{{ t.name }}</h6>
+                                        <p class="font-worksans-light small-text mb-0">{{ t.description }}</p>        
+                                    </div>
+                                {% endif %}
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
+<!-- Level 15 -->
+<div class="py-2">
+    <div class="row justify-content-center no-hover">
+        <h5 class="text-center font-worksans-bold">Level 15</h5>
+        {% for class in classesList %}
+        {% if class.shortName == selected.selectedClass %}
+            {% for talent in class.level15 %}
+            {% for t in talentList %}
+            {% if t.name == talent %}
+            {% if selected.level15Talent == talent %}
+                <div class="col-12 col-sm-10 col-md-4 py-2 px-3 level15-card pointer selectedCard">
+                    <div class="card h-100 row">
+                        <div class="card-body h-100 weaponBorder d-flex align-items-center bl-bg">
+                            <div class="d-flex flex-row align-items-center">
+                                    <div class="p-0 d-flex position-relative">
+                                        <picture class="position-relative flex-shrink-0">
+                                            <img src="{{ t.image }}" class="talent-icon p-1" alt="{{t.name}}">
+                                        </picture>
+                                        <picture class="talent-border-icon">
+                                            <img src="/static/img/borders/talents-border.png" class="talent-icon" alt="Talents border">
+                                        </picture>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6 class="font-worksans-bold text-white">{{ t.name }}</h6>
+                                        <p class="font-worksans-light small-text mb-0">{{ t.description }}</p>        
+                                    </div>
+                                {% else %}
+                                <div class="col-12 col-sm-10 col-md-4 py-2 px-3 level15-card pointer">
+                                    <div class="card h-100 row">
+                                        <div class="card-body h-100 weaponBorder d-flex align-items-center bl-bg">
+                                            <div class="d-flex flex-row align-items-center">
+                                    <div class="p-0 d-flex position-relative">
+                                        <picture class="position-relative flex-shrink-0">
+                                            <img src="{{ t.image }}" class="talent-icon p-1" alt="{{t.name}}">
+                                        </picture>
+                                        <picture class="talent-border-icon">
+                                            <img src="/static/img/borders/talents-border.png" class="talent-icon" alt="Talents border">
+                                        </picture>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6 class="font-worksans-bold text-white">{{ t.name }}</h6>
+                                        <p class="font-worksans-light small-text mb-0">{{ t.description }}</p>        
+                                    </div>
+                                {% endif %}
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
+<!-- Level 20 -->
+<div class="py-2">
+    <div class="row justify-content-center no-hover">
+        <h5 class="text-center font-worksans-bold">Level 20</h5>
+        {% for class in classesList %}
+        {% if class.shortName == selected.selectedClass %}
+            {% for talent in class.level20 %}
+            {% for t in talentList %}
+            {% if t.name == talent %}
+            {% if selected.level20Talent == talent %}
+                <div class="col-12 col-sm-10 col-md-4 py-2 px-3 level20-card pointer selectedCard">
+                    <div class="card h-100 row">
+                        <div class="card-body h-100 weaponBorder d-flex align-items-center bl-bg">
+                            <div class="d-flex flex-row align-items-center">
+                                    <div class="p-0 d-flex position-relative">
+                                        <picture class="position-relative flex-shrink-0">
+                                            <img src="{{ t.image }}" class="talent-icon p-1" alt="{{t.name}}">
+                                        </picture>
+                                        <picture class="talent-border-icon">
+                                            <img src="/static/img/borders/talents-border.png" class="talent-icon" alt="Talents border">
+                                        </picture>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6 class="font-worksans-bold text-white">{{ t.name }}</h6>
+                                        <p class="font-worksans-light small-text mb-0">{{ t.description }}</p>        
+                                    </div>
+                                {% else %}
+                                <div class="col-12 col-sm-10 col-md-4 py-2 px-3 level20-card pointer">
+                                    <div class="card h-100 row">
+                                        <div class="card-body h-100 weaponBorder d-flex align-items-center bl-bg">
+                                            <div class="d-flex flex-row align-items-center">
+                                    <div class="p-0 d-flex position-relative">
+                                        <picture class="position-relative flex-shrink-0">
+                                            <img src="{{ t.image }}" class="talent-icon p-1" alt="{{t.name}}">
+                                        </picture>
+                                        <picture class="talent-border-icon">
+                                            <img src="/static/img/borders/talents-border.png" class="talent-icon" alt="Talents border">
+                                        </picture>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6 class="font-worksans-bold text-white">{{ t.name }}</h6>
+                                        <p class="font-worksans-light small-text mb-0">{{ t.description }}</p>        
+                                    </div>
+                                {% endif %}
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
+<!-- Level 25 -->
+<div class="py-2">
+    <div class="row justify-content-center no-hover">
+        <h5 class="text-center font-worksans-bold">Level 25</h5>
+        {% for class in classesList %}
+        {% if class.shortName == selected.selectedClass %}
+            {% for talent in class.level25 %}
+            {% for t in talentList %}
+            {% if t.name == talent %}
+            {% if selected.level25Talent == talent %}
+                <div class="col-12 col-sm-10 col-md-4 py-2 px-3 level25-card pointer selectedCard">
+                    <div class="card h-100 row">
+                        <div class="card-body h-100 weaponBorder d-flex align-items-center bl-bg">
+                            <div class="d-flex flex-row align-items-center">
+                                    <div class="p-0 d-flex position-relative">
+                                        <picture class="position-relative flex-shrink-0">
+                                            <img src="{{ t.image }}" class="talent-icon p-1" alt="{{t.name}}">
+                                        </picture>
+                                        <picture class="talent-border-icon">
+                                            <img src="/static/img/borders/talents-border.png" class="talent-icon" alt="Talents border">
+                                        </picture>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6 class="font-worksans-bold text-white">{{ t.name }}</h6>
+                                        <p class="font-worksans-light small-text mb-0">{{ t.description }}</p>        
+                                    </div>
+                                {% else %}
+                                <div class="col-12 col-sm-10 col-md-4 py-2 px-3 level25-card pointer">
+                                    <div class="card h-100 row">
+                                        <div class="card-body h-100 weaponBorder d-flex align-items-center bl-bg">
+                                            <div class="d-flex flex-row align-items-center">
+                                    <div class="p-0 d-flex position-relative">
+                                        <picture class="position-relative flex-shrink-0">
+                                            <img src="{{ t.image }}" class="talent-icon p-1" alt="{{t.name}}">
+                                        </picture>
+                                        <picture class="talent-border-icon">
+                                            <img src="/static/img/borders/talents-border.png" class="talent-icon" alt="Talents border">
+                                        </picture>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6 class="font-worksans-bold text-white">{{ t.name }}</h6>
+                                        <p class="font-worksans-light small-text mb-0">{{ t.description }}</p>        
+                                    </div>
+                                {% endif %}
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
+<!-- Level 30 -->
+<div class="py-2">
+    <div class="row justify-content-center no-hover">
+        <h5 class="text-center font-worksans-bold">Level 30</h5>
+        {% for class in classesList %}
+        {% if class.shortName == selected.selectedClass %}
+            {% for talent in class.level30 %}
+            {% for t in talentList %}
+            {% if t.name == talent %}
+            {% if selected.level30Talent == talent %}
+                <div class="col-12 col-sm-10 col-md-4 py-2 px-3 level30-card pointer selectedCard">
+                    <div class="card h-100 row">
+                        <div class="card-body h-100 weaponBorder d-flex align-items-center bl-bg">
+                            <div class="d-flex flex-row align-items-center">
+                                    <div class="p-0 d-flex position-relative">
+                                        <picture class="position-relative flex-shrink-0">
+                                            <img src="{{ t.image }}" class="talent-icon p-1" alt="{{t.name}}">
+                                        </picture>
+                                        <picture class="talent-border-icon">
+                                            <img src="/static/img/borders/talents-border.png" class="talent-icon" alt="Talents border">
+                                        </picture>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6 class="font-worksans-bold text-white">{{ t.name }}</h6>
+                                        <p class="font-worksans-light small-text mb-0">{{ t.description }}</p>        
+                                    </div>
+                                {% else %}
+                                <div class="col-12 col-sm-10 col-md-4 py-2 px-3 level30-card pointer">
+                                    <div class="card h-100 row">
+                                        <div class="card-body h-100 weaponBorder d-flex align-items-center bl-bg">
+                                            <div class="d-flex flex-row align-items-center">
+                                    <div class="p-0 d-flex position-relative">
+                                        <picture class="position-relative flex-shrink-0">
+                                            <img src="{{ t.image }}" class="talent-icon p-1" alt="{{t.name}}">
+                                        </picture>
+                                        <picture class="talent-border-icon">
+                                            <img src="/static/img/borders/talents-border.png" class="talent-icon" alt="Talents border">
+                                        </picture>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6 class="font-worksans-bold text-white">{{ t.name }}</h6>
+                                        <p class="font-worksans-light small-text mb-0">{{ t.description }}</p>        
+                                    </div>
+                                {% endif %}
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
+

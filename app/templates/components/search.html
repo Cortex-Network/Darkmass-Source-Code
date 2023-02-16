@@ -1,0 +1,12 @@
+<div class="row d-flex justify-content-center align-items-center mb-3">
+    <div class="col-md-8">
+        <div class="search">
+            <form action="{{ url_for('Search') }}" method="POST">
+                <i class="fa fa-search"></i>
+                <input type="text" class="form-control bg-special-linear text-white" name="weaponName" placeholder="Search for a weapon...">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                <button class="btn btn-primary">Search</button>
+            </form>
+        </div>
+    </div>
+</div>

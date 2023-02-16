@@ -1,0 +1,28 @@
+/* Colors */
+
+.home-page-box {
+    background-color: rgba(0,0,0,.8);
+}
+
+/* Cards */
+
+.home-page-card {
+    height: 140px;
+}
+
+/* Images */
+
+.home-ourPages-img {
+    height: 100px;
+    width: 100px;
+    background-color: rgba(78,103,79,.2);
+}
+
+/* Breakpoints */
+
+@media only screen and (min-width:992px) {
+    .home-ourPages-img {
+        height: 125px;
+        width: 125px;
+    }
+}

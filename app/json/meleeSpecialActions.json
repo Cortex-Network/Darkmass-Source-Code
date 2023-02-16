@@ -1,0 +1,48 @@
+{
+"actions": [
+{
+    "name": "Activate",
+    "image": "/static/img/specialactions/activate.png",
+    "description": "Power up the weapon for a stronger attack.",
+    "detailedDescription": ["TBA", "TBA"],
+    "gif": "/static/img/statsBreakdown/meleeGIFS/activate.gif"
+     
+},
+{
+    "name": "Defensive Stance",
+    "image": "/static/img/specialactions/defensivestance.png",
+    "description": "Plant the Slab Shield into the ground and enter a defensive stance, capable of withstanding all but the strongest attacks.",
+    "detailedDescription": ["TBA", "TBA"],
+    "gif": ""
+},
+{
+    "name": "Parry",
+    "image": "/static/img/specialactions/parry.png",
+    "description": "Parry an incoming attack and perform a fast, deadly counter.",
+    "detailedDescription": ["TBA", "TBA"],
+    "gif": ""
+},
+{
+    "name": "Punch",
+    "image": "/static/img/specialactions/punch.png",
+    "description": "A quick stab that inflics low damage but ignores Stagger reduction. A good combo starter.",
+    "detailedDescription": ["TBA", "TBA"],
+    "gif": ""
+},
+{
+    "name": "Special Melee Attack",
+    "image": "/static/img/specialactions/specialmeleeattack.png",
+    "description": "A special attack that usually inflicts a certain type of damage. This differs between weapons that have this as their special action, however.",
+    "detailedDescription": ["TBA", "TBA"],
+    "gif": ""
+    
+},
+{
+    "name": "Warp Charged",
+    "image": "/static/img/specialactions/warpcharged.png",
+    "description": "Power the weapon up for a stronger attack.",
+    "detailedDescription": ["TBA", "TBA"],
+    "gif": ""
+}
+]
+}

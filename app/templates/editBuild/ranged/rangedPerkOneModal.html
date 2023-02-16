@@ -1,0 +1,23 @@
+<div class="modal fade" id="rangedPerkOneModal" tabindex="-1" aria-labelledby="rangedPerkOneModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                {% for p in perksList %}
+                    <div class="row">
+                        <a class="btn row modal-select-bg rangedPerkOneSelectButton pointer text-start p-3 font-worksans-bold" @click='rangedPerkOne = "{{ p.description }}"' id="rangedPerkOne-select">
+                            <span class="col-6 align-self-center">
+                                <span style="color:white;">{{ p.description }}</span>
+                            </span>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="weapon-frame-top d-flex align-items-center px-0">
+                <img src="/static/img/borders/talent-border-top.png" alt="" class="frame-center ranged">
+            </div>
+            <div class="weapon-frame-bottom d-flex align-items-center px-0">
+                <img src="/static/img/borders/talent-border-bot.png" alt="" class="frame-center ranged">
+            </div>
+        </div>
+    </div>
+</div>

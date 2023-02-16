@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block head %}
+    <link href="{{ url_for('static', filename='css/class.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block background %}
+    class="mainPage"
+{% endblock %}
+
+{% block content %}
+<div class="container-lg py-4 px-2">
+    <div class="row text-center justify-content-center mb-4">
+        <div class="class-nandd-container weaponBorder col-10 col-md-6 p-3">
+            {% if model.name == "Ogryn Skullbreaker" %}
+            <img class="class-icon" src="/static/img/classes/ogryn.png" alt="Ogryn Class Icon">
+            {% elif model.name == "Veteran Sharpshooter" %}
+            <img class="class-icon" src="/static/img/classes/veteran.png" alt="Veteran Class Icon">
+            {% elif model.name == "Psyker Psykinetic" %}
+            <img class="class-icon" src="/static/img/classes/psyker.png" alt="Psyker Class Icon">
+            {% elif model.name == "Zealot Preacher" %}
+            <img class="class-icon" src="/static/img/classes/zealot.png" alt="Zealot Class Icon">
+            {% endif %}
+            <h1 class="font-anton-upp font-anton-cracked py-4">{{ model.name }}</h1>
+            <p class="font-worksans-light lh-sm small-text">{{ model.description }}</p>
+        </div>
+    </div>
+    {% include "classDisplays/classStats.html" %}
+    <div class="row mb-md-2">
+        {% include "classDisplays/classAbility.html" %}
+        {% include "classDisplays/classBlitz.html" %}
+        {% include "classDisplays/classAura.html" %}
+    </div>
+    <div class="row mt-md-2">
+        {% include "classDisplays/classIconic.html" %}
+    </div>
+    <div class="row mt-4">
+        {% include "classDisplays/classTalents.html" %}
+    </div>
+</div>
+{% endblock %}

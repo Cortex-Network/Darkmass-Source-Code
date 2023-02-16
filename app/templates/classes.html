@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block head %}
+    <link href="{{ url_for('static', filename='css/classes.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block background %}
+    class="mainPage"
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid d-flex justify-content-center pt-4">
+        <h1 class="font-anton-upp display-3">
+            <span class="font-anton-cracked">Classes</span>  
+        </h1>
+    </div>
+    {% include "components/skullbanner.html" %}
+    <div class="container-sm d-flex flex-wrap align-items-center justify-content-center py-3 custom-container">
+        <div class="row g-3">
+            <div class="col-12 col-sm-6">
+                <a href="/class/Ogryn Skullbreaker">
+                <div class="card classes-border
+                 text-center">
+                        <div class="card-body skullbreaker p-0 overflow-hidden justify-content-center vw-custom-class">
+                            <img class="classes-icon-bg" src="/static/img/classes/ogryn-icon-bg.png" alt="Ogryn Skullbreaker Icon">
+                            <img class="class-background special" src="/static/img/classes/verteran-classes-special-bg.png">
+                            <h2 class="card-title font-anton-upp font-anton-cracked classes-name text-white display-4">Ogryn</h2>
+                            <img class="card-img classes-model mx-auto px-3 pt-5" src="/static/img/classes/Ogryn-model.png" alt="ogryn model">
+                            <img class="card-class-icon ogryn" src="/static/img/classes/Ogryn-metal-icon-cropped.png" alt="Ogryn Icon">    
+                        </div>
+                </div></a>
+            </div>
+            <div class="col-12 col-sm-6">
+                <a href="/class/Zealot Preacher">
+                <div class="card classes-border
+                 text-center">
+                    <div class="card-body zealot p-0 overflow-hidden justify-content-center vw-custom-class">
+                        <img class="classes-icon-bg" src="/static/img/classes/zealot-icon-bg.png" alt="Ogryn Skullbreaker Icon">
+                        <img class="class-background special" src="/static/img/classes/psyker-classes-special-bg.png">
+                        <h2 class="card-title font-anton-upp font-anton-cracked classes-name text-white display-4">Zealot</h2> 
+                        <img class="card-img classes-model mx-auto px-3 pt-5" src="/static/img/classes/Zealot-model.png" alt="zealot model">
+                        <img class="card-class-icon zealot" src="/static/img/classes/Zealot-metal-icon-cropped.png" alt="zealot icon">
+                    </div>
+                </div></a>
+            </div>
+            <div class="col-12 col-sm-6">
+                <a href="/class/Psyker Psykinetic">
+                <div class="card classes-border
+                 text-center">
+                    <div class="card-body psyker p-0 overflow-hidden justify-content-center vw-custom-class">
+                        <img class="classes-icon-bg" src="/static/img/classes/psyker-icon-bg.png" alt="Ogryn Skullbreaker Icon">
+                        <img class="class-background special" src="/static/img/classes/psyker-classes-special-bg.png">
+                        <h2 class="card-title font-anton-upp font-anton-cracked classes-name text-white display-4">Psyker</h2>
+                        <img class="card-img classes-model mx-auto px-3 pt-5" src="/static/img/classes/Psyker-model.png" alt="psyker model">
+                        <img class="card-class-icon psyker" src="/static/img/classes/Psyker-metal-icon-cropped.png" alt="psyker icon">
+                    </div>
+                </div></a>
+            </div>
+            <div class="col-12 col-sm-6">
+                <a href="/class/Veteran Sharpshooter">
+                <div class="card classes-border
+                 text-center">
+                    <div class="card-body veteran p-0 overflow-hidden justify-content-center vw-custom-class">
+                        <img class="classes-icon-bg" src="/static/img/classes/veteran-icon-bg.png" alt="Ogryn Skullbreaker Icon">
+                        <img class="class-background special" src="/static/img/classes/verteran-classes-special-bg.png">
+                        <h2 class="card-title font-anton-upp font-anton-cracked classes-name text-white display-4">Veteran</h2>
+                        <img class="card-img classes-model mx-auto px-3 pt-5" src="/static/img/classes/Veteran-model.png" alt="veteran model">
+                        <img class="card-class-icon veteran" src="/static/img/classes/Veteran-metal-icon-cropped.png" alt="veteran icon">   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

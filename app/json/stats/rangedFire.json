@@ -1,0 +1,29 @@
+{
+"rangedFire": [
+{
+    "firemode": "Burst-fire",
+    "fmImg": "/static/img/statsBreakdown/rangedFiremodes/burstfire.png",
+    "fmDesc": "Fires in bursts, making it a middle ground between fully and semi automatic rates of fire. Useful for clearing hordes quickly, as well as bursting down specials. The burst size differs between weapons. Example: The MK VIII Headhunter fires in 2 round bursts, whereas the MK III fires in 3 round bursts."
+},
+{
+    "firemode": "Fully automatic",
+    "fmImg": "/static/img/statsBreakdown/rangedFiremodes/fullyautomatic.png",
+    "fmDesc": "The weapon fires fully automatically until the clip runs out. Rate of Fire (ROF) differs between weapons. Example: MK VId Recon Lasgun has a high ROF, which is around 16/s. The Vraks MK III Headhunter Autogun on the other hand has a ROF of around 8/s. There are tradeoffs, in the sense that whilst the Recon Lasgun has a higher ROF than the autogun, it does less damage per second. As such, different fully-automatic weapons have their own benefits and downsides. Most useful for clearing hordes quickly, where it outperforms other firemodes such as semi-automatic."
+},
+{
+    "firemode": "Projectile",
+    "fmImg": "/static/img/statsBreakdown/rangedFiremodes/projectile.png",
+    "fmDesc": "A single shot, which usually does a very high amount of damage. In most cases it can be charged up to deal even more damage, which makes it extremely useful for dealing with high HP targets."
+},
+{
+    "firemode": "Semi-automatic",
+    "fmImg": "/static/img/statsBreakdown/rangedFiremodes/semiautomatic.png",
+    "fmDesc": "The slowest rate of fire amongst guns (omitting projectiles) but usually the most damaging. A good example of this is the Kantrael MK XII Lasgun, which shoots slow, but melts high HP targets."
+},
+{
+    "firemode": "Shotgun",
+    "fmImg": "/static/img/statsBreakdown/rangedFiremodes/shotgun.png",
+    "fmDesc": "Only found on the Combat Shotgun and Kickback. The kickback can only hit one target per pellet, but this can pass through the target and hit other enemies as well. Good for knocking down elites, whilst taking out some trash enemies in the process. The Combat Shotgun can rip through multiple enemies at once per pellet, and does not stop on impact. It can also be loaded with a special shell, that gives the next shot high stagger and a horizontal spread pattern."
+}
+]
+}

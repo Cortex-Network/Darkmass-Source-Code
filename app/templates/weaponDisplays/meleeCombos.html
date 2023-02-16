@@ -1,0 +1,48 @@
+<div class="container-fluid py-2 text-center">
+    <h1 class="font-anton">Light Combo</h1>
+    {% include "components/skullbanner.html" %}
+</div>
+<div class="container text-center py-3">
+    <div class="row">
+        {% for combo in subtypeWeapon.lightCombo %}
+            {% for action in meleeActionList %}
+            {% if action.name == combo %}
+                    <div class="col-md-4 py-2">
+                        <h2 class="card-text text-white">
+                            <br>
+                            <img src="{{ action.image }}" alt="{{ action.name }}" class="icon-weapon-actions">  
+                            <span class="font-worksans-light">{{ action.name }}</span>
+                            <br>
+                        </h2>
+                    </div>
+            {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </div>
+    <br>
+    <br>
+</div>
+<div class="container-fluid py-2 text-center">
+    <h1 class="font-anton">Heavy Combo</h1>
+    {% include "components/skullbanner.html" %}
+</div>
+<div class="container text-center py-3">
+    <div class="row">
+        {% for combo in subtypeWeapon.heavyCombo %}
+            {% for action in meleeActionList %}
+            {% if action.name == combo %}
+                    <div class="col-md-4 py-2">
+                        <h2 class="card-text text-white">
+                            <br>
+                            <img src="{{ action.image }}" alt="{{ action.name }}" class="icon-weapon-actions">  
+                            <span class="font-worksans-light">{{ action.name }}</span>
+                            <br>
+                        </h2>
+                    </div>
+            {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </div>
+    <br>
+    <br>
+</div>

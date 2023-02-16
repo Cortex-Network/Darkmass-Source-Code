@@ -1,0 +1,86 @@
+<div class="container" id="rangedTable" style="display: none;">
+    <div class="row justify-content-center">
+        <div class="col-12 col-xl-10">
+            <h1 class="pt-5 pb-3 font-anton-upp font-anton-cracked">Weapon Table</h1>
+            <input class="w-100 weaponBorder table-search text-white" type="text" id="weaponsTableInput" onkeyup="rangedTableSearch()" placeholder="Search for weapons...">
+            <div class="table-responsive">
+                <table class="table weaponBorder text-white text-start" id="weaponsTable">
+                    <thead>
+                        <tr class="font-worksans-bold">
+                        <th scope="col" class="tdodd"></th>
+                        <th scope="col" class="tdeven">Weapon Name</th>
+                        <th scope="col" class="tdodd">Bar 1</th>
+                        <th scope="col" class="tdeven">Bar 2</th>
+                        <th scope="col" class="tdodd">Bar 3</th>
+                        <th scope="col" class="tdeven">Bar 4</th>
+                        <th scope="col" class="tdodd">Bar 5</th>
+                        </tr>
+                    </thead>
+                    <tbody id="weaponsTableGroup">
+                        {% for weapon in rangedTable %}
+                        <tr class="font-worksans-light">
+                            <td class="tdodd">
+                                <a class="tableIcon collapsed" href="#rangedWeapon{{ weapon.id }}" data-bs-toggle="collapse" data-parent="#weaponsTableGroup" role="button" aria-expanded="false" aria-controls="rangedWeapon{{ weapon.id }}">
+                                    <i class="fa-solid fa-caret-right tableCaret"></i>
+                                </a>
+                            </td>
+                            <td class="tdeven"><a class="text-decoration-none text-white font-worksans-bold" href="/weapons/ranged/{{weapon.name}}">{{ weapon.name }}</th>
+                            {% for bar in weapon.bars %}
+                            <td class="{{ loop.cycle('tdodd', 'tdeven') }}">{{ bar }}</td>
+                            {% endfor %}
+                        </tr>
+                        <tr class="collapse small-text accordion-group font-worksans-light" id="rangedWeapon{{ weapon.id }}">
+                            {% for i in rangedBarsDetailedList %}
+                                {% if weapon.name in i.weapon %}
+                                    <td class="tdodd"></td>
+                                    <td class="tdeven font-worksans-light">{{ weapon.name }}</td>
+                                    <td class="tdodd">
+                                        <ul class="ps-3">
+                                            {% for b1 in i.bar1Modifiers %}
+                                            <li>{{ b1 }}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    </td>
+                                    <td class="tdeven">
+                                        <ul class="ps-3">
+                                            {% for b2 in i.bar2Modifiers %}
+                                            <li>{{ b2 }}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    </td>
+                                    <td class="tdodd">
+                                        <ul class="ps-3">
+                                            {% for b3 in i.bar3Modifiers %}
+                                            <li>{{ b3 }}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    </td>
+                                    <td class="tdeven">
+                                        <ul class="ps-3">
+                                            {% for b4 in i.bar4Modifiers %}
+                                            <li>{{ b4 }}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    </td>
+                                    <td class="tdodd">
+                                        <ul class="ps-3">
+                                            {% for b5 in i.bar5Modifiers %}
+                                            <li>{{ b5 }}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    </td>
+                                {% endif %}
+                            {% endfor %}
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <p class="py-2 font-worksans-light w-max-xl mx-auto">Note: When inspecting a weapon in-game, the bars are seperated into two rows. There are 2 across the top row, and 3 along the second row.</p>
+            <img src="/static/img/statsBreakdown/barExample.png" class="img-fluid" alt="Bar Example">
+            <p class="pt-4 font-worksans-light w-max-xl mx-auto">The columns in this table simply represents this. Bars 1-2 are equivalent to the top row, and bars 3-5 the bottom row. There is currently a total of 12 different bars for melee weapons.</p>
+            <p class="font-worksans-light w-max-xl mx-auto">Damage is always present on every weapon. You may notice that some bars such as Moblity appear in different columns (2 and 5 in this case).</p>
+            <p class="font-worksans-light w-max-xl mx-auto">These do not differ in any way and share the same modifers as above. This table is simply just a representation of how they are displayed in-game.</p>
+        </div>
+    </div>
+</div>

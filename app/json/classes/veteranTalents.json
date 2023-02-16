@@ -1,0 +1,94 @@
+{
+"veteranTalents": [
+{
+    "name": "Confirmed Kill",
+    "image": "/static/img/classes/Veteran/Level 5/ConfirmedKill.webp",
+    "description": "Replenish 25% Toughness on Elite kill and a further 25% Toughness over time."
+},
+{
+    "name": "Exhilarating Takedown",
+    "image": "/static/img/classes/Veteran/Level 5/ExhilaratingTakedown.webp",
+    "description": "Replenish 10% Toughness on ranged weak spot kill."
+},
+{
+    "name": "At Arm's Length",
+    "image": "/static/img/classes/Veteran/Level 5/AtArmsLength.webp",
+    "description": "Replenish 5% Toughness per second while more than 8 metres from enemies."
+},
+{
+    "name": "Sniper",
+    "image": "/static/img/classes/Veteran/Level 10/Sniper.webp",
+    "description": "Deal up to 20% increased damage based on the distance between you and the target."
+},
+{
+    "name": "Tactical Reload",
+    "image": "/static/img/classes/Veteran/Level 10/TacticalReload.webp",
+    "description": "+20% reload speed if you have ammo in your weapon."
+},
+{
+    "name": "Demolition Stockpile",
+    "image": "/static/img/classes/Veteran/Level 10/DemolitionStockpile.webp",
+    "description": "Replenish 1 Grenade(s) every 60s."
+},
+{
+    "name": "Bio-Optic Targeting",
+    "image": "/static/img/classes/Veteran/Level 15/Bio-OpticTargeting.webp",
+    "description": "Volley Fire Designates non-Ogryn Elites and Specialists as Priority Targets for Allies in Coherency."
+},
+{
+    "name": "Demolition Team",
+    "image": "/static/img/classes/Veteran/Level 15/DemolitionTeam.webp",
+    "description": "You and allies in Coherency have a 5% chance to gain a Grenade on enemy kill."
+},
+{
+    "name": "Covering Fire",
+    "image": "/static/img/classes/Veteran/Level 15/CoveringFire.webp",
+    "description": "When you kill an enemy with a ranged attack, allies in melee range of the target replenish 10% Toughness."
+},
+{
+    "name": "Unwavering Focus",
+    "image": "/static/img/classes/Veteran/Level 20/UnwaveringFocus.webp",
+    "description": "+75% Toughness damage reduction from ranged attacks during Volley Fire."
+},
+{
+    "name": "Duck and Dive",
+    "image": "/static/img/classes/Veteran/Level 20/DuckandDive.webp",
+    "description": "Dodging, sprinting or sliding to avoid ranged attacks grants 20% stamina."
+},
+{
+    "name": "Camo Expert",
+    "image": "/static/img/classes/Veteran/Level 20/CamoExpert.webp",
+    "description": "While standing still, enemies are significantly less likely to target you."
+},
+{
+    "name": "Frag Storm",
+    "image": "/static/img/classes/Veteran/Level 25/FragStorm.webp",
+    "description": "Frag Grenades apply 8 stacks of Bleed to all enemies hit."
+},
+{
+    "name": "Deadshot",
+    "image": "/static/img/classes/Veteran/Level 25/Deadshot.webp",
+    "description": "+25% Critical Chance and 60% Sway Reduction, but lose 10% Stamina per second while using your weapons Alt fire."
+},
+{
+    "name": "One After Another",
+    "image": "/static/img/classes/Veteran/Level 25/OneAfterAnother.webp",
+    "description": "+30% reload speed on Elite kill."
+},
+{
+    "name": "Sustained Fire",
+    "image": "/static/img/classes/Veteran/Level 30/SustainedFire.webp",
+    "description": "Volley Fire Reloads your weapon and Replenishes 60% Toughness. Killing a Designated Enemy during Volley Fire refreshes its duration."
+},
+{
+    "name": "Counterfire",
+    "image": "/static/img/classes/Veteran/Level 30/Counterfire.webp",
+    "description": "+25% Weak Spot Damage during Volley Fire. Volley Fire now Designates all Scab Shooters as Priority Targets. Killing a Designated Enemy during Volley Fire refreshes its duration."
+},
+{
+    "name": "The Bigger they Are...",
+    "image": "/static/img/classes/Veteran/Level 30/TheBiggerTheyAre.webp",
+    "description": "+50% Damage (Ogryns and Monstrosities) during Volley Fire. Volley Fire Designates Ogryns and Monstrosities as Priority Targets. Killing a Designated Enemy during Volley Fire refreshes its duration."
+}
+]
+}

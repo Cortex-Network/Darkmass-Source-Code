@@ -1,0 +1,713 @@
+{
+    "_links": {
+      "self": {
+        "href": "/store/storefront/credits_store_veteran?accountId=eb4cc633-b035-41e9-954e-9debde6b0133&personal=true&characterId=de9fe2e7-6632-4cd7-b30d-ccbce78618af"
+      },
+      "config": {
+        "href": "/store/storefront/credits_store_veteran/config"
+      }
+    },
+    "catalog": {
+      "id": "5aff8ad3-7fcf-4d2b-b068-177198363da8",
+      "name": "credits_store_veteran",
+      "generation": 1,
+      "layoutRef": "credits_grid",
+      "validFrom": "1666786690000",
+      "validTo": "1950869892855"
+    },
+    "name": "credits_store_veteran",
+    "public": [
+      {
+        "offerId": "bd40170a-7457-430e-9318-df2315c9db50",
+        "sku": {
+          "id": "715b78d1-4832-40e3-b6bc-c90813b993a8",
+          "displayPriority": 0,
+          "internalName": "credit_store_all_rewards_veteran_sharpshooter",
+          "name": "credit_store_all_rewards_veteran_sharpshooter",
+          "description": "credit_store_all_rewards_veteran_sharpshooter",
+          "category": "item_instance",
+          "assetId": "",
+          "tags": [
+            
+          ],
+          "dlcReq": [
+            
+          ]
+        },
+        "entitlement": {
+          "id": "ef8562ed-98a9-45d0-91ff-184eafb7f70a",
+          "limit": 0,
+          "type": "Permanent"
+        },
+        "price": {
+          "id": "bd40170a-7457-430e-9318-df2315c9db50",
+          "amount": {
+            "amount": 9635,
+            "type": "credits"
+          },
+          "priority": 1,
+          "priceFormula": "dynamic_price_formula"
+        },
+        "state": "active",
+        "description": {
+          "id": "content/items/weapons/player/ranged/autogun_p3_m1",
+          "gearId": "445af476-00bd-4c62-be76-2ee101d1bb12",
+          "rotation": "day_1/24",
+          "type": "weapon",
+          "properties": {
+            
+          },
+          "overrides": {
+            "ver": 2,
+            "rarity": 2,
+            "characterLevel": 30,
+            "itemLevel": 338,
+            "baseItemLevel": 318,
+            "traits": [
+              
+            ],
+            "perks": [
+              {
+                "id": "content/items/perks/ranged_common/wield_increase_armored_damage",
+                "rarity": 3
+              }
+            ],
+            "base_stats": [
+              {
+                "name": "autogun_p3_m1_dps_stat",
+                "value": 0.38
+              },
+              {
+                "name": "autogun_p3_m1_stability_stat",
+                "value": 0.53
+              },
+              {
+                "name": "autogun_p3_m1_power_stat",
+                "value": 0.76
+              },
+              {
+                "name": "autogun_p3_m1_mobility_stat",
+                "value": 0.73
+              },
+              {
+                "name": "autogun_p3_m1_ammo_stat",
+                "value": 0.78
+              }
+            ]
+          }
+        },
+        "media": [
+          
+        ]
+      },
+      {
+        "offerId": "c658175e-3b81-42f3-8ee2-3aa3086a1be1",
+        "sku": {
+          "id": "a86a4bbd-77ba-4d26-8467-5d86a8e72c8e",
+          "displayPriority": 0,
+          "internalName": "credit_store_device",
+          "name": "credit_store_device",
+          "description": "credit_store_device",
+          "category": "item_instance",
+          "assetId": "",
+          "tags": [
+            
+          ],
+          "dlcReq": [
+            
+          ]
+        },
+        "entitlement": {
+          "id": "86a4c061-fb0f-47e7-84d5-90cb407f19d2",
+          "limit": 0,
+          "type": "Permanent"
+        },
+        "price": {
+          "id": "c658175e-3b81-42f3-8ee2-3aa3086a1be1",
+          "amount": {
+            "amount": 6595,
+            "type": "credits"
+          },
+          "priority": 1,
+          "priceFormula": "dynamic_price_formula"
+        },
+        "state": "active",
+        "description": {
+          "id": "content/items/gadgets/defensive_gadget_16",
+          "gearId": "6e8e03a7-b015-4c08-bfd4-a4fd1c41d274",
+          "rotation": "day_1/24",
+          "type": "gadget",
+          "properties": {
+            
+          },
+          "overrides": {
+            "ver": 2,
+            "rarity": 3,
+            "characterLevel": 30,
+            "itemLevel": 87,
+            "baseItemLevel": 67,
+            "perks": [
+              {
+                "id": "content/items/perks/gadget_common/trait_gadget_corruption_resistance",
+                "rarity": 3
+              }
+            ],
+            "traits": [
+              {
+                "id": "content/items/traits/gadget_inate_trait/trait_inate_gadget_health_segment",
+                "rarity": 3,
+                "value": 0.67
+              }
+            ]
+          }
+        },
+        "media": [
+          
+        ]
+      }
+    ],
+    "personal": [
+      {
+        "offerId": "85fa82a4-612c-4ce0-9f3e-fa8341cfe880",
+        "sku": {
+          "id": "a86a4bbd-77ba-4d26-8467-5d86a8e72c8e",
+          "displayPriority": 0,
+          "internalName": "credit_store_device",
+          "name": "credit_store_device",
+          "description": "credit_store_device",
+          "category": "item_instance",
+          "assetId": "",
+          "tags": [
+            
+          ],
+          "dlcReq": [
+            
+          ]
+        },
+        "entitlement": {
+          "id": "86a4c061-fb0f-47e7-84d5-90cb407f19d2",
+          "limit": 0,
+          "type": "Permanent"
+        },
+        "price": {
+          "amount": {
+            "amount": 6895,
+            "type": "credits"
+          },
+          "id": "c658175e-3b81-42f3-8ee2-3aa3086a1be1",
+          "priority": 1,
+          "priceFormula": "dynamic_price_formula"
+        },
+        "state": "active",
+        "description": {
+          "id": "content/items/gadgets/defensive_gadget_11",
+          "gearId": "08661b5e-ddcd-4ecc-8ab4-e3d3598f410a",
+          "rotation": "day_1/24",
+          "type": "gadget",
+          "properties": {
+            
+          },
+          "overrides": {
+            "ver": 2,
+            "rarity": 3,
+            "characterLevel": 30,
+            "itemLevel": 91,
+            "baseItemLevel": 71,
+            "perks": [
+              {
+                "id": "content/items/perks/gadget_common/trait_gadget_mission_reward_gear_instead_of_weapon_increase",
+                "rarity": 3
+              }
+            ],
+            "traits": [
+              {
+                "id": "content/items/traits/gadget_inate_trait/trait_inate_gadget_health",
+                "rarity": 3,
+                "value": 0.71
+              }
+            ]
+          }
+        },
+        "media": [
+          
+        ]
+      },
+      {
+        "offerId": "6613487d-404c-40f8-aac7-86af520e0764",
+        "sku": {
+          "id": "715b78d1-4832-40e3-b6bc-c90813b993a8",
+          "displayPriority": 0,
+          "internalName": "credit_store_all_rewards_veteran_sharpshooter",
+          "name": "credit_store_all_rewards_veteran_sharpshooter",
+          "description": "credit_store_all_rewards_veteran_sharpshooter",
+          "category": "item_instance",
+          "assetId": "",
+          "tags": [
+            
+          ],
+          "dlcReq": [
+            
+          ]
+        },
+        "entitlement": {
+          "id": "ef8562ed-98a9-45d0-91ff-184eafb7f70a",
+          "limit": 0,
+          "type": "Permanent"
+        },
+        "price": {
+          "amount": {
+            "amount": 16490,
+            "type": "credits"
+          },
+          "id": "bd40170a-7457-430e-9318-df2315c9db50",
+          "priority": 1,
+          "priceFormula": "dynamic_price_formula"
+        },
+        "state": "active",
+        "description": {
+          "id": "content/items/weapons/player/ranged/lasgun_p3_m3",
+          "gearId": "141fa17c-42c5-40bb-9e38-2c071ea9a012",
+          "rotation": "day_1/24",
+          "type": "weapon",
+          "properties": {
+            
+          },
+          "overrides": {
+            "ver": 2,
+            "rarity": 3,
+            "characterLevel": 30,
+            "itemLevel": 402,
+            "baseItemLevel": 342,
+            "traits": [
+              {
+                "id": "content/items/traits/bespoke_lasgun_p3/increased_sprint_speed",
+                "rarity": 2
+              }
+            ],
+            "perks": [
+              {
+                "id": "content/items/perks/ranged_common/wield_increase_critical_strike_damage",
+                "rarity": 4
+              }
+            ],
+            "base_stats": [
+              {
+                "name": "lasgun_p3_m3_dps_stat",
+                "value": 0.8
+              },
+              {
+                "name": "lasgun_p3_m3_stability_stat",
+                "value": 0.45
+              },
+              {
+                "name": "lasgun_p3_m3_control_stat",
+                "value": 0.65
+              },
+              {
+                "name": "lasgun_p3_m3_mobility_stat",
+                "value": 0.8
+              },
+              {
+                "name": "lasgun_p3_m3_ammo_stat",
+                "value": 0.73
+              }
+            ]
+          }
+        },
+        "media": [
+          
+        ]
+      },
+      {
+        "offerId": "49e7f5bf-1e2e-4bb5-b002-19171cb33416",
+        "sku": {
+          "id": "a86a4bbd-77ba-4d26-8467-5d86a8e72c8e",
+          "displayPriority": 0,
+          "internalName": "credit_store_device",
+          "name": "credit_store_device",
+          "description": "credit_store_device",
+          "category": "item_instance",
+          "assetId": "",
+          "tags": [
+            
+          ],
+          "dlcReq": [
+            
+          ]
+        },
+        "entitlement": {
+          "id": "86a4c061-fb0f-47e7-84d5-90cb407f19d2",
+          "limit": 0,
+          "type": "Permanent"
+        },
+        "price": {
+          "amount": {
+            "amount": 3580,
+            "type": "credits"
+          },
+          "id": "c658175e-3b81-42f3-8ee2-3aa3086a1be1",
+          "priority": 1,
+          "priceFormula": "dynamic_price_formula"
+        },
+        "state": "active",
+        "description": {
+          "id": "content/items/gadgets/defensive_gadget_4",
+          "gearId": "f019f9a3-2f2a-41f7-adc8-540c5f230684",
+          "rotation": "day_1/24",
+          "type": "gadget",
+          "properties": {
+            
+          },
+          "overrides": {
+            "ver": 2,
+            "rarity": 2,
+            "characterLevel": 30,
+            "itemLevel": 68,
+            "baseItemLevel": 68,
+            "perks": [
+              
+            ],
+            "traits": [
+              {
+                "id": "content/items/traits/gadget_inate_trait/trait_inate_gadget_toughness",
+                "rarity": 3,
+                "value": 0.68
+              }
+            ]
+          }
+        },
+        "media": [
+          
+        ]
+      },
+      {
+        "offerId": "0493fd8b-1c3b-4060-9c77-2f9d340efa1e",
+        "sku": {
+          "id": "715b78d1-4832-40e3-b6bc-c90813b993a8",
+          "displayPriority": 0,
+          "internalName": "credit_store_all_rewards_veteran_sharpshooter",
+          "name": "credit_store_all_rewards_veteran_sharpshooter",
+          "description": "credit_store_all_rewards_veteran_sharpshooter",
+          "category": "item_instance",
+          "assetId": "",
+          "tags": [
+            
+          ],
+          "dlcReq": [
+            
+          ]
+        },
+        "entitlement": {
+          "id": "ef8562ed-98a9-45d0-91ff-184eafb7f70a",
+          "limit": 0,
+          "type": "Permanent"
+        },
+        "price": {
+          "amount": {
+            "amount": 9780,
+            "type": "credits"
+          },
+          "id": "bd40170a-7457-430e-9318-df2315c9db50",
+          "priority": 1,
+          "priceFormula": "dynamic_price_formula"
+        },
+        "state": "active",
+        "description": {
+          "id": "content/items/weapons/player/melee/combatknife_p1_m1",
+          "gearId": "3e5dfa02-b440-45bd-948a-b0f8c45c9280",
+          "rotation": "day_1/24",
+          "type": "weapon",
+          "properties": {
+            
+          },
+          "overrides": {
+            "ver": 2,
+            "rarity": 2,
+            "characterLevel": 30,
+            "itemLevel": 343,
+            "baseItemLevel": 323,
+            "traits": [
+              
+            ],
+            "perks": [
+              {
+                "id": "content/items/perks/melee_common/wield_increase_armored_damage",
+                "rarity": 3
+              }
+            ],
+            "base_stats": [
+              {
+                "name": "combatknife_p1_m1_dps_stat",
+                "value": 0.73
+              },
+              {
+                "name": "combatknife_p1_m1_armor_pierce_stat",
+                "value": 0.74
+              },
+              {
+                "name": "combatknife_p1_m1_first_target_stat",
+                "value": 0.52
+              },
+              {
+                "name": "combatknife_p1_m1_mobility_stat",
+                "value": 0.47
+              },
+              {
+                "name": "combatknife_p1_m1_finesse_stat",
+                "value": 0.76
+              }
+            ]
+          }
+        },
+        "media": [
+          
+        ]
+      },
+      {
+        "offerId": "9976a019-525a-4c30-aa74-88e6313ce1d1",
+        "sku": {
+          "id": "715b78d1-4832-40e3-b6bc-c90813b993a8",
+          "displayPriority": 0,
+          "internalName": "credit_store_all_rewards_veteran_sharpshooter",
+          "name": "credit_store_all_rewards_veteran_sharpshooter",
+          "description": "credit_store_all_rewards_veteran_sharpshooter",
+          "category": "item_instance",
+          "assetId": "",
+          "tags": [
+            
+          ],
+          "dlcReq": [
+            
+          ]
+        },
+        "entitlement": {
+          "id": "ef8562ed-98a9-45d0-91ff-184eafb7f70a",
+          "limit": 0,
+          "type": "Permanent"
+        },
+        "price": {
+          "amount": {
+            "amount": 16200,
+            "type": "credits"
+          },
+          "id": "bd40170a-7457-430e-9318-df2315c9db50",
+          "priority": 1,
+          "priceFormula": "dynamic_price_formula"
+        },
+        "state": "active",
+        "description": {
+          "id": "content/items/weapons/player/melee/combataxe_p1_m2",
+          "gearId": "0295ebf5-dde0-43fc-9307-1272e18e93ee",
+          "rotation": "day_1/24",
+          "type": "weapon",
+          "properties": {
+            
+          },
+          "overrides": {
+            "ver": 2,
+            "rarity": 3,
+            "characterLevel": 30,
+            "itemLevel": 395,
+            "baseItemLevel": 350,
+            "traits": [
+              {
+                "id": "content/items/traits/bespoke_combataxe_p1/chained_hits_increases_power",
+                "rarity": 1
+              }
+            ],
+            "perks": [
+              {
+                "id": "content/items/perks/melee_common/wield_increase_crit_chance",
+                "rarity": 3
+              }
+            ],
+            "base_stats": [
+              {
+                "name": "combataxe_p1_m1_dps_stat",
+                "value": 0.79
+              },
+              {
+                "name": "combataxe_p1_m1_armor_pierce_stat",
+                "value": 0.8
+              },
+              {
+                "name": "combataxe_p1_m1_first_target_stat",
+                "value": 0.65
+              },
+              {
+                "name": "combataxe_p1_m1_mobility_stat",
+                "value": 0.6
+              },
+              {
+                "name": "combataxe_cleave_targets_stat",
+                "value": 0.66
+              }
+            ]
+          }
+        },
+        "media": [
+          
+        ]
+      },
+      {
+        "offerId": "92181597-cac1-4698-92cf-f63026adbba5",
+        "sku": {
+          "id": "715b78d1-4832-40e3-b6bc-c90813b993a8",
+          "displayPriority": 0,
+          "internalName": "credit_store_all_rewards_veteran_sharpshooter",
+          "name": "credit_store_all_rewards_veteran_sharpshooter",
+          "description": "credit_store_all_rewards_veteran_sharpshooter",
+          "category": "item_instance",
+          "assetId": "",
+          "tags": [
+            
+          ],
+          "dlcReq": [
+            
+          ]
+        },
+        "entitlement": {
+          "id": "ef8562ed-98a9-45d0-91ff-184eafb7f70a",
+          "limit": 0,
+          "type": "Permanent"
+        },
+        "price": {
+          "amount": {
+            "amount": 6500,
+            "type": "credits"
+          },
+          "id": "bd40170a-7457-430e-9318-df2315c9db50",
+          "priority": 1,
+          "priceFormula": "dynamic_price_formula"
+        },
+        "state": "active",
+        "description": {
+          "id": "content/items/weapons/player/ranged/lasgun_p2_m3",
+          "gearId": "311dfc27-a7da-425f-bc6c-7b2d7216b4d3",
+          "rotation": "day_1/24",
+          "type": "weapon",
+          "properties": {
+            
+          },
+          "overrides": {
+            "ver": 2,
+            "rarity": 1,
+            "characterLevel": 30,
+            "itemLevel": 328,
+            "baseItemLevel": 328,
+            "traits": [
+              
+            ],
+            "perks": [
+              
+            ],
+            "base_stats": [
+              {
+                "name": "lasgun_p2_m3_dps_stat",
+                "value": 0.62
+              },
+              {
+                "name": "lasgun_p2_m3_stability_stat",
+                "value": 0.72
+              },
+              {
+                "name": "lasgun_p2_m3_power_stat",
+                "value": 0.73
+              },
+              {
+                "name": "lasgun_p2_m3_charge_speed_stat",
+                "value": 0.42
+              },
+              {
+                "name": "lasgun_p2_m3_ammo_stat",
+                "value": 0.8
+              }
+            ]
+          }
+        },
+        "media": [
+          
+        ]
+      },
+      {
+        "offerId": "61647ab7-5457-4cf0-9b86-1c2014a6ca1f",
+        "sku": {
+          "id": "715b78d1-4832-40e3-b6bc-c90813b993a8",
+          "displayPriority": 0,
+          "internalName": "credit_store_all_rewards_veteran_sharpshooter",
+          "name": "credit_store_all_rewards_veteran_sharpshooter",
+          "description": "credit_store_all_rewards_veteran_sharpshooter",
+          "category": "item_instance",
+          "assetId": "",
+          "tags": [
+            
+          ],
+          "dlcReq": [
+            
+          ]
+        },
+        "entitlement": {
+          "id": "ef8562ed-98a9-45d0-91ff-184eafb7f70a",
+          "limit": 0,
+          "type": "Permanent"
+        },
+        "price": {
+          "amount": {
+            "amount": 6185,
+            "type": "credits"
+          },
+          "id": "bd40170a-7457-430e-9318-df2315c9db50",
+          "priority": 1,
+          "priceFormula": "dynamic_price_formula"
+        },
+        "state": "active",
+        "description": {
+          "id": "content/items/weapons/player/ranged/lasgun_p3_m2",
+          "gearId": "69dbff78-6fc5-413c-8d14-de479ff334de",
+          "rotation": "day_1/24",
+          "type": "weapon",
+          "properties": {
+            
+          },
+          "overrides": {
+            "ver": 2,
+            "rarity": 1,
+            "characterLevel": 30,
+            "itemLevel": 312,
+            "baseItemLevel": 312,
+            "traits": [
+              
+            ],
+            "perks": [
+              
+            ],
+            "base_stats": [
+              {
+                "name": "lasgun_p3_m2_dps_stat",
+                "value": 0.74
+              },
+              {
+                "name": "lasgun_p3_m2_stability_stat",
+                "value": 0.13
+              },
+              {
+                "name": "lasgun_p3_m2_control_stat",
+                "value": 0.72
+              },
+              {
+                "name": "lasgun_p3_m2_mobility_stat",
+                "value": 0.74
+              },
+              {
+                "name": "lasgun_p3_m2_ammo_stat",
+                "value": 0.77
+              }
+            ]
+          }
+        },
+        "media": [
+          
+        ]
+      }
+    ]
+    }

@@ -1,0 +1,92 @@
+{
+"glossary": [
+{
+    "name": "Bleed",
+    "description": "Applies stacks of bleed to the enemy, which deal damage over time. Maximum stacks is 16, which last somewhere between 2-5 seconds. Does less damage to enemies which have some form of bleed resistance, such as Crushers and other armoured enemies. Exact calculation for bleed damage /s current unknown."
+},
+{
+    "name": "Brittleness",
+    "description": "Equates to armour penetration against armoured enemies. Different from Rending in the sense that Brittleness is a debuff applied to enemies, rather than a buff to the player. This means all your teammates benefit from it as well. Each stack of Brittleness reduces enemy armour by a certain % and lasts a certain amount of time."
+},
+{
+    "name": "Burn",
+    "description": "Applies a damage over time effect to enemies. This damage is applied through stacks, in a similar vein to bleed. Burn damage is tied to stacks, which is capped at 16 in the same way as bleed. The Burn bar affects the DoT application rate, as well as the maximum number of stacks (Ranges from 8-16 on the flamer)."
+},
+{
+    "name": "Cleave",
+    "description": "Refers to the additional targets hit by a melee weapon after the first enemy is hit. Directly affected by the Cleave Damage and Cleave Target bars. The former modifies how many targets your melee weapon passes through, whereas the later modifies the damage dealt to these additional targets."
+},
+{
+    "name": "Corruption Damage",
+    "description": "Inflicted by Pox enemies and the Plague Ogryn monstrosity. Can be mitigated by the corruption resistance modifier on curios."
+},
+{
+    "name": "Crit Chance (Melee)",
+    "description": "Chance to inflict a critical hit on an enemy. Base rate is 5% across most weapons. Combat Blade has a 20% base rate. Tactical Axe also has a base rate between 15-20% and is the only melee weapon that has the Critical Bonus bar, which directly modifies increases crit chance."
+},
+{
+    "name": "Damage",
+    "description": "Damage dealt to enemies. Multiplicative with other stats, partially multiplicative with crit stats."
+},
+{
+    "name": "Damage over Time (DoT)",
+    "description": "Does a flat amount of damage to enemies. This damage varies depending on the armour type of enemies."
+},
+{
+    "name": "Health",
+    "description": "Your total hit points. Receiving damage targets toughness before HP, but you will receive chip damage when taking melee damage whilst under 100 toughness. Only possible to regain through medpacks, a medicae station or through certain class specific talents."
+},
+{
+    "name": "Impact",
+    "description": "Increases the effectiveness of stagger on enemies. It is a direct increase to stagger damage, allowing you to stagger certain enemy types which have a higher stagger resistance."
+},
+{
+    "name": "Mass",
+    "description": "How 'dense' an enemy is. If a weapon has 8 cleave, and an enemy has 3 mass then the weapon can cleave two enemies with 2 remainder mass. Because there is remainder mass, the swing will pass through the second unit and hit the third and be stopped on it because it has mass greater than remaining cleave so with an 8 cleave weapon, you could cleave three 3 mass enemies."
+},
+{
+    "name": "Power",
+    "description": "An overall increase to damage. Unclear how the direct calculation works, but it increases damage, cleave and stagger simultaneously."
+},
+{
+    "name": "Rending",
+    "description": "Increase armour penetration. Unclear how it calculates this exactly. Either reduces armour defense by 10% per stack or downgrades enemy armour by 1 level per stack. Rending is a player buff, compared to Brittleness which is an enemy debuff."
+},
+{
+    "name": "Salvo",
+    "description": "One salvo is all the shots that happen until recoil fully resets either by swapping off and back onto the weapon or just not firing for a period of time. Can be affected by blessings such as Opening Salvo, which increases the power of the first shot in a Salvo."
+},
+{
+    "name": "Soulblaze",
+    "description": "Similar to Burn, but exclusive to the Psyker. Applied by the flame staff and some specific talents. The DoT is multiplicative, resulting in it applying low damage at one stack, but very high damage past 4 stacks."
+},
+{
+    "name": "Suppression",
+    "description": "Suppression against an enemy usually causes them to run away and seek cover. Suppression against you causes your weapon to knock around whilst in ADS and increases inaccuracy."
+},
+{
+    "name":"Stamina",
+    "description": "Each class has a base stamina value, which are as follows: Psyker: 1, Veteran: 2, Zealot: 4, Ogryn 5. Each weapon also has a stamina value which adds to that base. Example: A Surge Staff provides +4 stamina, a Psyker with one equipped will have 5 stamina. This represents the 'chunks' of the stamina bar. These chunks are used when sprinting, blocking and pushing. For sprinting, each 'chunk' on the bar represents around 1 second of sprinting. The data for blocking and pushing has not yet been fully compiled, but pushing generally costs around 1-2 'chunks', which differs between weapons."
+},
+{
+    "name":"Stagger",
+    "description": "Interrupting enemies on hit; directly linked to impact. Staggering enemies knocks them off balance and weapons with the crowd control bar gain the biggest increase to stagger. Stagger is also applied on cleave, meaning that high cleave weapons can stagger multiple enemies at once."
+},
+{
+    "name": "Toughness",
+    "description": "Blue shield above your health bar. Receiving damage reduces toughness until 0, where you then take HP damage. However, being hit in melee when below 100 toughness will cause chip damage to your HP."
+},
+{
+    "name": "Toughness Damage",
+    "description": "Melee attacks deal twice as much damage to toughness. Ranged weapons usually do 1x. Can be mitigated by the toughness DR modifier on curios."
+},
+{
+    "name": "Weakspot",
+    "description": "Weakspots of enemies, which most weapons deal some sort of increased damage to. This is the head for the majority of enemies. An exception is the Beast of Nurgle monstrosity, where the yellow spot on its back is the weakspot."
+},
+{
+    "name": "Wounds",
+    "description": "An extra 'chunk' of HP. Doesn't provide any more actual HP, but increases the amount of times you can go down and be revived before dieing. In Uprising (Difficulty 1) you gain an extra wound, whereas in Heresy and Damnation (4 and 5) you lose one. I.E. A Veteran in Heresy with no curio modifiers to wounds will have only have 2 wounds, whereas in Uprising they would have 4."
+}
+]
+}

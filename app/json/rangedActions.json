@@ -1,0 +1,118 @@
+{
+"rangedActions": [
+{
+    "name": "ADS - Fully Automatic",
+    "image": "/static/img/rangedActions/adsfullyautomatic.webp",
+    "description": "",
+    "detailedDescription": []
+},
+{
+    "name": "ADS - Semi-automatic",
+    "image": "/static/img/rangedActions/adssemiautomatic.webp",
+    "description": "",
+    "detailedDescription": []
+},
+{
+    "name": "ADS - Burst-fire",
+    "image": "/static/img/rangedActions/adsburstfire.webp",
+    "description": "",
+    "detailedDescription": []
+},
+{
+    "name": "ADS - Shotgun",
+    "image": "/static/img/rangedActions/adsshotgun.webp",
+    "description": "",
+    "detailedDescription": []
+},
+{
+    "name": "Braced - Burst-fire",
+    "image": "/static/img/rangedActions/bracedburstfire.webp",
+    "description": "",
+    "detailedDescription": []
+},
+{
+    "name": "Braced - Fully Automatic",
+    "image": "/static/img/rangedActions/bracedfullyautomatic.webp",
+    "description": "",
+    "detailedDescription": []
+},
+{
+    "name": "Braced - Projectile",
+    "image": "/static/img/rangedActions/bracedprojectile.webp",
+    "description": "",
+    "detailedDescription": []
+},
+{
+    "name": "Braced - Shotgun",
+    "image": "/static/img/rangedActions/bracedshotgun.webp",
+    "description": "",
+    "detailedDescription": []
+},
+{
+    "name": "Hip Fire - Burst-fire",
+    "image": "/static/img/rangedActions/hipfireburstfire.webp",
+    "description": "",
+    "detailedDescription": []
+},
+{
+    "name": "Hip Fire - Fully Automatic",
+    "image": "/static/img/rangedActions/hipfirefullyautomatic.webp",
+    "description": "",
+    "detailedDescription": []
+},
+{
+    "name": "Hip Fire - Projectile",
+    "image": "/static/img/rangedActions/hipfireprojectile.webp",
+    "description": "",
+    "detailedDescription": []
+},
+{
+    "name": "Hip Fire - Semi-automatic",
+    "image": "/static/img/rangedActions/hipfiresemiautomatic.webp",
+    "description": "",
+    "detailedDescription": []
+},
+{
+    "name": "Hip Fire - Shotgun",
+    "image": "/static/img/rangedActions/hipfireshotgun.webp",
+    "description": "",
+    "detailedDescription": []
+},
+{
+    "name": "Melee Attacks",
+    "image": "/static/img/rangedActions/meleeattacks.webp",
+    "description": "",
+    "detailedDescription": []
+},
+{
+    "name": "Staff-Bound Coruscation",
+    "image": "/static/img/rangedActions/staffboundcoruscation.webp",
+    "description": "",
+    "detailedDescription": []
+},
+{
+    "name": "Staff-Bound Coruscation - Semi-automatic",
+    "image": "/static/img/rangedActions/staffboundcoruscationsemiautomatic.webp",
+    "description": "",
+    "detailedDescription": []
+},
+{
+    "name": "Staff-Bound Smite",
+    "image": "/static/img/rangedActions/staffboundsmite.webp",
+    "description": "",
+    "detailedDescription": []
+},
+{
+    "name": "Warp Detonation",
+    "image": "/static/img/rangedActions/warpdetonation.webp",
+    "description": "",
+    "detailedDescription": []
+},
+{
+    "name": "Warp Shot - Projectile",
+    "image": "/static/img/rangedActions/warpshotprojectile.webp",
+    "description": "",
+    "detailedDescription": []
+}
+]
+}

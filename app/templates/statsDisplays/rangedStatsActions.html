@@ -1,0 +1,133 @@
+<div class="position-relative" id="rangedActions" style="display: block;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <h1 class="pt-5 font-anton-upp font-anton-cracked">Ranged Actions</h1>
+                <div class="d-flex flex-column">
+                    <p class="pt-3 font-worksans mx-auto w-max-lg">Ranged weapons are more complex than melee weapons. Whilst melee weapons share a total of 4 actions, ranged weapons have around 20 unique actions. However, this can be simplified by essentially splitting the actions into two parts.</p>
+                    <p class="font-worksans mx-auto w-max-lg">The first part of this is the actual action itself, which can be one of the four listed below. The second part is the firemode, of which there are 5 different types. It is the combination of both action and firemode which gives each ranged weapon its own unique primary and secondary action.</p>
+                    <p class="font-worksans mx-auto w-max-lg">Example: The Kantrael MK XII Lasgun has a primary action of Hip Fire | Semi-automatic. It takes the first part of this action from the four listed below, and then combines it with a firemode to provide its overall action.</p>  
+                    <p class="font-worksans mx-auto w-max-lg">There are unique cases in regard to the Ogryn's Grenadier Gauntlet and the Psyker's staffs, where things look slightly different, but overall function in the same way. There are dedicated sections to these weapons at the bottom of the page which explains this in more detail.</p>  
+                </div>
+                <div class="row mt-3 g-3">
+                    {% for action in rangedActionsSimpleList %}
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="card stat-action-card h-100">
+                            <div class="card-body weaponBorder h-100 bl-bg">
+                                <img src="{{ action.image }}" alt="Ranged Action Image" class="stat-action-img">
+                                <h5 class="font-worksans-bold small-text px-0">{{ action.name }}</h5>
+                                <p class="font-worksans small-text-14">{{ action.description }}</p>
+                                {% for d in action.detailedDescription %}
+                                    <p class="font-worksans-light small-text-14">{{ d }}</p>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <h1 class="pt-5 font-anton-upp font-anton-cracked">Ranged Firemodes</h1>
+                <div class="row mt-3 g-3">
+                    {% for fire in rangedFireList %}
+                    <div class="col-sm-6 col-xl-4">
+                        <div class="card stat-action-card h-100">
+                            <div class="card-body weaponBorder h-100 bl-bg">
+                                <img src="{{ fire.fmImg }}" alt="Fire Mode Image" class="">
+                                <h5 class="font-worksans-bold small-text px-0">{{ fire.firemode }}</h5>
+                                <p class="font-worksans small-text-14">{{ fire.fmDesc }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <h1 class="pt-5 font-anton-upp font-anton-cracked">Ranged Special Actions</h1>
+                <div class="row mt-3 g-3">
+                    {% for action in rangedSpecialActionsList %}
+                    <div class="col-6 col-md-4">
+                        <div class="card stat-action-card h-100">
+                            <div class="card-body weaponBorder h-100 bl-bg">
+                                <img src="{{ action.image }}" alt="{{ action.name }}" class="stat-action-img">
+                                <h5 class="font-worksans-bold small-text px-0">{{ action.name }}</h5>
+                                <p class="font-worksans small-text-14 pt-2">{{ action.description }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <h1 class="pt-5 pb-3 font-anton-upp font-anton-cracked">Staffs</h1>
+                <div class="d-flex flex-column">
+                    <p class="pt-3 font-worksans mx-auto w-max-lg">Staff actions differ slightly from guns in terms of naming conventions, but functionally they act the same. This table shows the 4 Psyker staffs, and their respective actions. Below the table is a breakdown of the keywords associated with each staff, and what they mean.</p>
+                </div>
+                <div class="table-responsive">
+                    <table class="table weaponBorder text-white text-start" id="weaponsTable">
+                        <thead>
+                            <tr class="font-worksans-bold">
+                            <th scope="col">Staff Name</th>
+                            <th scope="col">Primary Action</th>
+                            <th scope="col">Secondary Action</th>
+                            <th scope="col">Special Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for staff in staffsList %}
+                            <tr class="{{ loop.cycle('odd', 'even') }} font-worksans-light">
+                                <td>{{ staff.name }}</td>
+                                <td>{{ staff.primaryAction }}</td>
+                                <td>{{ staff.secondaryAction }}</td>
+                                <td>{{ staff.specialAction }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <div class="d-flex flex-column">
+                    <p class="pt-3 font-worksans mx-auto w-max-lg">Staff-Bound x refers to the attack animation of the staff. It is essentially the same as hip fire in terms of how the actual attack is aimed, As a secondary action it is the exact same, although it becomes a charged attack.</p>
+                    <p class="pt-3 font-worksans mx-auto w-max-lg">All staffs fire projectiles aside from the Purgatus, which is considered semi-automatic. The secondary actions are unique to each staff and are explained below, although they continue to share the Staff-Bound name and remain a hip fire form of attack.</p>
+                </div>
+                <div class="row mt-2 weaponBorder bl-bg">
+                    <div class="col-lg-6">
+                        <p class="pt-3 font-worksans mx-auto w-max-lg">Purgatus</p>
+                        <p class="pt-3 font-worksans mx-auto w-max-lg">The primary action is a semi-automatic attack, which appears as a burst of flame from the Psyker's left hand. It does fairly low damage, but somewhat staggers enemies and applies stacks of Soulblaze. Soulblaze is the Psyker's equivalent of Burn, and works in a similar fashion. It applies a DoT effect which is multiplicative, meaning it does low damage at low stacks but seriously ramps up at higher stacks.</p>
+                        <p class="pt-3 font-worksans mx-auto w-max-lg">The secondary action is a charged attack, which acts as a prolonged version of the primary action. It can stagger multiple enemies at once, whilst applying Soulblaze stacks to them. Useful for horde control.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="pt-3 font-worksans mx-auto w-max-lg">Surge</p>
+                        <p class="pt-3 font-worksans mx-auto w-max-lg">The primary action is a projectile attack shared with the Trauma and Voidstrike staffs. It does decent damage, but can only hit one enemy at once. Has long range, so can be useful for taking out snipers and other low HP elites.</p>
+                        <p class="pt-3 font-worksans mx-auto w-max-lg">The secondary action, referred to as smite, is a charged bouncing-like attack that chains between up to 5 enemies at once. It CC locks most enemies into place including Ogryn specials, providing excellent utility. It does moderate damage, and the longer it is charged, the more damage it does whilst increasing the length enemies are CC'd by.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="pt-3 font-worksans mx-auto w-max-lg">Trauma</p>
+                        <p class="pt-3 font-worksans mx-auto w-max-lg">The primary action is a projectile attack, which functionally works the same as the Surge and Voidstrike staffs. Moderate damage, good range, but can only hit one target at a time.</p>
+                        <p class="pt-3 font-worksans mx-auto w-max-lg">The secondary action, referred to as Pyroblast, is a charged AoE type that damages and staggers multiple enemies at once. The longer the attack is charged, the bigger the AoE radius and the more damage it inflicts. Generates a lot of peril.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="pt-3 font-worksans mx-auto w-max-lg">Voidstrike</p>
+                        <p class="pt-3 font-worksans mx-auto w-max-lg">The primary action is a projectile attack, which functionally works the same as the Surge and Trauma staffs. Moderate damage, good range, but can only hit one target at a time.</p>
+                        <p class="pt-3 font-worksans mx-auto w-max-lg">The secondary action is a charged projectile attack, which acts as an amplified version of the primary action. It can pierce through multiple enemies at once and even entire hordes, dealing high damage on top of stagger. The charge on the attack affects the amount of enemies it can pierce as well as its damage, meaning that a fully charged attack will pierce through a lot more enemies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <h1 class="pt-5 font-anton-upp font-anton-cracked">Grenadier Gauntlet</h1>
+            <div class="d-flex flex-column">
+                <p class="pt-3 font-worksans mx-auto w-max-lg">The Grenadier Gauntlet is an Ogryn exclusive weapon which is unique in the sense that it is essentially a hybrid melee/ranged weapon. Below is a screenshot of the actions overview of the weapon.</p>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <img src = "/static/img/statsBreakdown/rangedActions/grenadiergauntlet.png" alt="Grenadier Gauntlet">
+                </div>
+            </div>
+            <div class="d-flex flex-column">
+                <p class="pt-3 font-worksans mx-auto w-max-lg">The left click works the same as a melee weapon, with both a light attack and heavy attach chain (relentless attacks). The right click works the same as a ranged weapon, with a braced attack that fires a projectile. This projectile explodes on impact, dealing high damage and high stagger. The special attack, Explosive Punch, does what the descriptions outlines. It is a short melee attack, followed by what is essentially the same as the ranged attack but at close range. Also deals high damage and high stagger.</p>
+            </div>
+        </div>
+    </div>
+</div>

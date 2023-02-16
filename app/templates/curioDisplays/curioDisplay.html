@@ -1,0 +1,36 @@
+<div class="container-lg text-center w-max-xl px-4 px-md-0">
+    <div class="row">
+        {% for curio in curiosList %}
+            {% if curio.name == curio.name %}
+            <div class="col-6 col-sm-4 col-md-3 col-lg-25 p-2">
+                <div class="card h-100 curio">
+                    <div class="d-flex flex-column h-100">
+                        <div class="card-body curios-card d-flex align-items-center row flex-column">
+                            <h5 class="font-worksans-bold small-text px-2 px-sm-1">{{ curio.name }}</h5>
+                            <img src="{{ curio.image }}" alt="{{ curio.name }}" class="icon-curios p-0 mb-2">
+                        </div>
+                    </div>
+                    <div class="card-frame-top d-flex align-items-center px-0">
+                        <div class="card-frame-side-wrapper frame-top">
+                            <img class="frame-left" src="/static/img/borders/card-frame-top-left.png" alt="">
+                        </div>
+                        <div class="card-frame-side-wrapper frame-top">
+                            <img class="frame-right" src="/static/img/borders/card-frame-top-right.png" alt="">
+                        </div>
+                        <img class="frame-center" src="/static/img/borders/curio-frame-middle-top.png" alt="">
+                    </div>
+                    <div class="card-frame-bottom d-flex align-items-center px-0">
+                        <div class="card-frame-side-wrapper frame-bot">
+                            <img class="frame-left" src="/static/img/borders/card-frame-bottom-left.png" alt="">
+                        </div>
+                        <div class="card-frame-side-wrapper frame-bot">
+                            <img class="frame-right" src="/static/img/borders/card-frame-bottom-right.png" alt="">
+                        </div>
+                        <img class="frame-center" src="/static/img/borders/card-frame-bottom-middle.png" alt="">
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>

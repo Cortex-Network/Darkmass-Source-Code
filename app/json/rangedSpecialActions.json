@@ -1,0 +1,44 @@
+{
+"rangedSpecialActions": [
+{
+    "name": "Bash",
+    "image": "/static/img/rangedSpecialActions/bash.png",
+    "description": "Using the firearm to attack your enemy in close combat."
+},
+{
+    "name": "Bayonet Attack",
+    "image": "/static/img/rangedSpecialActions/bayonetattack.png",
+    "description": "Attack with the attached bayonette."
+},
+{
+    "name": "Explosive Punch",
+    "image": "/static/img/rangedSpecialActions/explosivepunch.png",
+    "description": "Punch an enemy with the gauntlet and fire a grenade just after the punch lands."
+},
+{
+    "name": "Push",
+    "image": "/static/img/rangedSpecialActions/push.png",
+    "description": "Push enemies away with your empty hand."
+},
+{
+    "name": "Special Ammo",
+    "image": "/static/img/rangedSpecialActions/specialammo.png",
+    "description": "Loads the weapon with one special shell that gives next shot horizontal spread pattern and high Stagger."
+},
+{
+    "name": "Strike",
+    "image": "/static/img/rangedSpecialActions/strike.png",
+    "description": "Combo attacks using the staff as a melee weapon."
+},
+{
+    "name": "Torch",
+    "image": "/static/img/rangedSpecialActions/torch.png",
+    "description": "Turn on or off the weapon mounted torch. Useful in dark areas."
+},
+{
+    "name": "Vent Heat",
+    "image": "/static/img/rangedSpecialActions/ventheat.png",
+    "description": "Quickly decrease either the wielder's Peril or the weapons Overcharge (as appropriate)"
+}
+]
+}

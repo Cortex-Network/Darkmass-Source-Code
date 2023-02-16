@@ -1,0 +1,83 @@
+{
+"meleeBars": [
+{
+    "name": "Cleave Damage",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "Damage delivered to additional enemies Hit beyond the main target.",
+    "modifiers": ["Cleave Damage vs Flak Armored: %", "Cleave Damage vs Unarmoured: %", "Cleave Damage vs Infested: %"]
+},
+{
+    "id": "meleeBars2",
+    "name": "Cleave Targets",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "The higher the Cleave, the more enemies Hit in one swing.",
+    "modifiers": ["Light Attack Cleave Damage Distribution", "Light Attack Cleave Stagger Distribution", "Heavy Attack Cleave Damage Distribution", "Heavy Attack Cleave Stagger Distribution"]
+},
+{
+    "name": "Critical Bonus",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "Chance of landing a Critical Hit and how much Damage it will do.",
+    "modifiers": ["Critical Damage vs Flak Armoured: %", "Critical Damage vs Unyielding: %", "Critical Damage vs Carapace Armoured: %", "Melee Critical Chance: %"]
+},
+{
+    "name": "Crowd Control",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "Increases a weapon's Stagger, Impact and Cleave",
+    "modifiers": ["Light Attack Attack Speed", "Heavy Attack Attack Speed", "Light Attack Weapon Stagger", "Light Attack Cleave Damage Distribution", "Light Attack Cleave Stagger Distribution", "Heavy Attack Weapon Stagger", "Heavy Attack Cleave Damage Distribution", "Heavy Attack Cleave Stagger Distribution"]
+},
+{
+    "name": "Damage",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "How much Damage the weapon inflicts.",
+    "modifiers": ["Light Attack Damage", "Heavy Attack Damage"]
+},
+{
+    "name": "Defences",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "Affects Stamina efficiency, as well as the length and speed of dashes.",
+    "modifiers": ["Sprint Cost: /s", "Push Cost", "Dodge Distance: %", "Dodge Limit"]
+},
+{
+    "name": "Finesse",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "Increases the Weapon's attack Speed and grants bonuses to Critical Hits and Weak Spot Hits.",
+    "modifiers": ["Light Attack Critical and Weakspot Power: x multiplier", "Heavy Attack Critical and Weakspot Power: x multiplier", "Light Attack Attack Speed: %", "Heavy Attack Attack Speed: %"]
+},
+{
+    "name": "First Target",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "How much Damage done to the first Enemy Hit when hitting multiple enemies in one swing.",
+    "modifiers": ["Light Attack Power vs First Target: x multiplier", "Heavy Attack Power vs First Target: x multiplier"]
+},
+{
+    "name": "Mobility",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "Measure of Movement Speed, Sprint Speed, and Dodge distance bonus while the weapon is active.",
+    "modifiers": ["Sprint Speed", "Dodge Distance: %", "Dodge Limit"]
+},
+{
+    "name": "Penetration",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "Weapons's effectiveness against Armoured enemies.",
+    "modifiers": ["Light Attack Damage vs Flak Armoured: %", "Heavy Attack Damage vs Flak Armoured: %", "Heavy Attack Damage vs Carapace Armoured: %"]
+},
+{
+    "name": "Power Output",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "Damage inflicted by the powered up/activated attacks on Power Maul and similar power weapons",
+    "modifiers": ["Light Attack Power", "Heavy Attack Power", "Blast Radius", "Epicentre Radius", "Area Suppression Radius", "Area Suppression"]
+},
+{
+    "name": "Shredder",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "Measure of a weapon's damage while its 'Rev' Special Action is active.",
+    "modifiers": ["Light Attack Saw Rip Damage", "Light Attack Sawing Damage", "Heavy Attack Sawing Damage", "Heavy Attack Saw Rip Damage"]
+},
+{
+    "name": "Warp Resistance",
+    "image": "/static/img/statsBreakdown/bar.png",
+    "description": "Use of this weapon increases a Psyker's Peril. The higher the Warp Resistance, the less Peril is generated with each attack.",
+    "modifiers": ["Peril Generation: %"]
+}
+]
+}

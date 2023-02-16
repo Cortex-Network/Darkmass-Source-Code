@@ -1,0 +1,28 @@
+{
+"staffs": [
+{
+    "name": "Purgatus",
+    "primaryAction": "Staff-Bound Coruscation | Semi-automatic",
+    "secondaryAction": "Staff-Bound Coruscation",
+    "specialAction": "Strike"
+},
+{
+    "name": "Surge",
+    "primaryAction": "Staff-Bound Blaze Bolt | Projectile",
+    "secondaryAction": "Staff-Bound Smite",
+    "specialAction": "Strike"
+},
+{
+    "name": "Trauma",
+    "primaryAction": "Staff-Bound Blaze Bolt | Projectile",
+    "secondaryAction": "Staff-Bound Pyroblast",
+    "specialAction": "Strike"
+},
+{
+    "name": "Voidstrike",
+    "primaryAction": "Staff-Bound Blaze Bolt | Projectile",
+    "secondaryAction": "Staff-Bound Blaze Bolt | Projectile",
+    "specialAction": "Strike"
+}
+]
+}

@@ -1,0 +1,28 @@
+{
+"actions": [
+{
+    "name": "Assassin",
+    "image": "/static/img/actions/assassin.png",
+    "description": "Fast attacks targetting one enemy, efficient on weak spots.",
+    "detailedDescription": ["Assassin attacks are generally low cleave, high headshot damage. This makes them good against single targets, but lacking against hordes.", "However, these weapons (especially the combat blade) provide enough mobility to dance around hordes via dodging."]
+},
+{
+    "name": "Relentless",
+    "image": "/static/img/actions/relentless.png",
+    "description": "Wide attack that staggers many enemies at once.",
+    "detailedDescription": ["Relentless attacks usually have higher damage/stagger cleave, and as such are effective weapons for controlling and taking out hordes.", "Some Relentless weapons may lack in single target damage, but make up for it with their execellent horde control."]
+},
+{
+    "name": "Strikedown",
+    "image": "/static/img/actions/strikedown.png",
+    "description": "A powerful attack targeting one enemy.",
+    "detailedDescription": ["Generally for single target, usually with low cleave but some attacks have armour penetration.", "Strikedown weapons are generally good for taking out armoured single targets, but lack in horde control."]
+},
+{
+    "name": "Vanguard",
+    "image": "/static/img/actions/vanguard.png",
+    "description": "Wide attack damaging many enemies at once.",
+    "detailedDescription": ["Vanguard attacks for good for doing damage to hordes, but can lack enough cleave to control the horde effectively.", "They perform well though until hordes grow too dense in size, which relentless weapons deal with better."]
+}
+]
+}
